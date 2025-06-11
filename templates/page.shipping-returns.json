@@ -1,0 +1,105 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_ppiexY": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_YUmaah": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "General Conditions",
+            "icon": "chat_bubble",
+            "row_content": "<p>Fine & Mine reserves the right to refuse service to anyone for any reason at any time. We also reserve the right to suspend or remove any users from our system at our sole discretion.</p><p>You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.</p><p>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.</p><p>The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_prExWy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "chat_bubble",
+            "row_content": "<p>The estimated delivery time for <strong>Metro Manila and Luzon areas </strong>are<strong> 3 to 5 days</strong>. As for <strong>Visayas and Mindanao</strong>, the estimated lead time is <strong>5 to 7 days</strong>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UT7kVq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Order Tracking",
+            "icon": "chat_bubble",
+            "row_content": "<p>Once the order is shipped, customers will receive an email notification containing a tracking number.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dYgVFH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Returns & Refunds",
+            "icon": "chat_bubble",
+            "row_content": "<p>All products sold on this website (<a href=\"https://fineandmine.ph/\" target=\"_blank\" title=\"https://fineandmine.ph/\">www.fineandmine.ph</a>), including promotions and sale items, are exempt from refunds, returns and/or exchanges, unless proven to have been received with a defect or damage.</p><p>Freebies and/or samples are given on an as-is where-is basis and are not subject to returns, refunds or exchanges.</p><p>We sincerely apologize if you've received a product that is not up to standard. Allow us to exchange your defective product for the same kind in a good condition. To start this process, kindly send us a message to our <a href=\"https://www.facebook.com/fineandmine.ph\" target=\"_blank\" title=\"https://www.facebook.com/fineandmine.ph\">official Facebook Page</a> with your <strong>name</strong>, <strong>order number</strong>, <strong>details of the concern</strong>, and <strong>photos of the incorrect/damaged item</strong>. We’ll get you taken care of right away.</p><p>For further concerns regarding refund and returns, you may reach out to <a href=\"https://www.facebook.com/fineandmine.ph\" target=\"_blank\" title=\"https://www.facebook.com/fineandmine.ph\">Fine & Mine on Facebook</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NXhpBC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Returns Process",
+            "icon": "chat_bubble",
+            "row_content": "<p>All approved returns must be <strong>postmarked within seven (7) days of the delivery date</strong>.</p><p>All returned items must be in <strong>new and unused condition, with all original tags and labels attached</strong>. Please return the watch in the original box with all original packing material, manuals, and any other materials that came with the watch.</p><p>To return an item, please contact us on our <a href=\"https://www.facebook.com/fineandmine.ph\" target=\"_blank\" title=\"https://www.facebook.com/fineandmine.ph\">official Facebook page</a> to obtain a Return Merchandise Authorization (RMA) number.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bUgKcw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Products, Services, Orders, and Transactions",
+            "icon": "chat_bubble",
+            "row_content": "<p>Certain products or services may be available exclusively online through the website, or Fine & Mine linked sites. These products or services may have limited quantities and are subject to return or exchange only according to our <a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Return Policy</a>.</p><p>We have made every effort to display as accurately as possible the colors and images of our products that appear at the store. We cannot guarantee that your computer monitor’s display of any color will be as accurate.</p><p>We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right to discontinue any product at any time. Any offer for any product or service made on this site is void where prohibited.</p><p>We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected.</p><p>Unless you cancel your order, your order will be considered valid upon completion of the packing of the order. The contract between you and Fine & Mine will be completed once we dispatch the goods to you.</p><p>We reserve the right not to accept or process your order at our own discretion for reasons such as, but not limited to, fraud, shipping restrictions, payment authorization or if the said product is out of stock.</p><p>Fine & Mine operates on a first-come, first-serve basis. Keeping Items in your cart doesn’t guarantee availability of product.</p><p>All prices on our website are inclusive of government-imposed taxes. If you have placed an order for a product whose price was posted incorrectly, we reserve the right to either not process or cancel the said order. You will be notified of such error via email.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_YUmaah",
+        "collapsible_row_prExWy",
+        "collapsible_row_UT7kVq",
+        "collapsible_row_dYgVFH",
+        "collapsible_row_NXhpBC",
+        "collapsible_row_bUgKcw"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_ppiexY"
+  ]
+}

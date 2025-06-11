@@ -1,0 +1,111 @@
+<div class="nav-menu header__inline-menu">
+  {% for block in section.blocks %}
+    <ul class="u-list nav-menu-list list-menu list-menu--inline" role="list">
+      <li class="nav-menu-item">
+        {% assign menu = linklists[block.settings.menu_link] %}
+        
+        {% if menu.links.size == 1 %} 
+          <a href="{{ menu.links.first.url }}" class="menu-title single-link">
+               {{ block.settings.link_title }} 
+          </a>
+        {% endif %}
+        
+        {% if menu.links.size != 1 %} 
+            <span class="menu-title"> {{ block.settings.link_title }} </span> 
+        {% endif %}
+     
+        
+        {% if menu.links.size > 1 %}
+          <ul class="u-list sub-menu">
+            {% for link in menu.links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    </ul>
+  {% endfor %}
+</div>
+
+
+{%  style %}
+
+.nav-menu {
+    grid-column: span 3;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+.nav-menu-list {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  justify-content: start;
+  justify-items: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.nav-menu-list *  {
+  text-decoration: none;
+  list-style-type: none;
+  color: gray;
+  width: auto;
+}
+.nav-menu-list li:hover a:hover   {
+  color: #075056;
+  background-color: {{ section.settings.color_scheme }} ;
+} 
+  
+.nav-menu-item {
+  position: relative;
+  min-width: 150px;
+} 
+
+.u-list {
+  padding: 0;
+}  
+
+.menu-title {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+}  
+  
+.nav-menu-item a, li {
+  text-decoration: none;
+  cursor: pointer; 
+
+}    
+
+.sub-menu {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: white;
+  border: 0 1px 1px 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; 
+  min-width: 200px;
+  white-space: nowrap;
+}
+.sub-menu a {
+  display: block;
+  width: 100%;
+  padding: 5px 5px 5px 15px;
+}  
+
+.nav-menu-item:hover .sub-menu {
+  display: block; 
+}  
+
+
+@media screen and (max-width: 990px) {
+  .nav-menu {
+    display:none;
+  }
+}
+{% endstyle %}

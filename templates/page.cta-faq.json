@@ -1,0 +1,187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_TfhRVk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MBFmMb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the items authentic?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Yes, we guarantee 100% authenticity for all the items you checkout on our website.</p><p>We are the official distributor and retailer of the brands you can shop in our official offline and online channels.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zyhP7x": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you have a warranty?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Yes, all purchases include a 1-year warranty for manufacturing defects.</p><p>If you have any concerns about the jewelry that you received, please reach out to our team via <a href=\"https://www.facebook.com/fineandmine.ph\">our official Facebook Page (Fine & Mine)</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GTNiYi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it hypoallergenic?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Our products use hypoallergenic stainless steel. Genuine leather, semi-precious stones, silicone, and textile may also be used integrated in some designs.</p><p>You can find out more about an item's materials and finishes in the product description.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LTn8Td": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your items pawnable?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Although we carry an assortment of established brands known for their quality craftsmanship, the items you shop are not made of pure gold, silver, or platinum. They won't be accepted in pawn shops.</p><p>You can learn more about the materials and finishes in the product description of the item that you're eyeing.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nMmjTd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I take care of my jewelry?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Our jewelry are tarnish-resistant but require effortless care.</p><p>Take a moment to read through our Jewelry Care page to learn how to prolong its shine.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MBFmMb",
+        "collapsible_row_zyhP7x",
+        "collapsible_row_GTNiYi",
+        "collapsible_row_LTn8Td",
+        "collapsible_row_nMmjTd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Product Information",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    },
+    "collapsible_content_fjKLa7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_k9Ka9Q": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the payment methods available?",
+            "icon": "chat_bubble",
+            "row_content": "<p>We accept payments via Credit and Debit Cards, E-wallet and Cash on Delivery.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zcfDxi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take for my order to arrive?",
+            "icon": "chat_bubble",
+            "row_content": "<p>The estimated shipping of orders are as follows:</p><ul><li>Metro Manila and Luzon areas:<strong> </strong>3 to 5 days</li><li>Visayas and Mindanao areas: 5 to 7 days</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NRnHjX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you do same-day/next-day deliveries?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Yes, we accept express delivery requests for Metro Manila addresses. Simply select your preferred delivery option at checkout when you place your order before the cut-offs listed below:</p><p><strong>Same-Day Delivery</strong></p><ul><li>10AM, Mon-Fri</li></ul><p><strong>Next-Day Delivery</strong></p><ul><li>2PM, Mon-Thu</li></ul><p>Please note that shipping and courier fees will be shouldered by the buyer. Cash-on-delivery (COD) is also not applicable for express delivery orders.</p><p>Our working hours are from <strong>9:00AM </strong>to<strong> 6:00PM (PST) on Mondays to Fridays</strong> <strong>only</strong>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bmWBPJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I make changes to my order?",
+            "icon": "chat_bubble",
+            "row_content": "<p>We'll be able to assist if your order hasn't been dispatched yet.</p><p>Send a message to our <a href=\"https://www.facebook.com/urbantimeph\">official Facebook page (Fine & Mine)</a> with your <strong>name</strong> and <strong>order number</strong> as soon as you notice an error.</p><p>Let us know the details of your concern and if there's anything that you would like to change. Kindly note that changes to your order are subject to the team's review and approval.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DkhLHL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I have a concern with my order.",
+            "icon": "chat_bubble",
+            "row_content": "<p>Oh no! We’re so sorry to hear that your shopping experience with us didn't meet your expectations.</p><p>We do quality checks on every order that we ship. If you encounter an issue with your order, please message us on our <a href=\"https://www.facebook.com/fineandmine.ph\">official Facebook page (Fine & Mine)</a> with your <strong>name</strong>, <strong>order number</strong>, <strong>details of the concern</strong>, and <strong>photos of the incorrect/damaged item</strong>.</p><p>We’ll check on it and have things sorted out as soon as we can.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nnd6EX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are your operating hours?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Our working hours are from <strong>9:00AM </strong>to<strong> 6:00PM (PST) on Mondays to Fridays</strong> <strong>only</strong>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_R3MxM7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where else can I shop Fine & Mine?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Our team is actively working on meeting you where you are.</p><p>Aside from our official website, you can also checkout our brands from the our official online channels:</p><ul><li><a href=\"https://www.zalora.com.ph/store/fine-mine\" target=\"_blank\" title=\"https://www.zalora.com.ph/store/fine-mine\"><strong>ZALORA</strong></a>: Fine & Mine</li><li>LAZADA: Coming soon.</li><li><a href=\"https://shopee.ph/fineandmine?categoryId=100009&entryPoint=ShopByPDP&itemId=29878587788\" target=\"_blank\" title=\"https://shopee.ph/fineandmine?categoryId=100009&entryPoint=ShopByPDP&itemId=29878587788\"><strong>Shopee</strong></a>: Fine & Mine</li><li><a href=\"https://shop.tiktok.com/view/product/1731008422760580340?region=PH&locale=en\" target=\"_blank\" title=\"https://shop.tiktok.com/view/product/1731008422760580340?region=PH&locale=en\"><strong>TikTok Shop:</strong></a> Fine & Mine</li></ul><p>Follow us on our social media channels and stay tuned for further announcements on store openings both online and offline marketplaces.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_k9Ka9Q",
+        "collapsible_row_zcfDxi",
+        "collapsible_row_NRnHjX",
+        "collapsible_row_bmWBPJ",
+        "collapsible_row_DkhLHL",
+        "collapsible_row_nnd6EX",
+        "collapsible_row_R3MxM7"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Order and Shipping",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_TfhRVk",
+    "collapsible_content_fjKLa7"
+  ]
+}

@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_TfhRVk": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MBFmMb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean my jewelry?",
+            "icon": "heart",
+            "row_content": "<p>After wear, you may buff and polish your jewelry with a soft microfiber cloth. </p><p>For deep cleaning, you can wipe your jewelry with a slightly damp cloth. Avoid using abrasive and harsh chemicals for cleaning to preserve its color and finish.</p><p>Warm, soapy water is recommended to remove dirt and residue.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zyhP7x": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I store my jewelry?",
+            "icon": "heart",
+            "row_content": "<p>Keep jewelry in a dry area and avoid storing it in humid places. If you're using pouches or organizers, we recommend placing silica gel packs to absorb moisture in your jewelry storage.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GTNiYi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I protect my jewelry from discoloration and fading?",
+            "icon": "heart",
+            "row_content": "<p>Do not expose your jewelry to extreme temperatures and harsh chemicals. It may cause damage which includes discoloration, deformation, and chipping.</p><p>Daily use items like perfumes, lotions, and hairspray may contain chemicals that can potentially damage the finish.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LTn8Td": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I wear my jewelry while showering/swimming/exercising?",
+            "icon": "heart",
+            "row_content": "<p>Your jewelry is generally safe for daily wear.</p><p>However, we recommend removing your jewelry if you're expecting prolonged exposure to sun, sweat, and chlorine to keep its shine longer.</p><p>Wipe your jewelry after each use and deep clean as needed.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MBFmMb",
+        "collapsible_row_zyhP7x",
+        "collapsible_row_GTNiYi",
+        "collapsible_row_LTn8Td"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Cleaning and Maintenance",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 12,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_TfhRVk"
+  ]
+}

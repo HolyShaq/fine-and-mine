@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collection_list_zzWM6d": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_mWY3Gq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lacoste-jewelry"
+          }
+        },
+        "featured_collection_8CX6aR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tommy-hilfiger-jewelry"
+          }
+        },
+        "featured_collection_RL4zmi": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "boss-jewelry"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_mWY3Gq",
+        "featured_collection_8CX6aR",
+        "featured_collection_RL4zmi"
+      ],
+      "settings": {
+        "title": "Our Brands",
+        "link": "",
+        "link_url": "",
+        "link_size": 18,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#e6e6e6",
+        "link_background_hover_color": "#000000",
+        "link_font": "assistant_n4",
+        "link_height": 100,
+        "link_letter": 0,
+        "link_position": false,
+        "link_mobile": false,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_MAdGLU": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_zzWM6d",
+    "custom_liquid_MAdGLU"
+  ]
+}

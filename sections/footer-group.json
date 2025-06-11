@@ -1,0 +1,171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "ss_back_to_top_button_qDMVVz": {
+      "type": "ss-back-to-top-button",
+      "settings": {
+        "hide_on_mobile": false,
+        "show_when_precent_of_page": 100,
+        "pos": "right",
+        "bg_color": "{{ shop.brand.colors.secondary[1].background }}",
+        "border_color": "{{ shop.brand.colors.secondary[1].background }}",
+        "arrow_color": "{{ shop.brand.colors.primary[0].background }}",
+        "button_size": 54,
+        "arrow_size": 30,
+        "horizontal_dst_to_edge": 20,
+        "vertical_dst_to_edge": 20
+      }
+    },
+    "ss_feature_1_AwgKzK": {
+      "type": "ss-feature-1",
+      "blocks": {
+        "image_Ccmzqr": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Free Shipping",
+            "feature_text": "<p>We ship Metro Manila orders above ₱2,990 at no cost to you. No promo code required.</p>",
+            "feature_url": "shopify://pages/shipping-returns",
+            "hide_image": false
+          }
+        },
+        "image_xrdDiA": {
+          "type": "image",
+          "settings": {
+            "feature_title": "All-authentic",
+            "feature_text": "<p>We guarantee 100% authenticity for all products that you shop from use</p>",
+            "feature_url": "shopify://collections/new-arrivals",
+            "hide_image": false
+          }
+        },
+        "image_gJrMB8": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Express Delivery",
+            "feature_text": "<p>Same-day and next-day delivery options available at checkout</p>",
+            "feature_url": "shopify://pages/frequently-asked-questions-faqs",
+            "hide_image": false
+          }
+        },
+        "image_NidGUL": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Exclusive Promos",
+            "feature_text": "<p>Join our VIP list to stay updated on limited-time sales and events</p>",
+            "feature_url": "shopify://collections/sale",
+            "hide_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_Ccmzqr",
+        "image_xrdDiA",
+        "image_gJrMB8",
+        "image_NidGUL"
+      ],
+      "settings": {
+        "feature_row": 4,
+        "feature_row_mobile": 2,
+        "feature_gap": 20,
+        "feature_gap_mobile": 40,
+        "feature_padding_horizontal": 0,
+        "feature_padding_vertical": 16,
+        "feature_radius": 0,
+        "feature_border_thickness": 0,
+        "feature_shadow": false,
+        "feature_heading_custom": true,
+        "feature_heading_font": "poppins_n4",
+        "feature_heading_size": 14,
+        "feature_heading_size_mobile": 14,
+        "feature_heading_height": 100,
+        "feature_heading_mt": 16,
+        "feature_text_custom": false,
+        "feature_text_font": "poppins_n4",
+        "feature_text_size": 10,
+        "feature_text_size_mobile": 10,
+        "feature_text_height": 130,
+        "feature_text_mt": 12,
+        "feature_icon_size": 30,
+        "feature_icon_size_mobile": 30,
+        "feature_bg": "#ffffff",
+        "feature_border_color": "{{ shop.brand.colors.secondary[0].foreground }}",
+        "feature_shadow_color": "{{ shop.brand.colors.secondary[0].foreground }}",
+        "feature_heading_color": "{{ shop.brand.colors.secondary[0].foreground }}",
+        "feature_text_color": "{{ shop.brand.colors.secondary[0].foreground }}",
+        "feature_icon_color": "{{ shop.brand.colors.primary[0].background }}",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "link_list_CwUtp9": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About Us",
+            "menu": "company-info"
+          }
+        },
+        "link_list_McdBrM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "footer"
+          }
+        },
+        "text_cH6dmK": {
+          "type": "text",
+          "settings": {
+            "heading": "Find Us",
+            "subtext": "<h4>Store coming soon!</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_CwUtp9",
+        "link_list_McdBrM",
+        "text_cH6dmK"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "ss_back_to_top_button_qDMVVz",
+    "ss_feature_1_AwgKzK",
+    "footer"
+  ]
+}

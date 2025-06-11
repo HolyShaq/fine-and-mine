@@ -1,0 +1,52 @@
+       
+
+.menu-drawer__inner-list {
+  display: none; /* Hide initially */
+  padding-left: 20px; /* Indent submenu */
+}
+
+details[open]  .menu-drawer__inner-list {
+  display: block;
+}
+
+.icon-chevron {
+  margin-right: 5px;
+  opacity: .3;
+  width: 15px;
+  height: 15px;
+  transition: transform 0.1s ease;
+  transform-origin: center;
+  transform: rotate(270deg);
+}
+
+
+.menu-drawer__inner-list[open] .icon-chevron{
+    transform: rotate(360deg)
+}
+
+.menu-drawer__link-title {
+  display: flex;
+  size: 1.3rem;
+  color: gray;
+}
+
+
+
+.menu-drawer__summary--inline {
+  display: flex;
+  align-items: center;
+}
+
+
+.menu-drawer__list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu-drawer__sub-menu li, .menu-drawer__sub-menu >li > a {
+  color: gray;
+  text-decoration: none;
+  list-style: none;
+  
+}

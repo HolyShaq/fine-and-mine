@@ -1,0 +1,169 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "custom_liquid_pLJLiB": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<script src=\"https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js\"></script>\n<div id=\"node-marquee\">\n  <span>\nFREE SHIPPING on orders PhpXXXX and above\n&nbsp;\n&nbsp;\n•\n&nbsp;\n&nbsp;\nShop New Arrivals\n&nbsp;\n&nbsp;\n•\n&nbsp;\n&nbsp;\nComing soon: SM City Davao\n&nbsp;\n&nbsp;\n•\n&nbsp;\n&nbsp;\n    </span>\n</div>\n<style>\n    #node-marquee {\n        background-color: #075056;\n        color: white;\n        font-size: 12px;\n        overflow: hidden;\n\n    }\n    #node-marquee span {\n        display: inline-block;\n        white-space: nowrap;\n        padding: 5px;\n\n    }\n</style>\n<script>\n    nodeMarquee({\n        parent: '#node-marquee',\n        speed: .8\n    });\n</script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "EXCLUSIVE LAUNCH SALE: 10% OFF until Mar 31, 2025 only",
+            "link": "shopify://collections/sale"
+          }
+        },
+        "announcement_4DC9Af": {
+          "type": "announcement",
+          "settings": {
+            "text": "Express Delivery within Metro Manila available!",
+            "link": "shopify://collections/new-arrivals"
+          }
+        },
+        "announcement_qNNaHE": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING on orders above ₱2,990",
+            "link": "shopify://collections/bestsellers"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_4DC9Af",
+        "announcement_qNNaHE"
+      ],
+      "custom_css": [
+        ".announcement-bar-section {height: 3.5rem; width: 100%; position: fixed; top: 0;}",
+        "body {padding-top: 50px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "show_line_separator": false,
+        "show_social": false,
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "link_c7DEhx": {
+          "type": "link",
+          "settings": {
+            "menu_title": "Women",
+            "menu_link_1": "womens-jewelry",
+            "menu_link_2": "",
+            "menu_link_3": "",
+            "sub_menu_image_link_1": "",
+            "sub_menu_image_1_caption": "",
+            "sub_menu_image_link_2": "",
+            "sub_menu_image_2_caption": "Caption 2"
+          }
+        },
+        "link_XHh6iK": {
+          "type": "link",
+          "settings": {
+            "menu_title": "Men",
+            "menu_link_1": "mens-jewelry",
+            "menu_link_2": "",
+            "menu_link_3": "",
+            "sub_menu_image_link_1": "",
+            "sub_menu_image_1_caption": "",
+            "sub_menu_image_link_2": "",
+            "sub_menu_image_2_caption": ""
+          }
+        },
+        "link_bkbe86": {
+          "type": "link",
+          "settings": {
+            "menu_title": "Categories",
+            "menu_link_1": "shop-by-brand",
+            "menu_link_2": "shop-all",
+            "menu_link_3": "",
+            "sub_menu_image_1": "shopify://shop_images/HEADER_Brand-Image-LAJ.jpg",
+            "sub_menu_image_link_1": "shopify://collections/lacoste-jewelry",
+            "sub_menu_image_1_caption": "Lacoste Jewelry",
+            "sub_menu_image_2": "shopify://shop_images/HEADER_Brand-Image-TH_6effc2cd-a827-4696-877b-29f37efc53d1.jpg",
+            "sub_menu_image_link_2": "shopify://collections/tommy-hilfiger-jewelry",
+            "sub_menu_image_2_caption": "Tommy Hilfiger Jewelry"
+          }
+        },
+        "link_9dRdQg": {
+          "type": "link",
+          "settings": {
+            "menu_title": "About Us",
+            "menu_link_1": "company-info",
+            "menu_link_2": "footer",
+            "menu_link_3": "",
+            "sub_menu_image_link_1": "",
+            "sub_menu_image_1_caption": "",
+            "sub_menu_image_link_2": "",
+            "sub_menu_image_2_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_c7DEhx",
+        "link_XHh6iK",
+        "link_bkbe86",
+        "link_9dRdQg"
+      ],
+      "custom_css": [],
+      "settings": {
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_customer_avatar": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "checkbox_sub_menu_always_show": false,
+        "sub_menu_title_font_size": 14,
+        "sub_menu_title_font_color": "#426c8a",
+        "sub_menu_list_title_font_size": 14,
+        "sub_menu_list_font_size": 11.6,
+        "sub_menu_list_font_color": "#426c8a",
+        "sub_menu_bg_color": "#f9f9f9",
+        "sub_menu_underline_transition": 0.2,
+        "sub_menu_underline_color_1": "#426c8a",
+        "sub_menu_underline_color_2": "#426c8a",
+        "sub_menu_image_border_thickness": 0,
+        "sub_menu_image_border_color": "#426c8a",
+        "checkbox_border_image_1": false,
+        "checkbox_border_image_2": false
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_pLJLiB",
+    "announcement-bar",
+    "header"
+  ]
+}
