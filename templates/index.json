@@ -9,6 +9,9 @@
  */
 {
   "sections": {
+    "sample": {
+      "type": "simple-text-banner",
+    },
     "slideshow_MVec98": {
       "type": "slideshow",
       "blocks": {
@@ -1018,6 +1021,7 @@
     }
   },
   "order": [
+    "sample",
     "slideshow_MVec98",
     "collection_list_dRE43m",
     "slideshow_DUCf8E",

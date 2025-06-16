@@ -1,0 +1,40 @@
+<div
+  class="tw:flex tw:flex-col tw:p-16  tw:mx-auto tw:items-center tw:gap-8.5"
+  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
+>
+  <h2 class="tw:font-semibold tw:text-4xl">{{ section.settings.header }}</h2>
+  <p class="tw:max-w-6xl tw:text-center">{{ section.settings.content }}</p>
+</div>
+
+{% schema %}
+{
+  "name": "Simple Text Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#10181f"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#c2cfd6"
+    }
+  ]
+}
+{% endschema %}

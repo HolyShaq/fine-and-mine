@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,11 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --tw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --tw-color-red-100: oklch(93.6% 0.032 17.717);
-    --tw-color-red-200: oklch(88.5% 0.062 18.334);
-    --tw-color-red-600: oklch(57.7% 0.245 27.325);
-    --tw-text-9xl: 8rem;
-    --tw-text-9xl--line-height: 1;
+    --tw-spacing: 0.25rem;
+    --tw-container-4xl: 56rem;
+    --tw-container-5xl: 64rem;
+    --tw-container-6xl: 72rem;
+    --tw-text-2xl: 1.5rem;
+    --tw-text-2xl--line-height: calc(2 / 1.5);
+    --tw-text-4xl: 2.25rem;
+    --tw-text-4xl--line-height: calc(2.5 / 2.25);
+    --tw-font-weight-semibold: 600;
     --tw-default-font-family: var(--tw-font-sans);
     --tw-default-mono-font-family: var(--tw-font-mono);
   }
@@ -160,7 +165,92 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .tw\:mx-auto {
+    margin-inline: auto !important;
+  }
+  .tw\:my-4 {
+    margin-block: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:flex {
+    display: flex !important;
+  }
+  .tw\:max-w-4xl {
+    max-width: var(--tw-container-4xl) !important;
+  }
+  .tw\:max-w-5xl {
+    max-width: var(--tw-container-5xl) !important;
+  }
+  .tw\:max-w-6xl {
+    max-width: var(--tw-container-6xl) !important;
+  }
+  .tw\:flex-col {
+    flex-direction: column !important;
+  }
+  .tw\:flex-row {
+    flex-direction: row !important;
+  }
+  .tw\:items-center {
+    align-items: center !important;
+  }
+  .tw\:gap-4 {
+    gap: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:gap-5 {
+    gap: calc(var(--tw-spacing) * 5) !important;
+  }
+  .tw\:gap-8\.5 {
+    gap: calc(var(--tw-spacing) * 8.5) !important;
+  }
+  .tw\:gap-10 {
+    gap: calc(var(--tw-spacing) * 10) !important;
+  }
+  .tw\:gap-\[34px\] {
+    gap: 34px !important;
+  }
+  .tw\:p-4 {
+    padding: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:p-16 {
+    padding: calc(var(--tw-spacing) * 16) !important;
+  }
+  .tw\:p-\[64px\] {
+    padding: 64px !important;
+  }
+  .tw\:py-4 {
+    padding-block: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:py-18 {
+    padding-block: calc(var(--tw-spacing) * 18) !important;
+  }
+  .tw\:py-24 {
+    padding-block: calc(var(--tw-spacing) * 24) !important;
+  }
+  .tw\:py-32 {
+    padding-block: calc(var(--tw-spacing) * 32) !important;
+  }
+  .tw\:py-64 {
+    padding-block: calc(var(--tw-spacing) * 64) !important;
+  }
+  .tw\:py-\[64px\] {
+    padding-block: 64px !important;
+  }
+  .tw\:text-center {
+    text-align: center !important;
+  }
+  .tw\:text-2xl {
+    font-size: var(--tw-text-2xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-2xl--line-height)) !important;
+  }
+  .tw\:text-4xl {
+    font-size: var(--tw-text-4xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-4xl--line-height)) !important;
+  }
+  .tw\:font-semibold {
+    --tw-font-weight: var(--tw-font-weight-semibold) !important;
+    font-weight: var(--tw-font-weight-semibold) !important;
+  }
+}
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -2856,5 +2946,16 @@ header-menu > details, details-disclosure > details {
   }
   100% {
     transform: translateX(100%) scaleX(0);
+  }
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-font-weight: initial;
+    }
   }
 }
