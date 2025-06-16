@@ -171,6 +171,9 @@
   }
 }
 @layer utilities {
+  .tw\:mx-16 {
+    margin-inline: calc(var(--tw-spacing) * 16) !important;
+  }
   .tw\:mx-57 {
     margin-inline: calc(var(--tw-spacing) * 57) !important;
   }
@@ -179,6 +182,9 @@
   }
   .tw\:my-4 {
     margin-block: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:my-8 {
+    margin-block: calc(var(--tw-spacing) * 8) !important;
   }
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
@@ -245,6 +251,9 @@
   }
   .tw\:flex-col {
     flex-direction: column !important;
+  }
+  .tw\:flex-col-reverse {
+    flex-direction: column-reverse !important;
   }
   .tw\:flex-row {
     flex-direction: row !important;
@@ -348,6 +357,16 @@
     --tw-font-weight: var(--tw-font-weight-semibold) !important;
     font-weight: var(--tw-font-weight-semibold) !important;
   }
+  .tw\:sm\:mx-16 {
+    @media (width >= 40rem) {
+      margin-inline: calc(var(--tw-spacing) * 16) !important;
+    }
+  }
+  .tw\:sm\:my-16 {
+    @media (width >= 40rem) {
+      margin-block: calc(var(--tw-spacing) * 16) !important;
+    }
+  }
   .tw\:sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row !important;
@@ -368,6 +387,17 @@
       padding-inline: calc(var(--tw-spacing) * 32) !important;
     }
   }
+  .tw\:sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--tw-text-5xl) !important;
+      line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
+    }
+  }
+  .tw\:md\:mx-32 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
   .tw\:md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row !important;
@@ -381,6 +411,17 @@
   .tw\:md\:px-32 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
+  .tw\:md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--tw-text-5xl) !important;
+      line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
+    }
+  }
+  .tw\:lg\:mx-57 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--tw-spacing) * 57) !important;
     }
   }
   .tw\:lg\:px-57 {
