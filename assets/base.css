@@ -199,6 +199,9 @@
   .tw\:gap-5 {
     gap: calc(var(--tw-spacing) * 5) !important;
   }
+  .tw\:gap-8 {
+    gap: calc(var(--tw-spacing) * 8) !important;
+  }
   .tw\:gap-8\.5 {
     gap: calc(var(--tw-spacing) * 8.5) !important;
   }
@@ -214,11 +217,23 @@
   .tw\:p-16 {
     padding: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:p-57 {
+    padding: calc(var(--tw-spacing) * 57) !important;
+  }
   .tw\:p-\[64px\] {
     padding: 64px !important;
   }
+  .tw\:px-57 {
+    padding-inline: calc(var(--tw-spacing) * 57) !important;
+  }
   .tw\:py-4 {
     padding-block: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:py-12 {
+    padding-block: calc(var(--tw-spacing) * 12) !important;
+  }
+  .tw\:py-16 {
+    padding-block: calc(var(--tw-spacing) * 16) !important;
   }
   .tw\:py-18 {
     padding-block: calc(var(--tw-spacing) * 18) !important;

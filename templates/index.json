@@ -9,9 +9,6 @@
  */
 {
   "sections": {
-    "sample": {
-      "type": "simple-text-banner",
-    },
     "slideshow_MVec98": {
       "type": "slideshow",
       "blocks": {
@@ -76,11 +73,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_g6jyjw",
-        "slide_NNYNAp",
-        "slide_XnVNcJ"
-      ],
+      "block_order": ["slide_g6jyjw", "slide_NNYNAp", "slide_XnVNcJ"],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -217,11 +210,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_UJtjPa",
-        "slide_gLbpYC",
-        "slide_X7HxaC"
-      ],
+      "block_order": ["slide_UJtjPa", "slide_gLbpYC", "slide_X7HxaC"],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -397,11 +386,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_FNjBMy",
-        "slide_qenEkY",
-        "slide_76FnNy"
-      ],
+      "block_order": ["slide_FNjBMy", "slide_qenEkY", "slide_76FnNy"],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -995,9 +980,7 @@
           }
         }
       },
-      "block_order": [
-        "instafeed_app_block_aGP64P"
-      ],
+      "block_order": ["instafeed_app_block_aGP64P"],
       "settings": {
         "include_margins": true
       }
@@ -1012,12 +995,28 @@
           }
         }
       },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_yU4BcN"
-      ],
+      "block_order": ["klaviyo_email_marketing_sms_form_embed_block_yU4BcN"],
       "settings": {
         "include_margins": true
       }
+    },
+    "sample": {
+      "type": "multi-column-text-banner",
+      "blocks": {
+        "a": {
+          "type": "column",
+          "settings": {
+            "header": "[PROMO] Lorem ipsum dolor sit amet",
+          }
+        },
+        "b": {
+          "type": "column",
+          "settings": {
+            "header": "[PROMO] Lorem ipsum dolor sit amet",
+          }
+        },
+      },
+      "block_order": ["a", "b"],
     }
   },
   "order": [

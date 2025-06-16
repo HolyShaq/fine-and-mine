@@ -1,0 +1,77 @@
+<div
+  class="tw:flex tw:px-57 tw:py-16"
+  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
+>
+  {% for block in section.blocks %}
+    <div class="tw:flex tw:flex-col tw:p-4 tw:gap-4">
+      <h2 class="tw:font-semibold">{{ block.settings.header }}</h2>
+      <p>{{ block.settings.content }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Multi Column Text Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#10181f"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header",
+          "default": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi Column Text Banner",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "column",
+          "name": "Column 1",
+          "settings": {
+            "header": "[PROMO] Lorem ipsum dolor sit amet",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          }
+        },
+        {
+          "type": "column",
+          "name": "Column 2",
+          "settings": {
+            "header": "[PROMO] Consectetur adipiscing elit",
+            "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
