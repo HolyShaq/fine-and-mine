@@ -1,0 +1,67 @@
+<div
+  class="tw:mx-57 tw:my-16 tw:h-[280px] {% if section.settings.image %} tw:flex tw:flex-row {% endif %}"
+  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
+>
+  <div class="tw:flex tw:flex-col tw:gap-4 tw:p-8 tw:justify-center tw:h-full {% unless section.settings.image %} tw:text-center tw:items-center {% endunless %}">
+    <h2 class="tw:font-semibold tw:text-5xl">
+      {{ section.settings.header }}
+    </h2>
+    <p class="tw:max-w-4xl">{{ section.settings.content }}</p>
+    <button class="button tw:font-bold tw:w-fit">
+      {{ section.settings.button_text }}
+    </button>
+  </div>
+  {% if section.settings.image %}
+    {{ section.settings.image | image_url: height: 279 | image_tag: class: 'tw:flex-1/2' }}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "CTA Banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "Lorem Ipsum Dolor Sit Amet"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Content",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#10181f"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f0f0f0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "CTA Banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
