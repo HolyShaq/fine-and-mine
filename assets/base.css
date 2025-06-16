@@ -255,6 +255,9 @@
   .tw\:justify-center {
     justify-content: center !important;
   }
+  .tw\:gap-2 {
+    gap: calc(var(--tw-spacing) * 2) !important;
+  }
   .tw\:gap-4 {
     gap: calc(var(--tw-spacing) * 4) !important;
   }
@@ -287,6 +290,9 @@
   }
   .tw\:p-\[64px\] {
     padding: 64px !important;
+  }
+  .tw\:px-16 {
+    padding-inline: calc(var(--tw-spacing) * 16) !important;
   }
   .tw\:px-57 {
     padding-inline: calc(var(--tw-spacing) * 57) !important;
@@ -341,6 +347,46 @@
   .tw\:font-semibold {
     --tw-font-weight: var(--tw-font-weight-semibold) !important;
     font-weight: var(--tw-font-weight-semibold) !important;
+  }
+  .tw\:sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row !important;
+    }
+  }
+  .tw\:sm\:gap-0 {
+    @media (width >= 40rem) {
+      gap: calc(var(--tw-spacing) * 0) !important;
+    }
+  }
+  .tw\:sm\:px-12 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--tw-spacing) * 12) !important;
+    }
+  }
+  .tw\:sm\:px-32 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
+  .tw\:md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row !important;
+    }
+  }
+  .tw\:md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--tw-spacing) * 0) !important;
+    }
+  }
+  .tw\:md\:px-32 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
+  .tw\:lg\:px-57 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--tw-spacing) * 57) !important;
+    }
   }
 }
 :root {
