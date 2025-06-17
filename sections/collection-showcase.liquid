@@ -1,0 +1,68 @@
+<div class="page-width tw:pt-5 tw:pb-5">
+  {% render 'collection-header',
+    title: section.settings.title,
+    nav_text: section.settings.nav_text,
+    subtitle: section.settings.subtitle,
+    link: section.settings.page.url
+  %}
+
+  <div class="tw:grid tw:grid-cols-3 tw:grid-rows-2 tw:h-[570px] tw:gap-3">
+    {% for collection in section.settings.collections limit: 3 %}
+      {% liquid
+        if forloop.index == 1
+          assign wrapper_class = 'tw:col-span-2 tw:row-span-2'
+        else
+          assign wrapper_class = ''
+        endif
+      %}
+      <div class="{{ wrapper_class }}">
+        {% render 'card-collection',
+          card_collection: collection,
+        %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Showcase",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "collection_list",
+      "id": "collections",
+      "label": "Collections"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "New Arrivals"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Discover the hottest styles from the latest collections"
+    },
+    {
+      "type": "text",
+      "id": "nav_text",
+      "label": "Navigation Text",
+      "default": "View All"
+    },
+    {
+      "type": "page",
+      "id": "page",
+      "label": "Navigate To"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Showcase",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

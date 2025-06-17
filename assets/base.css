@@ -179,6 +179,18 @@
   }
 }
 @layer utilities {
+  .tw\:col-span-1 {
+    grid-column: span 1 / span 1 !important;
+  }
+  .tw\:col-span-2 {
+    grid-column: span 2 / span 2 !important;
+  }
+  .tw\:row-span-1 {
+    grid-row: span 1 / span 1 !important;
+  }
+  .tw\:row-span-2 {
+    grid-row: span 2 / span 2 !important;
+  }
   .tw\:m-auto {
     margin: auto !important;
   }
@@ -200,6 +212,9 @@
   .tw\:flex {
     display: flex !important;
   }
+  .tw\:grid {
+    display: grid !important;
+  }
   .tw\:size-6 {
     width: calc(var(--tw-spacing) * 6) !important;
     height: calc(var(--tw-spacing) * 6) !important;
@@ -218,6 +233,9 @@
   }
   .tw\:h-\[280px\] {
     height: 280px !important;
+  }
+  .tw\:h-\[570px\] {
+    height: 570px !important;
   }
   .tw\:h-fit {
     height: fit-content !important;
@@ -289,6 +307,12 @@
   .tw\:rotate-270 {
     rotate: 270deg !important;
   }
+  .tw\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  .tw\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+  }
   .tw\:flex-col {
     flex-direction: column !important;
   }
@@ -312,6 +336,9 @@
   }
   .tw\:gap-2 {
     gap: calc(var(--tw-spacing) * 2) !important;
+  }
+  .tw\:gap-3 {
+    gap: calc(var(--tw-spacing) * 3) !important;
   }
   .tw\:gap-4 {
     gap: calc(var(--tw-spacing) * 4) !important;
@@ -377,11 +404,17 @@
   .tw\:pt-4 {
     padding-top: calc(var(--tw-spacing) * 4) !important;
   }
+  .tw\:pt-5 {
+    padding-top: calc(var(--tw-spacing) * 5) !important;
+  }
   .tw\:pt-6 {
     padding-top: calc(var(--tw-spacing) * 6) !important;
   }
   .tw\:pr-0 {
     padding-right: calc(var(--tw-spacing) * 0) !important;
+  }
+  .tw\:pb-5 {
+    padding-bottom: calc(var(--tw-spacing) * 5) !important;
   }
   .tw\:pl-1 {
     padding-left: calc(var(--tw-spacing) * 1) !important;

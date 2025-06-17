@@ -1001,7 +1001,7 @@
       }
     },
     "cta": {
-      "type": "cta-banner",
+      "type": "collection-showcase",
     },
     "promo": {
       "type": "multi-column-text-banner",
@@ -1017,14 +1017,10 @@
       },
       "block_order": ["a", "b"],
     },
-    "text": {
-      "type": "simple-text-banner",
-    },
   },
   "order": [
     "cta",
     "promo",
-    "text",
     "slideshow_MVec98",
     "collection_list_dRE43m",
     "slideshow_DUCf8E",
