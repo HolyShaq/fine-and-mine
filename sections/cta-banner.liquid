@@ -12,9 +12,9 @@
         {{ section.settings.header }}
       </h2>
       <p class="tw:max-w-2xl tw:lg:max-w-3xl">{{ section.settings.content }}</p>
-      <button class="button tw:font-bold tw:w-fit">
+      <a href="{{ section.settings.collection.url }}" class="button tw:font-bold tw:w-fit">
         {{ section.settings.button_text }}
-      </button>
+      </a>
     </div>
   </div>
 </div>
@@ -24,6 +24,11 @@
   "name": "CTA Banner",
   "tag": "section",
   "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection",
+    },
     {
       "type": "text",
       "id": "header",
