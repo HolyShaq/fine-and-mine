@@ -6,13 +6,13 @@
     link: section.settings.page.url
   %}
 
-  <div class="tw:grid tw:grid-cols-3 tw:grid-rows-2 tw:h-[570px] tw:gap-3">
+  <div class="tw:grid tw:grid-cols-2 tw:grid-rows-2 tw:sm:grid-cols-3 tw:sm:grid-rows-2 tw:h-[470px] tw:sm:h-[570px] tw:gap-3">
     {% for collection in section.settings.collections limit: 3 %}
       {% liquid
         if forloop.index == 1
-          assign wrapper_class = 'tw:col-span-2 tw:row-span-2'
+            assign wrapper_class = 'tw:col-span-2 tw:row-span-1 tw:sm:row-span-2'
         else
-          assign wrapper_class = ''
+            assign wrapper_class = ''
         endif
       %}
       <div class="{{ wrapper_class }}">
@@ -32,7 +32,8 @@
     {
       "type": "collection_list",
       "id": "collections",
-      "label": "Collections"
+      "label": "Collections",
+      "limit": 3,
     },
     {
       "type": "text",
