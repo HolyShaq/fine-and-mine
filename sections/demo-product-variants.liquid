@@ -1,0 +1,50 @@
+<div class="page-width tw:flex tw:justify-center tw:items-center tw:gap-4">
+    {% render 'custom-card-product'
+      product: section.settings.product,
+       show_secondary_image: true,
+        lazy_load: true,
+        demo_sale: false,
+        demo_sold_out: false,
+     %}
+    {% render 'custom-card-product'
+      product: section.settings.product,
+       show_secondary_image: true,
+        lazy_load: true,
+        demo_sale: false,
+        demo_sold_out: true,
+     %}
+    {% render 'custom-card-product'
+      product: section.settings.product,
+       show_secondary_image: true,
+        lazy_load: true,
+        demo_sale: true,
+        demo_sold_out: false,
+     %}
+    {% render 'custom-card-product'
+      product: section.settings.product,
+       show_secondary_image: true,
+        lazy_load: true,
+        demo_sale: true,
+        demo_sold_out: true,
+     %}
+</div>
+
+{% schema %}
+{
+  "name": "Demo Product Variants",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Demo Product Variants",
+      "category": "Custom"
+    }
+  ],
+}
+{% endschema %}
