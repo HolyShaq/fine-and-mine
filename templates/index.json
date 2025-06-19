@@ -1000,8 +1000,12 @@
         "include_margins": true
       }
     },
+    "test": {
+      "type": "demo-product-variants"
+    }
   },
   "order": [
+    "test",
     "slideshow_MVec98",
     "collection_list_dRE43m",
     "slideshow_DUCf8E",

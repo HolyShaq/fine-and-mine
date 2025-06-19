@@ -3,7 +3,7 @@
 
   @param {object} product - Product Liquid object.
   @param {boolean} [show_secondary_image] - Show the secondary image on hover. Default: true
-  @param {boolean} [lazy_load] - LAzy load the image. Default: true
+  @param {boolean} [lazy_load] - Lazy load the image. Default: true
   @param {boolean} [demo_sale] - Compare at price for demo purposes. Default: null
   @param {boolean} [demo_sold_out] - Indicates if the product is sold out for demo purposes. Default: null
 
@@ -86,20 +86,35 @@
     <div class="tw:flex tw:flex-col tw:gap-2">
       <a
         href="{{ product.url }}"
-        class="tw:font-bold tw:w-full tw:bg-transparent tw:flex tw:justify-center tw:items-center tw:text-black tw:py-3 tw:border-2 tw:border-black tw:rounded-xl tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102"
+        class="tw:font-bold tw:w-full tw:bg-transparent tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:text-black tw:py-3 tw:border-2 tw:border-black tw:rounded-xl tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102"
       >
         View Details
       </a>
-      <button
-        class="tw:font-bold tw:w-full tw:flex tw:justify-center tw:items-center tw:py-3 tw:rounded-lg tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102 {% unless available %} tw:bg-transparent tw:text-[#C2CFD6] tw:border-2 tw:border-[#C2CFD6] tw:pointer-events-none {% endunless %}"
-        style="background-color: #426c8a; color: #f9f9f9;"
-      >
-        {% if available %}
-          Add to Cart
-        {% else %}
-          Sold Out
-        {% endif %}
-      </button>
+
+      {%- assign current_variant = product.selected_or_first_available_variant -%}
+      <product-form>
+        {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
+          <button
+            class="tw:font-bold tw:w-full tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:py-3 tw:rounded-lg tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102 {% unless available %} tw:bg-transparent tw:text-[#C2CFD6] tw:border-2 tw:border-[#C2CFD6] tw:pointer-events-none {% endunless %}"
+            style="background-color: #426c8a; color: #f9f9f9;"
+            type="submit"
+            name="add"
+            {% if current_variant.available == false %}
+              disabled
+            {% endif %}
+          >
+            <span class="tw:stroke-current">
+              {%- if current_variant.available -%}
+                Add to Cart
+              {%- else -%}
+                Sold Out
+              {%- endif -%}
+            </span>
+            {% render 'loading-spinner' %}
+          </button>
+        {%- endform -%}
+      </product-form>
     </div>
   </div>
 {% endif %}

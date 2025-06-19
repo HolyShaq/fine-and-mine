@@ -259,6 +259,9 @@
   .tw\:h-full {
     height: 100% !important;
   }
+  .tw\:min-h-20 {
+    min-height: calc(var(--tw-spacing) * 20) !important;
+  }
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
@@ -358,6 +361,12 @@
   }
   .tw\:bg-transparent {
     background-color: transparent !important;
+  }
+  .tw\:stroke-current {
+    stroke: currentcolor !important;
+  }
+  .tw\:stroke-white {
+    stroke: var(--tw-color-white) !important;
   }
   .tw\:object-cover {
     object-fit: cover !important;
