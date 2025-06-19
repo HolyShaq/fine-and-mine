@@ -1000,27 +1000,8 @@
         "include_margins": true
       }
     },
-    "cta": {
-      "type": "collection-showcase",
-    },
-    "promo": {
-      "type": "multi-column-text-banner",
-      "blocks": {
-        "a": {
-          "type": "column",
-          "name": "Column A",
-        },
-        "b": {
-          "type": "column",
-          "name": "Column B",
-        },
-      },
-      "block_order": ["a", "b"],
-    },
   },
   "order": [
-    "cta",
-    "promo",
     "slideshow_MVec98",
     "collection_list_dRE43m",
     "slideshow_DUCf8E",
