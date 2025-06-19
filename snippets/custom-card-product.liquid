@@ -36,7 +36,7 @@
     <div class="tw:relative tw:group/img">
       {% comment %} Featured Image {% endcomment %}
       <img
-        class="tw:w-96 tw:h-96 tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
+        class="tw:w-96 tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
         src="{{ product.featured_image | image_url }}"
         width="{{ product.featured_image.width }}"
         height="{{ product.featured_image.height }}"
@@ -47,7 +47,7 @@
       {% comment %} Secondary Image on Hover {% endcomment %}
       {% if product.images[1] != null and show_secondary_image %}
         <img
-          class="tw:absolute tw:top-0 tw:left-0 tw:w-96 tw:h-96 tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
+          class="tw:absolute tw:top-0 tw:left-0 tw:w-96 tw:aspect-square tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
           src="{{ product.images[1] | image_url }}"
           width="{{ product.images[1].width }}"
           height="{{ product.images[1].height }}"
