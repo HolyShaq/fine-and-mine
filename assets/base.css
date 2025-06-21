@@ -295,6 +295,9 @@
   .tw\:rotate-270 {
     rotate: 270deg !important;
   }
+  .tw\:cursor-pointer {
+    cursor: pointer !important;
+  }
   .tw\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }

@@ -96,7 +96,7 @@
         {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
           <input type="hidden" name="id" value="{{ current_variant.id }}">
           <button
-            class="tw:font-bold tw:w-full tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:py-3 tw:rounded-lg tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102 {% unless available %} tw:bg-transparent tw:text-[#C2CFD6] tw:border-2 tw:border-[#C2CFD6] tw:pointer-events-none {% endunless %}"
+            class="tw:font-bold tw:w-full tw:cursor-pointer tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:py-3 tw:rounded-lg tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102 {% unless available %} tw:bg-transparent tw:text-[#C2CFD6] tw:border-2 tw:border-[#C2CFD6] tw:pointer-events-none {% endunless %}"
             style="background-color: #426c8a; color: #f9f9f9;"
             type="submit"
             name="add"
