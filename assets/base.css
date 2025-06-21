@@ -227,6 +227,9 @@
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:my-auto {
+    margin-block: auto !important;
+  }
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4) !important;
   }
@@ -242,16 +245,35 @@
   .tw\:grid {
     display: grid !important;
   }
+  .tw\:hidden {
+    display: none !important;
+  }
   .tw\:aspect-square {
     aspect-ratio: 1 / 1 !important;
+  }
+  .tw\:size-4 {
+    width: calc(var(--tw-spacing) * 4) !important;
+    height: calc(var(--tw-spacing) * 4) !important;
   }
   .tw\:size-8 {
     width: calc(var(--tw-spacing) * 8) !important;
     height: calc(var(--tw-spacing) * 8) !important;
   }
+  .tw\:size-9 {
+    width: calc(var(--tw-spacing) * 9) !important;
+    height: calc(var(--tw-spacing) * 9) !important;
+  }
+  .tw\:size-10 {
+    width: calc(var(--tw-spacing) * 10) !important;
+    height: calc(var(--tw-spacing) * 10) !important;
+  }
   .tw\:size-12 {
     width: calc(var(--tw-spacing) * 12) !important;
     height: calc(var(--tw-spacing) * 12) !important;
+  }
+  .tw\:size-16 {
+    width: calc(var(--tw-spacing) * 16) !important;
+    height: calc(var(--tw-spacing) * 16) !important;
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
@@ -401,6 +423,18 @@
   .tw\:stroke-current {
     stroke: currentcolor !important;
   }
+  .tw\:stroke-0 {
+    stroke-width: 0 !important;
+  }
+  .tw\:stroke-1 {
+    stroke-width: 1 !important;
+  }
+  .tw\:stroke-2 {
+    stroke-width: 2 !important;
+  }
+  .tw\:stroke-12 {
+    stroke-width: 12 !important;
+  }
   .tw\:object-cover {
     object-fit: cover !important;
   }
@@ -491,9 +525,17 @@
     transition-timing-function: var(--tw-ease, var(--tw-default-transition-timing-function)) !important;
     transition-duration: var(--tw-duration, var(--tw-default-transition-duration)) !important;
   }
+  .tw\:duration-70 {
+    --tw-duration: 70ms !important;
+    transition-duration: 70ms !important;
+  }
   .tw\:duration-100 {
     --tw-duration: 100ms !important;
     transition-duration: 100ms !important;
+  }
+  .tw\:duration-150 {
+    --tw-duration: 150ms !important;
+    transition-duration: 150ms !important;
   }
   .tw\:duration-300 {
     --tw-duration: 300ms !important;
@@ -558,6 +600,36 @@
       }
     }
   }
+  .tw\:hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105% !important;
+        --tw-scale-y: 105% !important;
+        --tw-scale-z: 105% !important;
+        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
+  .tw\:hover\:scale-107 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 107% !important;
+        --tw-scale-y: 107% !important;
+        --tw-scale-z: 107% !important;
+        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
+  .tw\:hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110% !important;
+        --tw-scale-y: 110% !important;
+        --tw-scale-z: 110% !important;
+        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
   .tw\:hover\:shadow-lg {
     &:hover {
       @media (hover: hover) {
@@ -574,6 +646,11 @@
   .tw\:sm\:my-16 {
     @media (width >= 40rem) {
       margin-block: calc(var(--tw-spacing) * 16) !important;
+    }
+  }
+  .tw\:sm\:block {
+    @media (width >= 40rem) {
+      display: block !important;
     }
   }
   .tw\:sm\:h-\[280px\] {

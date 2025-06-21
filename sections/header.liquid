@@ -248,6 +248,12 @@
       
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
+      <a class="tw:hidden tw:sm:block" href="{{ pages.wishlist.url }}">
+        <span class="svg-wrapper header__icon header__icon--wishlist link focus-inset tw:hover:scale-107 tw:transition-all tw:duration-70">
+          <span class="tw:size-9">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+        </span>
+      </a>
+
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
