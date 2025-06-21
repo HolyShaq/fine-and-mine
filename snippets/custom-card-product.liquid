@@ -2,6 +2,8 @@
   Renders a product card
 
   @param {object} product - Product Liquid object.
+  @param {boolean} [compact_mode] - If true, renders a compact version of the product card. Default: false
+  @param {string} [image_size] - Size of the product image. Default: 'medium'
   @param {boolean} [show_secondary_image] - Show the secondary image on hover. Default: true
   @param {boolean} [lazy_load] - Lazy load the image. Default: true
   @param {boolean} [demo_sale] - Compare at price for demo purposes. Default: null
@@ -17,6 +19,22 @@
 {% enddoc %}
 
 {% liquid
+  unless compact_mode
+    assign compact_mode = false
+  endunless
+
+  unless image_size
+    assign image_tw_size = 'tw:w-96'
+  elsif image_size == 'small'
+    assign image_tw_size = 'tw:w-66'
+  elsif image_size == 'medium'
+    assign image_tw_size = 'tw:w-96'
+  endunless
+
+  unless background_color
+    assign background_color = '#f9f9f9'
+  endunless
+
   assign compare_at_price = product.compare_at_price
   if demo_sale
     assign compare_at_price = product.price | plus: 200000
@@ -30,56 +48,58 @@
 
 {% if product %}
   <div
-    class="tw:group/div tw:flex tw:flex-col tw:w-full tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden   tw:transition-all tw:duration-300 tw:ease-in-out"
+    class="{% if compact_mode %}tw:w-[380px]{% endif %} tw:group/div tw:flex tw:flex-col tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden tw:transition-all tw:duration-300 tw:ease-in-out"
     style="background-color: {{ background_color }};"
   >
-    {% comment %} Product Image {% endcomment %}
-    <div class="tw:relative tw:group/img">
-      {% comment %} Featured Image {% endcomment %}
-      <img
-        class="tw:w-96 tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
-        src="{{ product.featured_image | image_url }}"
-        width="{{ product.featured_image.width }}"
-        height="{{ product.featured_image.height }}"
-        {% if lazy_load %}
-          loading="lazy"
-        {% endif %}
-      >
-      {% comment %} Secondary Image on Hover {% endcomment %}
-      {% if product.images[1] != null and show_secondary_image %}
+    <div class="tw:flex {% if compact_mode %}tw:flex-row tw:gap-4{% else %}tw:flex-col tw:gap-6{% endif %}">
+      {% comment %} Product Image Container {% endcomment %}
+      {% comment %} Product Image {% endcomment %}
+      <div class="tw:relative tw:group/img">
+        {% comment %} Featured Image {% endcomment %}
         <img
-          class="tw:absolute tw:top-0 tw:left-0 tw:w-96 tw:aspect-square tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
-          src="{{ product.images[1] | image_url }}"
-          width="{{ product.images[1].width }}"
-          height="{{ product.images[1].height }}"
-          loading="lazy"
+          class="{{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
+          src="{{ product.featured_image | image_url }}"
+          width="{{ product.featured_image.width }}"
+          height="{{ product.featured_image.height }}"
+          {% if lazy_load %}
+            loading="lazy"
+          {% endif %}
         >
-      {% endif %}
-
-      {% comment %} Favorite Icon {% endcomment %}
-      <button class="tw:absolute tw:bottom-3 tw:left-3">
-        <span class="tw:m-auto tw:flex  tw:size-12 tw:items-center tw:justify-center tw:p-2 tw:rounded-full">
-          {{- 'icon-heart.svg' | inline_asset_content -}}
-        </span>
-      </button>
-
-      {% comment %} Sale Badge {% endcomment %}
-      {% if compare_at_price %}
-        <div class="tw:absolute tw:top-3 tw:right-3 tw:px-6 tw:py-1 tw:bg-red-700 tw:text-2xl tw:text-white tw:rounded-full">
-          Sale
+        {% comment %} Secondary Image on Hover {% endcomment %}
+        {% if product.images[1] != null and show_secondary_image %}
+          <img
+            class="tw:absolute tw:top-0 tw:left-0 {{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
+            src="{{ product.images[1] | image_url }}"
+            width="{{ product.images[1].width }}"
+            height="{{ product.images[1].height }}"
+            loading="lazy"
+          >
+        {% endif %}
+        {% comment %} Favorite Icon {% endcomment %}
+        {% unless compact_mode %}
+          <button class="tw:absolute tw:bottom-3 tw:left-3">
+            <span class="tw:m-auto tw:flex  tw:size-12 tw:items-center tw:justify-center tw:p-2 tw:rounded-full">
+              {{- 'icon-heart.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        {% endunless %}
+        {% comment %} Sale Badge {% endcomment %}
+        {% if compare_at_price and compact_mode == false %}
+          <div class="tw:absolute tw:top-3 tw:right-3 tw:px-6 tw:py-1 tw:bg-red-700 tw:text-2xl tw:text-white tw:rounded-full">
+            Sale
+          </div>
+        {% endif %}
+      </div>
+      {% comment %} Product Information {% endcomment %}
+      <div class="tw:flex tw:flex-col tw:gap-2">
+        <h3 class="tw:font-semibold tw:text-base">{{ product.metafields.custom.product_brand | upcase }}</h3>
+        <h2 class="tw:line-clamp-2 tw:text-2xl tw:min-h-[4rem] tw:group-hover/div:underline tw:transition-all tw:duration-300">
+          {{ product.title }}
+        </h2>
+        <div class="tw:flex tw:gap-3 tw:items-center">
+          <h2 class="tw:text-2xl tw:text-[#9E9E9E] tw:line-through">{{ compare_at_price | money }}</h2>
+          <h2 class="tw:font-bold tw:text-2xl">{{ product.price | money }}</h2>
         </div>
-      {% endif %}
-    </div>
-
-    {% comment %} Product Information {% endcomment %}
-    <div class="tw:flex tw:flex-col tw:gap-2">
-      <h3 class="tw:font-semibold tw:text-base">{{ product.metafields.custom.product_brand | upcase }}</h3>
-      <h2 class="tw:line-clamp-2 tw:text-2xl tw:min-h-[4rem] tw:group-hover/div:underline tw:transition-all tw:duration-300">
-        {{ product.title }}
-      </h2>
-      <div class="tw:flex tw:gap-3 tw:items-center">
-        <h2 class="tw:text-2xl tw:text-[#9E9E9E] tw:line-through">{{ compare_at_price | money }}</h2>
-        <h2 class="tw:font-bold tw:text-2xl">{{ product.price | money }}</h2>
       </div>
     </div>
 

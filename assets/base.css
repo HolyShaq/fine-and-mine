@@ -206,6 +206,9 @@
   .tw\:left-3 {
     left: calc(var(--tw-spacing) * 3) !important;
   }
+  .tw\:z-20 {
+    z-index: 20 !important;
+  }
   .tw\:col-span-2 {
     grid-column: span 2 / span 2 !important;
   }
@@ -265,8 +268,32 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
+  .tw\:w-0\.5 {
+    width: calc(var(--tw-spacing) * 0.5) !important;
+  }
+  .tw\:w-1\/2 {
+    width: calc(1/2 * 100%) !important;
+  }
+  .tw\:w-47 {
+    width: calc(var(--tw-spacing) * 47) !important;
+  }
+  .tw\:w-48 {
+    width: calc(var(--tw-spacing) * 48) !important;
+  }
+  .tw\:w-64 {
+    width: calc(var(--tw-spacing) * 64) !important;
+  }
+  .tw\:w-66 {
+    width: calc(var(--tw-spacing) * 66) !important;
+  }
+  .tw\:w-67 {
+    width: calc(var(--tw-spacing) * 67) !important;
+  }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
+  }
+  .tw\:w-\[380px\] {
+    width: 380px !important;
   }
   .tw\:w-fit {
     width: fit-content !important;
@@ -309,6 +336,12 @@
   }
   .tw\:flex-row {
     flex-direction: row !important;
+  }
+  .tw\:place-items-center {
+    place-items: center !important;
+  }
+  .tw\:place-items-stretch {
+    place-items: stretch !important;
   }
   .tw\:items-center {
     align-items: center !important;

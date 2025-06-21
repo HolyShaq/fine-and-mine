@@ -1,32 +1,72 @@
-<div class="page-width tw:flex tw:justify-center tw:items-center tw:gap-4">
-  {% render 'custom-card-product',
-    product: section.settings.product,
-    show_secondary_image: true,
-    lazy_load: true,
-    demo_sale: false,
-    demo_sold_out: false
-  %}
-  {% render 'custom-card-product',
-    product: section.settings.product,
-    show_secondary_image: true,
-    lazy_load: true,
-    demo_sale: false,
-    demo_sold_out: true
-  %}
-  {% render 'custom-card-product',
-    product: section.settings.product,
-    show_secondary_image: true,
-    lazy_load: true,
-    demo_sale: true,
-    demo_sold_out: false
-  %}
-  {% render 'custom-card-product',
-    product: section.settings.product,
-    show_secondary_image: true,
-    lazy_load: true,
-    demo_sale: true,
-    demo_sold_out: true
-  %}
+<div class="page-width tw:flex tw:flex-col tw:gap-4 tw:my-8">
+  <div class="tw:flex tw:justify-center tw:items-center tw:gap-4">
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: false,
+      demo_sold_out: false
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: false,
+      demo_sold_out: true
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: true,
+      demo_sold_out: false
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: true,
+      demo_sold_out: true
+    %}
+  </div>
+  <div class="tw:grid tw:grid-cols-2 tw:gap-4 tw:w-fit tw:mx-auto tw:place-items-center">
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: false,
+      demo_sold_out: false,
+      compact_mode: true,
+      image_size: 'small',
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: false,
+      demo_sold_out: true
+      compact_mode: true,
+      image_size: 'small',
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: true,
+      demo_sold_out: false
+      compact_mode: true,
+      image_size: 'small',
+    %}
+    {% render 'custom-card-product',
+      product: section.settings.product,
+      show_secondary_image: true,
+      lazy_load: true,
+      demo_sale: true,
+      demo_sold_out: true
+      compact_mode: true,
+      image_size: 'small',
+    %}
+  </div>
 </div>
 
 {% schema %}
