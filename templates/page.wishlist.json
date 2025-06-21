@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "wishlist": {
+      "type": "wishlist",
+    }
+  },
+  "order": [
+    "wishlist"
+  ]
+}

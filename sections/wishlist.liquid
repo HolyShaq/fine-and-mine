@@ -1,0 +1,14 @@
+<div class="page-width">
+  <h1 class="page-title tw:my-6 tw:font-semibold">Wishlist</h1>
+
+  {% comment %} Empty Wishlist {% endcomment %}
+  <div id="wishlist-empty" class="hidden">
+    <h1 class="tw:text-center tw:mx-auto tw:my-16 tw:font-light tw:text-5xl">Nothing's here yet...</h1>
+    <a href="{{ routes.all_products_collection_url }}" class="tw:mt-6 tw:mx-auto tw:block tw:w-fit">
+      <button class="button">Browse Products</button>
+    </a>
+  </div>
+
+  {% comment %} Wishlist Items {% endcomment %}
+  <div id="wishlist-items" class="tw:flex tw:flex-row tw:flex-wrap tw:gap-4"></div>
+</div>
