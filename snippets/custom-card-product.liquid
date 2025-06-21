@@ -6,6 +6,7 @@
   @param {boolean} [lazy_load] - Lazy load the image. Default: true
   @param {boolean} [demo_sale] - Compare at price for demo purposes. Default: null
   @param {boolean} [demo_sold_out] - Indicates if the product is sold out for demo purposes. Default: null
+  @param {string} [background_color] - Background color of the card. Default: #f9f9f9
 
   @example
   {% render 'card-product',
@@ -29,8 +30,8 @@
 
 {% if product %}
   <div
-    class="tw:group/div tw:flex tw:flex-col tw:w-full tw:max-w-[261px] tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden   tw:transition-all tw:duration-300 tw:ease-in-out"
-    style="background-color: #f9f9f9"
+    class="tw:group/div tw:flex tw:flex-col tw:w-full tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden   tw:transition-all tw:duration-300 tw:ease-in-out"
+    style="background-color: {{ background_color }};"
   >
     {% comment %} Product Image {% endcomment %}
     <div class="tw:relative tw:group/img">
