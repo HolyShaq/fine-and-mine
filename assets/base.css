@@ -365,9 +365,6 @@
   .tw\:stroke-current {
     stroke: currentcolor !important;
   }
-  .tw\:stroke-white {
-    stroke: var(--tw-color-white) !important;
-  }
   .tw\:object-cover {
     object-fit: cover !important;
   }

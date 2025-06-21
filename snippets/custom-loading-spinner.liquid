@@ -1,0 +1,28 @@
+{% comment %}
+  Renders loading-spinner.
+  Accepts:
+    - class: {string} css classes to replace the default ones (optional)
+
+  Usage:
+  {% render 'loading-spinner' %}
+{% endcomment %}
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="{% if class %}{{ class }}{% else %}loading__spinner hidden{% endif %}"
+  width="40"
+  height="40"
+  viewBox="0 0 40 40"
+  fill="none"
+>
+  <circle cx="20" cy="20" r="18" stroke="white" stroke-width="4" opacity="0"/>
+  <path d="M38 20a18 18 0 1 1-18-18" stroke="white" stroke-width="4" stroke-linecap="round">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 20 20"
+      to="360 20 20"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </path>
+</svg>
