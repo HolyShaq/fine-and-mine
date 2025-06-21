@@ -77,9 +77,12 @@
         {% endif %}
         {% comment %} Favorite Icon {% endcomment %}
         {% unless compact_mode %}
-          <button class="tw:absolute tw:bottom-3 tw:left-3 tw:cursor-pointer">
+          <button 
+            data-handle="{{ product.handle }}"
+            data-brand="{{ product.metafields.custom.product_brand }}"
+            class="wishlist_toggle tw:absolute tw:bottom-3 tw:left-3 tw:cursor-pointer">
             <span class="tw:m-auto tw:flex  tw:size-12 tw:items-center tw:justify-center tw:p-2 tw:rounded-full">
-              {{- 'icon-heart.svg' | inline_asset_content -}}
+              {% comment %} {{- 'icon-heart.svg' | inline_asset_content -}} {% endcomment %}
             </span>
           </button>
         {% endunless %}
