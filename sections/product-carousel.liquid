@@ -1,0 +1,91 @@
+<div id="slider-container" class="page-width">
+  {% comment %} Header {% endcomment %}
+  {% render 'collection-header',
+    title: section.settings.title,
+    subtitle: section.settings.subtitle,
+    nav_text: section.settings.nav_text,
+    link: section.settings.collection.url
+  %}
+
+  {% comment %} Product Carousel {% endcomment %}
+  <div id="{{ section.id }}" class="tw:flex tw:flex-row tw:gap-4 tw:overflow-x-clip tw:my-6">
+    {% for product in section.settings.collection.products %}
+      <div class="tw:shrink-0">
+        {% render 'custom-card-product', product: product, show_secondary_image: true, lazy_load: true %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% comment %} Navigation Arrows {% endcomment %}
+  <div
+    id="nav-buttons"
+    data-section-id="{{ section.id }}"
+    class="tw:flex tw:flex-row tw:justify-center tw:items-center tw:gap-14"
+  >
+    <button
+      type="button"
+      class="tw:flex tw:items-center tw:hover:scale-110 tw:stroke-2 tw:cursor-pointer tw:duration-100 tw:transition-all"
+      id="previous"
+      aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper tw:size-9 tw:rotate-90">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
+
+    <p id="nav-text" class="tw:lg">
+        1 of 6
+    </p>
+
+    <button
+      type="button"
+      class="tw:flex tw:items-center tw:hover:scale-110 tw:stroke-2 tw:cursor-pointer tw:duration-100 tw:transition-all"
+      id="next"
+      aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper tw:size-9 tw:rotate-270">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Carousel",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Lacoste Jewelry"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Adorn yourself in jewelry in the style of the crocodile"
+    },
+    {
+      "type": "text",
+      "id": "nav_text",
+      "label": "Navigation Text",
+      "default": "Shop the brand"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Carousel",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

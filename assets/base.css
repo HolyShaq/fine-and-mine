@@ -229,6 +229,9 @@
   .tw\:mx-auto {
     margin-inline: auto !important;
   }
+  .tw\:my-5 {
+    margin-block: calc(var(--tw-spacing) * 5) !important;
+  }
   .tw\:my-6 {
     margin-block: calc(var(--tw-spacing) * 6) !important;
   }
@@ -276,9 +279,21 @@
     width: calc(var(--tw-spacing) * 9) !important;
     height: calc(var(--tw-spacing) * 9) !important;
   }
+  .tw\:size-10 {
+    width: calc(var(--tw-spacing) * 10) !important;
+    height: calc(var(--tw-spacing) * 10) !important;
+  }
   .tw\:size-12 {
     width: calc(var(--tw-spacing) * 12) !important;
     height: calc(var(--tw-spacing) * 12) !important;
+  }
+  .tw\:size-16 {
+    width: calc(var(--tw-spacing) * 16) !important;
+    height: calc(var(--tw-spacing) * 16) !important;
+  }
+  .tw\:size-24 {
+    width: calc(var(--tw-spacing) * 24) !important;
+    height: calc(var(--tw-spacing) * 24) !important;
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
@@ -295,11 +310,20 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
+  .tw\:w-1\/4 {
+    width: calc(1/4 * 100%) !important;
+  }
   .tw\:w-66 {
     width: calc(var(--tw-spacing) * 66) !important;
   }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
+  }
+  .tw\:w-\[150px\] {
+    width: 150px !important;
+  }
+  .tw\:w-\[200px\] {
+    width: 200px !important;
   }
   .tw\:w-\[261px\] {
     width: 261px !important;
@@ -319,6 +343,9 @@
   .tw\:max-w-6xl {
     max-width: var(--tw-container-6xl) !important;
   }
+  .tw\:max-w-75 {
+    max-width: calc(var(--tw-spacing) * 75) !important;
+  }
   .tw\:max-w-\[1182px\] {
     max-width: 1182px !important;
   }
@@ -327,6 +354,12 @@
   }
   .tw\:flex-1 {
     flex: 1 !important;
+  }
+  .tw\:shrink-0 {
+    flex-shrink: 0 !important;
+  }
+  .tw\:rotate-90 {
+    rotate: 90deg !important;
   }
   .tw\:rotate-270 {
     rotate: 270deg !important;
@@ -379,8 +412,26 @@
   .tw\:gap-8\.5 {
     gap: calc(var(--tw-spacing) * 8.5) !important;
   }
+  .tw\:gap-12 {
+    gap: calc(var(--tw-spacing) * 12) !important;
+  }
+  .tw\:gap-14 {
+    gap: calc(var(--tw-spacing) * 14) !important;
+  }
+  .tw\:gap-16 {
+    gap: calc(var(--tw-spacing) * 16) !important;
+  }
+  .tw\:overflow-clip {
+    overflow: clip !important;
+  }
   .tw\:overflow-hidden {
     overflow: hidden !important;
+  }
+  .tw\:overflow-scroll {
+    overflow: scroll !important;
+  }
+  .tw\:overflow-x-clip {
+    overflow-x: clip !important;
   }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px) !important;
@@ -406,6 +457,9 @@
   }
   .tw\:bg-transparent {
     background-color: transparent !important;
+  }
+  .tw\:stroke-2 {
+    stroke-width: 2 !important;
   }
   .tw\:object-cover {
     object-fit: cover !important;
@@ -457,6 +511,10 @@
   .tw\:text-5xl {
     font-size: var(--tw-text-5xl) !important;
     line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
+  }
+  .tw\:text-6xl {
+    font-size: var(--tw-text-6xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-6xl--line-height)) !important;
   }
   .tw\:text-base {
     font-size: var(--tw-text-base) !important;
@@ -583,6 +641,37 @@
         --tw-scale-y: 107% !important;
         --tw-scale-z: 107% !important;
         scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
+  .tw\:hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110% !important;
+        --tw-scale-y: 110% !important;
+        --tw-scale-z: 110% !important;
+        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
+  .tw\:hover\:stroke-2 {
+    &:hover {
+      @media (hover: hover) {
+        stroke-width: 2 !important;
+      }
+    }
+  }
+  .tw\:hover\:stroke-3 {
+    &:hover {
+      @media (hover: hover) {
+        stroke-width: 3 !important;
+      }
+    }
+  }
+  .tw\:hover\:text-slate-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--tw-color-slate-400) !important;
       }
     }
   }
