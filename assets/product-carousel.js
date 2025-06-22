@@ -1,4 +1,5 @@
 const sliderContainer = document.querySelectorAll('.product-carousel');
+const gap = parseFloat(window.getComputedStyle(sliderContainer[0].querySelector("[name='carousel']")).rowGap);
 
 function parseNavText(navText) {
     const [currentIndex, totalPages] = navText.textContent.split(" of ");
@@ -8,16 +9,19 @@ function parseNavText(navText) {
 function prevPage(carousel, navText) {
     const [currentIndex, totalPages] = parseNavText(navText);
 
+    const offsetWidth = carousel.offsetWidth + gap
     const newIndex = currentIndex == 1 ? totalPages: currentIndex - 1
-    carousel.style.transform = `translateX(-${newIndex * sliderContainer.offsetWidth}px)`;
+    console.log((newIndex - 1) * offsetWidth)
+    carousel.style.transform = `translateX(-${(newIndex - 1) * offsetWidth}px)`;
     navText.textContent = `${newIndex} of ${totalPages}`
 }
 
 function nextPage(carousel, navText) {
     const [currentIndex, totalPages] = parseNavText(navText);
 
-    const newIndex = (currentIndex + 1) % totalPages
-    carousel.style.transform = `translateX(-${newIndex * sliderContainer.offsetWidth}px)`;
+    const offsetWidth = carousel.offsetWidth + gap
+    const newIndex = currentIndex == totalPages ? 1: currentIndex + 1
+    carousel.style.transform = `translateX(-${(newIndex - 1) * offsetWidth}px)`;
     navText.textContent = `${newIndex} of ${totalPages}`
 }
 
@@ -25,14 +29,12 @@ const optimalCardWidth = 261;
 sliderContainer.forEach((container) => {
     const carousel = container.querySelector("[name='carousel']")
 
-    const gap = parseFloat(window.getComputedStyle(carousel).rowGap);
     const cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth);
     const totalGap = gap * (cardsPerPage - 1);
     const actualCardwidth = (carousel.offsetWidth - totalGap) / cardsPerPage
 
     const carouselCards = container.querySelectorAll("[name='carousel-card']")
     carouselCards.forEach((card) => {
-        console.log(actualCardwidth);
         card.style.width = `${actualCardwidth}px`;
     })
 
