@@ -208,6 +208,8 @@ async function renderWishlist() {
   const wishlistEmpty = document.querySelector("#wishlist-empty");
   const wishlistItems = document.querySelector("#wishlist-items");
 
+  if (!wishlistEmpty || !wishlistItems) return;
+
   if (wishlist.length === 0) {
     wishlistEmpty.classList.remove("hidden");
     wishlistItems.classList.add("hidden");
