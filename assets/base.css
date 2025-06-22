@@ -217,9 +217,6 @@
   .tw\:left-3 {
     left: calc(var(--tw-spacing) * 3) !important;
   }
-  .tw\:z-20 {
-    z-index: 20 !important;
-  }
   .tw\:col-span-2 {
     grid-column: span 2 / span 2 !important;
   }
@@ -232,32 +229,23 @@
   .tw\:mx-auto {
     margin-inline: auto !important;
   }
-  .tw\:my-4 {
-    margin-block: calc(var(--tw-spacing) * 4) !important;
-  }
   .tw\:my-6 {
     margin-block: calc(var(--tw-spacing) * 6) !important;
   }
   .tw\:my-8 {
     margin-block: calc(var(--tw-spacing) * 8) !important;
   }
-  .tw\:my-12 {
-    margin-block: calc(var(--tw-spacing) * 12) !important;
-  }
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
-  }
-  .tw\:my-24 {
-    margin-block: calc(var(--tw-spacing) * 24) !important;
-  }
-  .tw\:my-auto {
-    margin-block: auto !important;
   }
   .tw\:mt-6 {
     margin-top: calc(var(--tw-spacing) * 6) !important;
   }
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:mb-8 {
+    margin-bottom: calc(var(--tw-spacing) * 8) !important;
   }
   .tw\:line-clamp-2 {
     overflow: hidden !important;
@@ -280,10 +268,6 @@
   .tw\:aspect-square {
     aspect-ratio: 1 / 1 !important;
   }
-  .tw\:size-4 {
-    width: calc(var(--tw-spacing) * 4) !important;
-    height: calc(var(--tw-spacing) * 4) !important;
-  }
   .tw\:size-8 {
     width: calc(var(--tw-spacing) * 8) !important;
     height: calc(var(--tw-spacing) * 8) !important;
@@ -292,25 +276,9 @@
     width: calc(var(--tw-spacing) * 9) !important;
     height: calc(var(--tw-spacing) * 9) !important;
   }
-  .tw\:size-10 {
-    width: calc(var(--tw-spacing) * 10) !important;
-    height: calc(var(--tw-spacing) * 10) !important;
-  }
   .tw\:size-12 {
     width: calc(var(--tw-spacing) * 12) !important;
     height: calc(var(--tw-spacing) * 12) !important;
-  }
-  .tw\:size-16 {
-    width: calc(var(--tw-spacing) * 16) !important;
-    height: calc(var(--tw-spacing) * 16) !important;
-  }
-  .tw\:size-24 {
-    width: calc(var(--tw-spacing) * 24) !important;
-    height: calc(var(--tw-spacing) * 24) !important;
-  }
-  .tw\:size-64 {
-    width: calc(var(--tw-spacing) * 64) !important;
-    height: calc(var(--tw-spacing) * 64) !important;
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
@@ -327,26 +295,8 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
-  .tw\:w-0\.5 {
-    width: calc(var(--tw-spacing) * 0.5) !important;
-  }
-  .tw\:w-1\/2 {
-    width: calc(1/2 * 100%) !important;
-  }
-  .tw\:w-47 {
-    width: calc(var(--tw-spacing) * 47) !important;
-  }
-  .tw\:w-48 {
-    width: calc(var(--tw-spacing) * 48) !important;
-  }
-  .tw\:w-64 {
-    width: calc(var(--tw-spacing) * 64) !important;
-  }
   .tw\:w-66 {
     width: calc(var(--tw-spacing) * 66) !important;
-  }
-  .tw\:w-67 {
-    width: calc(var(--tw-spacing) * 67) !important;
   }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
@@ -368,9 +318,6 @@
   }
   .tw\:max-w-6xl {
     max-width: var(--tw-container-6xl) !important;
-  }
-  .tw\:max-w-\[261px\] {
-    max-width: 261px !important;
   }
   .tw\:max-w-\[1182px\] {
     max-width: 1182px !important;
@@ -404,9 +351,6 @@
   }
   .tw\:place-items-center {
     place-items: center !important;
-  }
-  .tw\:place-items-stretch {
-    place-items: stretch !important;
   }
   .tw\:items-center {
     align-items: center !important;
@@ -457,32 +401,11 @@
   .tw\:border-black {
     border-color: var(--tw-color-black) !important;
   }
-  .tw\:bg-black {
-    background-color: var(--tw-color-black) !important;
-  }
   .tw\:bg-red-700 {
     background-color: var(--tw-color-red-700) !important;
   }
   .tw\:bg-transparent {
     background-color: transparent !important;
-  }
-  .tw\:stroke-current {
-    stroke: currentcolor !important;
-  }
-  .tw\:stroke-white {
-    stroke: var(--tw-color-white) !important;
-  }
-  .tw\:stroke-0 {
-    stroke-width: 0 !important;
-  }
-  .tw\:stroke-1 {
-    stroke-width: 1 !important;
-  }
-  .tw\:stroke-2 {
-    stroke-width: 2 !important;
-  }
-  .tw\:stroke-12 {
-    stroke-width: 12 !important;
   }
   .tw\:object-cover {
     object-fit: cover !important;
@@ -499,9 +422,6 @@
   .tw\:p-16 {
     padding: calc(var(--tw-spacing) * 16) !important;
   }
-  .tw\:px-4 {
-    padding-inline: calc(var(--tw-spacing) * 4) !important;
-  }
   .tw\:px-6 {
     padding-inline: calc(var(--tw-spacing) * 6) !important;
   }
@@ -510,9 +430,6 @@
   }
   .tw\:py-1 {
     padding-block: calc(var(--tw-spacing) * 1) !important;
-  }
-  .tw\:py-2 {
-    padding-block: calc(var(--tw-spacing) * 2) !important;
   }
   .tw\:py-3 {
     padding-block: calc(var(--tw-spacing) * 3) !important;
@@ -541,25 +458,9 @@
     font-size: var(--tw-text-5xl) !important;
     line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
   }
-  .tw\:text-6xl {
-    font-size: var(--tw-text-6xl) !important;
-    line-height: var(--tw-leading, var(--tw-text-6xl--line-height)) !important;
-  }
-  .tw\:text-8xl {
-    font-size: var(--tw-text-8xl) !important;
-    line-height: var(--tw-leading, var(--tw-text-8xl--line-height)) !important;
-  }
   .tw\:text-base {
     font-size: var(--tw-text-base) !important;
     line-height: var(--tw-leading, var(--tw-text-base--line-height)) !important;
-  }
-  .tw\:text-lg {
-    font-size: var(--tw-text-lg) !important;
-    line-height: var(--tw-leading, var(--tw-text-lg--line-height)) !important;
-  }
-  .tw\:text-xl {
-    font-size: var(--tw-text-xl) !important;
-    line-height: var(--tw-leading, var(--tw-text-xl--line-height)) !important;
   }
   .tw\:font-bold {
     --tw-font-weight: var(--tw-font-weight-bold) !important;
@@ -611,10 +512,6 @@
   .tw\:duration-100 {
     --tw-duration: 100ms !important;
     transition-duration: 100ms !important;
-  }
-  .tw\:duration-150 {
-    --tw-duration: 150ms !important;
-    transition-duration: 150ms !important;
   }
   .tw\:duration-300 {
     --tw-duration: 300ms !important;
@@ -679,32 +576,12 @@
       }
     }
   }
-  .tw\:hover\:scale-105 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 105% !important;
-        --tw-scale-y: 105% !important;
-        --tw-scale-z: 105% !important;
-        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
-      }
-    }
-  }
   .tw\:hover\:scale-107 {
     &:hover {
       @media (hover: hover) {
         --tw-scale-x: 107% !important;
         --tw-scale-y: 107% !important;
         --tw-scale-z: 107% !important;
-        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
-      }
-    }
-  }
-  .tw\:hover\:scale-110 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 110% !important;
-        --tw-scale-y: 110% !important;
-        --tw-scale-z: 110% !important;
         scale: var(--tw-scale-x) var(--tw-scale-y) !important;
       }
     }

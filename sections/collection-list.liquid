@@ -138,57 +138,12 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
-        <h2
-          id="SectionHeading-{{ section.id }}"
-          class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        >
-          {{ section.settings.title }}
-        </h2>
-      
-        {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
-          <div
-            class="center collection-list-view-all{% if show_mobile_slider %} small-hide medium-hide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-            {% endif %}
-          >
-      {% comment %}
-        
-        <a
-          href="{{ routes.collections_url }}"
-          class="button"
-          id="ViewAllButton-{{ section.id }}"
-          aria-labelledby="ViewAllButton-{{ section.id }} SectionHeading-{{ section.id }}"
-        >
-          {{- 'sections.collection_list.view_all' | t -}}
-        </a>
-      {% endcomment %}
-              <div class="featured-collection-top-{{ section.id }}">
-            <a class="featured-collection-link-{{ section.id }}" href="{{ routes.collections_url }}">
-              {{ link }}
-              <div class="featured-collection-arrow-{{ section.id }}">
-                <svg class="featured-collection-arrow-{{ section.id }}" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z">
-                </svg>
-              </div>
-            </a>
-          </div>
-      </div>
-    {%- endif -%}
-       {%  comment %}
-        {%- if section.settings.show_view_all and show_mobile_slider -%}
-          <a
-            href="{{ routes.collections_url }}"
-            id="ViewAll-{{ section.id }}"
-            class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-          >
-            {{- 'sections.settings.link' | t -}}
-          </a>
-        {%- endif -%}
-
-       {% endcomment %}
+      <div class="tw:mb-8">
+        {% render 'collection-header',
+          title: section.settings.title,
+          nav_text: section.settings.link,
+          link: section.settings.link_url,
+         %}
       </div>
     {%- endunless -%}
 
