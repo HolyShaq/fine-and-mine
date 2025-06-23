@@ -23,13 +23,12 @@
     assign compact_mode = false
   endunless
 
-  unless image_size
-    assign image_tw_size = 'tw:w-full'
-  elsif image_size == 'small'
+  assign image_tw_size = 'tw:w-full'
+  if image_size == 'small'
     assign image_tw_size = 'tw:w-66'
   elsif image_size == 'medium'
     assign image_tw_size = 'tw:w-full'
-  endunless
+  endif
 
   unless background_color
     assign background_color = '#f9f9f9'
@@ -54,7 +53,7 @@
     <div class="tw:flex tw:w-full {% if compact_mode %}tw:flex-row tw:gap-4{% else %}tw:flex-col tw:gap-6{% endif %}">
       {% comment %} Product Image Container {% endcomment %}
       {% comment %} Product Image {% endcomment %}
-      <div class="tw:relative tw:w-full tw:mx-auto tw:aspect-square tw:items-center tw:group/img">
+      <div class="tw:relative {% if compact_mode %}{{image_tw_size}}{% endif %} tw:aspect-square tw:items-center tw:group/img">
         {% comment %} Featured Image {% endcomment %}
         <img
           class="{{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"

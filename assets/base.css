@@ -233,6 +233,9 @@
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:mt-4 {
+    margin-top: calc(var(--tw-spacing) * 4) !important;
+  }
   .tw\:mt-6 {
     margin-top: calc(var(--tw-spacing) * 6) !important;
   }
@@ -767,9 +770,35 @@
       padding-inline: calc(var(--tw-spacing) * 16) !important;
     }
   }
+  .tw\:md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--tw-spacing) * 0) !important;
+    }
+  }
+  .tw\:md\:block {
+    @media (width >= 48rem) {
+      display: block !important;
+    }
+  }
+  .tw\:md\:hidden {
+    @media (width >= 48rem) {
+      display: none !important;
+    }
+  }
+  .tw\:md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row !important;
+    }
+  }
   .tw\:md\:px-32 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
+  .tw\:md\:text-4xl {
+    @media (width >= 48rem) {
+      font-size: var(--tw-text-4xl) !important;
+      line-height: var(--tw-leading, var(--tw-text-4xl--line-height)) !important;
     }
   }
   .tw\:lg\:max-w-3xl {
