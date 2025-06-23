@@ -18,20 +18,12 @@
     --tw-container-6xl: 72rem;
     --tw-text-base: 1rem;
     --tw-text-base--line-height: calc(1.5 / 1);
-    --tw-text-lg: 1.125rem;
-    --tw-text-lg--line-height: calc(1.75 / 1.125);
-    --tw-text-xl: 1.25rem;
-    --tw-text-xl--line-height: calc(1.75 / 1.25);
     --tw-text-2xl: 1.5rem;
     --tw-text-2xl--line-height: calc(2 / 1.5);
     --tw-text-4xl: 2.25rem;
     --tw-text-4xl--line-height: calc(2.5 / 2.25);
     --tw-text-5xl: 3rem;
     --tw-text-5xl--line-height: 1;
-    --tw-text-6xl: 3.75rem;
-    --tw-text-6xl--line-height: 1;
-    --tw-text-8xl: 6rem;
-    --tw-text-8xl--line-height: 1;
     --tw-font-weight-light: 300;
     --tw-font-weight-semibold: 600;
     --tw-font-weight-bold: 700;
@@ -202,9 +194,6 @@
   .tw\:top-0 {
     top: calc(var(--tw-spacing) * 0) !important;
   }
-  .tw\:top-1\/2 {
-    top: calc(1/2 * 100%) !important;
-  }
   .tw\:top-3 {
     top: calc(var(--tw-spacing) * 3) !important;
   }
@@ -216,9 +205,6 @@
   }
   .tw\:left-0 {
     left: calc(var(--tw-spacing) * 0) !important;
-  }
-  .tw\:left-1\/2 {
-    left: calc(1/2 * 100%) !important;
   }
   .tw\:left-3 {
     left: calc(var(--tw-spacing) * 3) !important;
@@ -234,9 +220,6 @@
   }
   .tw\:mx-auto {
     margin-inline: auto !important;
-  }
-  .tw\:my-5 {
-    margin-block: calc(var(--tw-spacing) * 5) !important;
   }
   .tw\:my-6 {
     margin-block: calc(var(--tw-spacing) * 6) !important;
@@ -285,21 +268,9 @@
     width: calc(var(--tw-spacing) * 9) !important;
     height: calc(var(--tw-spacing) * 9) !important;
   }
-  .tw\:size-10 {
-    width: calc(var(--tw-spacing) * 10) !important;
-    height: calc(var(--tw-spacing) * 10) !important;
-  }
   .tw\:size-12 {
     width: calc(var(--tw-spacing) * 12) !important;
     height: calc(var(--tw-spacing) * 12) !important;
-  }
-  .tw\:size-16 {
-    width: calc(var(--tw-spacing) * 16) !important;
-    height: calc(var(--tw-spacing) * 16) !important;
-  }
-  .tw\:size-24 {
-    width: calc(var(--tw-spacing) * 24) !important;
-    height: calc(var(--tw-spacing) * 24) !important;
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
@@ -316,15 +287,6 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
-  .tw\:min-h-\[5rem\] {
-    min-height: 5rem !important;
-  }
-  .tw\:w-1\/4 {
-    width: calc(1/4 * 100%) !important;
-  }
-  .tw\:w-15 {
-    width: calc(var(--tw-spacing) * 15) !important;
-  }
   .tw\:w-30 {
     width: calc(var(--tw-spacing) * 30) !important;
   }
@@ -333,12 +295,6 @@
   }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
-  }
-  .tw\:w-\[150px\] {
-    width: 150px !important;
-  }
-  .tw\:w-\[200px\] {
-    width: 200px !important;
   }
   .tw\:w-\[261px\] {
     width: 261px !important;
@@ -375,30 +331,6 @@
   }
   .tw\:shrink-0 {
     flex-shrink: 0 !important;
-  }
-  .tw\:-translate-x-1\/2 {
-    --tw-translate-x: calc(calc(1/2 * 100%) * -1) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .tw\:translate-x-1 {
-    --tw-translate-x: calc(var(--tw-spacing) * 1) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .tw\:translate-x-1\/2 {
-    --tw-translate-x: calc(1/2 * 100%) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .tw\:-translate-y-1\/2 {
-    --tw-translate-y: calc(calc(1/2 * 100%) * -1) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .tw\:translate-y-1 {
-    --tw-translate-y: calc(var(--tw-spacing) * 1) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .tw\:translate-y-1\/2 {
-    --tw-translate-y: calc(1/2 * 100%) !important;
-    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
   }
   .tw\:rotate-90 {
     rotate: 90deg !important;
@@ -454,23 +386,11 @@
   .tw\:gap-8\.5 {
     gap: calc(var(--tw-spacing) * 8.5) !important;
   }
-  .tw\:gap-12 {
-    gap: calc(var(--tw-spacing) * 12) !important;
-  }
   .tw\:gap-14 {
     gap: calc(var(--tw-spacing) * 14) !important;
   }
-  .tw\:gap-16 {
-    gap: calc(var(--tw-spacing) * 16) !important;
-  }
-  .tw\:overflow-clip {
-    overflow: clip !important;
-  }
   .tw\:overflow-hidden {
     overflow: hidden !important;
-  }
-  .tw\:overflow-scroll {
-    overflow: scroll !important;
   }
   .tw\:overflow-x-clip {
     overflow-x: clip !important;
@@ -554,10 +474,6 @@
     font-size: var(--tw-text-5xl) !important;
     line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
   }
-  .tw\:text-6xl {
-    font-size: var(--tw-text-6xl) !important;
-    line-height: var(--tw-leading, var(--tw-text-6xl--line-height)) !important;
-  }
   .tw\:text-base {
     font-size: var(--tw-text-base) !important;
     line-height: var(--tw-leading, var(--tw-text-base--line-height)) !important;
@@ -617,10 +533,6 @@
   .tw\:duration-100 {
     --tw-duration: 100ms !important;
     transition-duration: 100ms !important;
-  }
-  .tw\:duration-150 {
-    --tw-duration: 150ms !important;
-    transition-duration: 150ms !important;
   }
   .tw\:duration-300 {
     --tw-duration: 300ms !important;
@@ -702,27 +614,6 @@
         --tw-scale-y: 110% !important;
         --tw-scale-z: 110% !important;
         scale: var(--tw-scale-x) var(--tw-scale-y) !important;
-      }
-    }
-  }
-  .tw\:hover\:stroke-2 {
-    &:hover {
-      @media (hover: hover) {
-        stroke-width: 2 !important;
-      }
-    }
-  }
-  .tw\:hover\:stroke-3 {
-    &:hover {
-      @media (hover: hover) {
-        stroke-width: 3 !important;
-      }
-    }
-  }
-  .tw\:hover\:text-slate-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--tw-color-slate-400) !important;
       }
     }
   }
@@ -3517,21 +3408,6 @@ header-menu > details, details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -3632,9 +3508,6 @@ header-menu > details, details-disclosure > details {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-duration: initial;
