@@ -1,25 +1,40 @@
 const sliderContainers = document.querySelectorAll(".product-carousel");
-const carousel = sliderContainers[0].querySelector("[name='carousel']");
-const gap = parseFloat(window.getComputedStyle(carousel).rowGap);
+const carousel = sliderContainers[0].querySelector("[name='carousel']"); // Used to get the general width of all carousels
 const optimalCardWidth = 261; // Based on Figma, actualCardWidth can be a bit larger
+const minGapSize = 4;
+const maxGapSize = 32;
 let translateDistance;
 let cardsPerPage;
 
 function calculateSizes() {
-  // Update 'global' variables
-  translateDistance = carousel.offsetWidth + gap;
-  cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth);
-  console.log(carousel.offsetWidth)
+  cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth); // global var
 
-  const totalGap = gap * (cardsPerPage - 1);
-  const actualCardwidth = (carousel.offsetWidth - totalGap) / cardsPerPage;
+  // Calculate card width and gap
+  let cardWidth;
+  let gapSize;
+  const gapNum = cardsPerPage - 1;
+  gapSize = (carousel.offsetWidth - cardsPerPage * optimalCardWidth) / gapNum;
+
+  // If gap size is within the allowed range, use optimal card width
+  if (gapSize > minGapSize && gapSize < maxGapSize) {
+    cardWidth = optimalCardWidth;
+  } else {
+    // If gap size is outside the allowed range, adjust card width instead
+    targetGapSize = gapSize > maxGapSize ? maxGapSize : minGapSize;
+    cardWidth = (carousel.offsetWidth - targetGapSize * gapNum) / cardsPerPage;
+    gapSize = targetGapSize;
+  }
+
+  translateDistance = carousel.offsetWidth + gapSize; // global var
+
   sliderContainers.forEach((container) => {
     // Resize cards to fill containers
     const carousel = container.querySelector("[name='carousel']");
     const carouselCards = carousel.querySelectorAll("[name='carousel-card']");
     carousel.style.transform = "translateX(0px)"; // Reset all carousel translations
+    carousel.style.gap = `${gapSize}px`;
     carouselCards.forEach((card) => {
-      card.style.width = `${actualCardwidth}px`;
+      card.style.width = `${cardWidth}px`;
     });
 
     // Update nav text to match total pages
@@ -58,12 +73,12 @@ function nextPage(carousel, navText) {
 // Add functionality to nav buttons
 sliderContainers.forEach((container) => {
   const carousel = container.querySelector("[name='carousel']");
-  const carouselCards = carousel.querySelectorAll("[name='carousel-card']");
 
   const navText = container.querySelector("[name='nav-text']");
   const prev = container.querySelector("[name='prev']");
   const next = container.querySelector("[name='next']");
 
+  console.log("tite")
   prev.addEventListener("click", () => prevPage(carousel, navText, prev));
   next.addEventListener("click", () => nextPage(carousel, navText, next));
 });
