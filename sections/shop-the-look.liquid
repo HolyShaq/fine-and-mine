@@ -1,0 +1,90 @@
+<div class="page-width">
+  <div
+    class="tw:flex tw:flex-row tw:w-full tw:p-8"
+    style="background-color: {{ section.settings.background_color }};"
+  >
+    <img
+      class="tw:aspect-square tw:object-cover tw:w-full"
+      src="{{ section.settings.image | image_url }}"
+      width="{{ section.settings.image.width }}"
+      height="{{ section.settings.image.height }}"
+    >
+
+    <div class="tw:flex tw:flex-row tw:w-full tw:justify-center tw:items-center tw:m-4">
+      <div class="tw:w-fit tw:flex tw:flex-col tw:gap-6">
+        <h2
+          class="tw:text-4xl tw:font-semibold tw:text-center"
+          style="color:{{ section.settings.text_color }}"
+        >
+          {{ section.settings.title }}
+        </h2>
+        <div class="tw:flex tw:flex-row tw:items-center tw:gap-8">
+          <button class="tw:group tw:flex-grow-0" name="prev">
+            <span
+              class="tw:m-auto tw:flex tw:rotate-90 tw:size-7 tw:items-center tw:justify-center tw:p-1.5 tw:rounded-full transition-all tw:duration-150 tw:ease-in-out tw:group-hover:scale-130"
+              style="background-color: #426c8a; color: #c2cfd6;"
+            >
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+          <div class="tw:w-[261px]">
+            {% for product in section.settings.products limit: 1 %}
+              {% render 'custom-card-product', product: product %}
+            {% endfor %}
+          </div>
+          <button class="tw:group tw:flex-grow-0" name="next">
+            <span
+              class="tw:m-auto tw:flex tw:rotate-270 tw:size-7 tw:items-center tw:justify-center tw:p-1.5 tw:rounded-full transition-all tw:duration-150 tw:ease-in-out tw:group-hover:scale-130"
+              style="background-color: #426c8a; color: #c2cfd6;"
+            >
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop the Look",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#426c8a"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#c2cfd6"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop the Look"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop the Look Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
