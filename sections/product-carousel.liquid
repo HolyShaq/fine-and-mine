@@ -1,7 +1,13 @@
 <div class="product-carousel page-width">
   {% comment %} Header {% endcomment %}
+  {% liquid
+    assign title = section.settings.collection.title
+    if section.settings.title != ""
+      assign title = section.settings.title
+    endif
+  %}
   {% render 'collection-header',
-    title: section.settings.title,
+    title: title,
     subtitle: section.settings.subtitle,
     nav_text: section.settings.nav_text,
     link: section.settings.collection.url
@@ -66,7 +72,6 @@
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "Lacoste Jewelry"
     },
     {
       "type": "text",
