@@ -50,38 +50,27 @@ function parseNavText(navText) {
   return [Number(currentIndex), Number(totalPages)];
 }
 
-function prevPage(carousel, navText) {
+function navigate(carousel, navText, direction) {
   const [currentIndex, totalPages] = parseNavText(navText);
 
+  let newIndex = currentIndex + direction;
+  if (direction == 1) {
+    newIndex = currentIndex == totalPages ? 1 : newIndex;
+  } else {
+    newIndex = currentIndex == 1 ? totalPages : newIndex;
+  }
+
+  // Calculate empty space in last page
   cardsNum = carousel.querySelectorAll("[name='carousel-card']").length;
   excessCards = cardsNum % cardsPerPage;
   emptyCards = cardsPerPage - excessCards;
-  let emptyOffset = 0;
-  if (currentIndex == 1) {
-    emptyOffset = emptyCards * (cardWidth + gapSize)
+  let emptySpaceOffset = 0;
+  if (newIndex == totalPages) {
+    emptySpaceOffset = emptyCards * (cardWidth + gapSize)
   }
 
-  const newIndex = currentIndex == 1 ? totalPages : currentIndex - 1;
   carousel.style.transform = `translateX(-${
-    (newIndex - 1) * translateDistance - emptyOffset
-  }px)`;
-  navText.textContent = `${newIndex} of ${totalPages}`;
-}
-
-function nextPage(carousel, navText) {
-  const [currentIndex, totalPages] = parseNavText(navText);
-  
-  cardsNum = carousel.querySelectorAll("[name='carousel-card']").length;
-  excessCards = cardsNum % cardsPerPage;
-  emptyCards = cardsPerPage - excessCards;
-  let emptyOffset = 0;
-  if (currentIndex + 1 == totalPages) {
-    emptyOffset = emptyCards * (cardWidth + gapSize)
-  }
-
-  const newIndex = currentIndex == totalPages ? 1 : currentIndex + 1;
-  carousel.style.transform = `translateX(-${
-    (newIndex - 1) * translateDistance - emptyOffset
+    (newIndex - 1) * translateDistance - emptySpaceOffset
   }px)`;
   navText.textContent = `${newIndex} of ${totalPages}`;
 }
@@ -94,8 +83,8 @@ sliderContainers.forEach((container) => {
   const prev = container.querySelector("[name='prev']");
   const next = container.querySelector("[name='next']");
 
-  prev.addEventListener("click", () => prevPage(carousel, navText, prev));
-  next.addEventListener("click", () => nextPage(carousel, navText, next));
+  prev.addEventListener("click", () => navigate(carousel, navText, -1));
+  next.addEventListener("click", () => navigate(carousel, navText, 1));
 });
 
 window.addEventListener("resize", calculateSizes);
