@@ -317,6 +317,12 @@
   .tw\:max-w-75 {
     max-width: calc(var(--tw-spacing) * 75) !important;
   }
+  .tw\:max-w-\[300px\] {
+    max-width: 300px !important;
+  }
+  .tw\:max-w-\[400px\] {
+    max-width: 400px !important;
+  }
   .tw\:max-w-\[1182px\] {
     max-width: 1182px !important;
   }
