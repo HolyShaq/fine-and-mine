@@ -395,6 +395,12 @@
   .tw\:overflow-x-clip {
     overflow-x: clip !important;
   }
+  .tw\:overflow-x-scroll {
+    overflow-x: scroll !important;
+  }
+  .tw\:overflow-y-hidden {
+    overflow-y: hidden !important;
+  }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px) !important;
   }

@@ -3,15 +3,15 @@ const carousel = sliderContainers[0].querySelector("[name='carousel']"); // Used
 const optimalCardWidth = 261; // Based on Figma, actualCardWidth can be a bit larger
 const minGapSize = 4;
 const maxGapSize = 32;
+let gapSize;
 let translateDistance;
 let cardsPerPage;
+let cardWidth;
 
 function calculateSizes() {
   cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth); // global var
 
   // Calculate card width and gap
-  let cardWidth;
-  let gapSize;
   const gapNum = cardsPerPage - 1;
   gapSize = (carousel.offsetWidth - cardsPerPage * optimalCardWidth) / gapNum;
 
@@ -53,19 +53,35 @@ function parseNavText(navText) {
 function prevPage(carousel, navText) {
   const [currentIndex, totalPages] = parseNavText(navText);
 
+  cardsNum = carousel.querySelectorAll("[name='carousel-card']").length;
+  excessCards = cardsNum % cardsPerPage;
+  emptyCards = cardsPerPage - excessCards;
+  let emptyOffset = 0;
+  if (currentIndex == 1) {
+    emptyOffset = emptyCards * (cardWidth + gapSize)
+  }
+
   const newIndex = currentIndex == 1 ? totalPages : currentIndex - 1;
   carousel.style.transform = `translateX(-${
-    (newIndex - 1) * translateDistance
+    (newIndex - 1) * translateDistance - emptyOffset
   }px)`;
   navText.textContent = `${newIndex} of ${totalPages}`;
 }
 
 function nextPage(carousel, navText) {
   const [currentIndex, totalPages] = parseNavText(navText);
+  
+  cardsNum = carousel.querySelectorAll("[name='carousel-card']").length;
+  excessCards = cardsNum % cardsPerPage;
+  emptyCards = cardsPerPage - excessCards;
+  let emptyOffset = 0;
+  if (currentIndex + 1 == totalPages) {
+    emptyOffset = emptyCards * (cardWidth + gapSize)
+  }
 
   const newIndex = currentIndex == totalPages ? 1 : currentIndex + 1;
   carousel.style.transform = `translateX(-${
-    (newIndex - 1) * translateDistance
+    (newIndex - 1) * translateDistance - emptyOffset
   }px)`;
   navText.textContent = `${newIndex} of ${totalPages}`;
 }
@@ -78,7 +94,6 @@ sliderContainers.forEach((container) => {
   const prev = container.querySelector("[name='prev']");
   const next = container.querySelector("[name='next']");
 
-  console.log("tite")
   prev.addEventListener("click", () => prevPage(carousel, navText, prev));
   next.addEventListener("click", () => nextPage(carousel, navText, next));
 });
