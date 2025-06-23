@@ -24,11 +24,11 @@
   endunless
 
   unless image_size
-    assign image_tw_size = 'tw:w-96'
+    assign image_tw_size = 'tw:w-full'
   elsif image_size == 'small'
     assign image_tw_size = 'tw:w-66'
   elsif image_size == 'medium'
-    assign image_tw_size = 'tw:w-96'
+    assign image_tw_size = 'tw:w-full'
   endunless
 
   unless background_color
@@ -48,13 +48,13 @@
 
 {% if product %}
   <div
-    class="{% if compact_mode %}tw:w-[380px]{% endif %} tw:group/div tw:flex tw:flex-col tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden tw:transition-all tw:duration-300 tw:ease-in-out"
+    class="{% if compact_mode %}tw:w-[380px]{% else %} tw:w-full {% endif %} tw:group/div tw:flex tw:flex-col tw:p-4 tw:gap-6 tw:hover:scale-101 tw:overflow-hidden tw:transition-all tw:duration-300 tw:ease-in-out"
     style="background-color: {{ background_color }};"
   >
-    <div class="tw:flex {% if compact_mode %}tw:flex-row tw:gap-4{% else %}tw:flex-col tw:gap-6{% endif %}">
+    <div class="tw:flex tw:w-full {% if compact_mode %}tw:flex-row tw:gap-4{% else %}tw:flex-col tw:gap-6{% endif %}">
       {% comment %} Product Image Container {% endcomment %}
       {% comment %} Product Image {% endcomment %}
-      <div class="tw:relative tw:mx-auto tw:aspect-square tw:items-center tw:group/img">
+      <div class="tw:relative tw:w-full tw:mx-auto tw:aspect-square tw:items-center tw:group/img">
         {% comment %} Featured Image {% endcomment %}
         <img
           class="{{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
