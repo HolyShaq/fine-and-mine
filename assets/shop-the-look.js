@@ -19,6 +19,11 @@ function prepForInfScrolling(viewer) {
   viewer.style.transform = `translateX(-${translationDistance}px)`;
 }
 
+function resetTranslation(viewer) {
+  const translationDistance = viewer.offsetWidth;
+  viewer.style.transform = `translateX(-${translationDistance}px)`;
+}
+
 function navigateSlide(viewer, direction) {
   const transitionDistance = viewer.offsetWidth;
 
@@ -80,5 +85,9 @@ containers.forEach((container) => {
   prev.addEventListener("click", () => navigateSlide(compact_viewer, -1));
   next.addEventListener("click", () => navigateSlide(normal_viewer, 1));
   next.addEventListener("click", () => navigateSlide(compact_viewer, 1));
+
+  window.addEventListener("resize", () => {
+    resetTranslation(compact_viewer);
+  })
 });
 
