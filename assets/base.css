@@ -306,6 +306,12 @@
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
   }
+  .tw\:w-\[50\%\] {
+    width: 50% !important;
+  }
+  .tw\:w-\[80\%\] {
+    width: 80% !important;
+  }
   .tw\:w-\[200px\] {
     width: 200px !important;
   }
@@ -720,6 +726,16 @@
       width: 380px !important;
     }
   }
+  .tw\:sm\:w-\[420px\] {
+    @media (width >= 40rem) {
+      width: 420px !important;
+    }
+  }
+  .tw\:sm\:w-\[460px\] {
+    @media (width >= 40rem) {
+      width: 460px !important;
+    }
+  }
   .tw\:sm\:max-w-1\/2 {
     @media (width >= 40rem) {
       max-width: calc(1/2 * 100%) !important;
@@ -788,6 +804,11 @@
   .tw\:md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row !important;
+    }
+  }
+  .tw\:md\:gap-8 {
+    @media (width >= 48rem) {
+      gap: calc(var(--tw-spacing) * 8) !important;
     }
   }
   .tw\:md\:px-32 {

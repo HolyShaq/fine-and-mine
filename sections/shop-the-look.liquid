@@ -11,14 +11,14 @@
     >
 
     <div class="tw:flex tw:flex-row tw:w-full tw:justify-center tw:items-center tw:p-4">
-      <div class="tw:w-fit tw:flex tw:flex-col tw:gap-6">
+      <div class="tw:w-fit tw:max-w-full tw:flex tw:flex-col tw:gap-6">
         <h2
           class="tw:text-5xl tw:mt-4 tw:md:mt-0 tw:md:text-4xl tw:font-semibold tw:text-center"
           style="color:{{ section.settings.text_color }}"
         >
           {{ section.settings.title }}
         </h2>
-        <div class="tw:flex tw:flex-row tw:items-center tw:gap-8">
+        <div class="tw:flex tw:flex-row tw:items-center tw:justify-center tw:gap-4 tw:md:gap-8">
           <button name="prev" class="tw:group tw:flex-grow-0" name="prev">
             <span
               class="tw:m-auto tw:flex tw:rotate-90 tw:size-7 tw:items-center tw:justify-center tw:p-1.5 tw:rounded-full transition-all tw:duration-150 tw:ease-in-out tw:group-hover:scale-130"
@@ -29,14 +29,19 @@
           </button>
 
           {% comment %} Scrolling Product Card {% endcomment %}
-          {% assign breakpoint_sizes = "tw:w-[220px] tw:xs:w-[320px] tw:sm:w-[380px]" %}
-          <div class="tw:w-fit">
-            <div class="tw:overflow-hidden tw:md:hidden tw:block {{ breakpoint_sizes }} ">
+          {% comment %} {% assign breakpoint_sizes = "tw:w-[220px] tw:sm:w-[460px]" %} {% endcomment %}
+          <div class="tw:flex tw:items-center tw:justify-center tw:max-w-[380px] tw:w-[80%]">
+            <div class="tw:overflow-hidden tw:md:hidden tw:block tw:w-full">
               <div
-                class="compact-viewer  tw:flex tw:transition-transform tw:duration-300"
+                class="compact-viewer tw:flex tw:transition-transform tw:duration-300"
               >
                 {% for product in section.settings.products %}
-                  <div name="card" class="tw:shrink-0 {{ breakpoint_sizes }}">{% render 'custom-card-product', product: product, compact_mode: true, image_size: 'small' %}</div>
+                  <div
+                    name="card"
+                    class="tw:shrink-0 tw:w-full"
+                  >
+                    {% render 'custom-card-product', product: product, compact_mode: true, image_size: 'small' %}
+                  </div>
                 {% endfor %}
               </div>
             </div>
