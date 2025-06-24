@@ -30,6 +30,10 @@
     assign image_tw_size = 'tw:w-full'
   endif
 
+  unless show_secondary_image
+    assign show_secondary_image = true
+  endunless
+
   unless background_color
     assign background_color = '#f9f9f9'
   endunless
