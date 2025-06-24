@@ -24,6 +24,8 @@
     --tw-text-4xl--line-height: calc(2.5 / 2.25);
     --tw-text-5xl: 3rem;
     --tw-text-5xl--line-height: 1;
+    --tw-text-6xl: 3.75rem;
+    --tw-text-6xl--line-height: 1;
     --tw-font-weight-light: 300;
     --tw-font-weight-semibold: 600;
     --tw-font-weight-bold: 700;
@@ -414,6 +416,9 @@
   .tw\:justify-center {
     justify-content: center !important;
   }
+  .tw\:gap-1 {
+    gap: calc(var(--tw-spacing) * 1) !important;
+  }
   .tw\:gap-2 {
     gap: calc(var(--tw-spacing) * 2) !important;
   }
@@ -522,6 +527,10 @@
   .tw\:text-5xl {
     font-size: var(--tw-text-5xl) !important;
     line-height: var(--tw-leading, var(--tw-text-5xl--line-height)) !important;
+  }
+  .tw\:text-6xl {
+    font-size: var(--tw-text-6xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-6xl--line-height)) !important;
   }
   .tw\:text-base {
     font-size: var(--tw-text-base) !important;

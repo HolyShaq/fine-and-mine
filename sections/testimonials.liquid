@@ -1,0 +1,90 @@
+<div class="tw:flex tw:flex-col tw:gap-8 tw:my-8">
+  <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
+  <div class="tw:flex tw:flex-row tw:gap-4 tw:justify-center">
+    {% for testimonal in section.blocks %}
+      <div
+        class="tw:flex tw:flex-col tw:gap-4"
+        style="background-color: {{ section.settings.background_color }}"
+      >
+        {% comment %} Star Rating {% endcomment %}
+         {% assign empty_stars = 5 | minus: testimonal.settings.stars %}
+         <div class="tw:flex tw:flex-row tw:gap-1">
+            {% for i in (1..testimonal.settings.stars) %}
+            ⭐
+            {% endfor %}
+            {% for i in (1..empty_stars) %}
+            😭
+            {% endfor %}
+         </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "What People Say"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f9f9f9"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonal",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header",
+          "default": "Testimonial"
+        },
+        {
+          "type": "text",
+          "id": "body",
+          "label": "Body",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Review"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Highlighted Product"
+        },
+        {
+          "type": "range",
+          "id": "stars",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "unit": "⭐",
+          "label": "Rating",
+          "default": 4
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+        "name": "Testimonials",
+        "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
