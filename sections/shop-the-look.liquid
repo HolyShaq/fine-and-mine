@@ -33,7 +33,7 @@
           <div class="tw:w-fit">
             <div class="tw:overflow-hidden tw:md:hidden tw:block {{ breakpoint_sizes }} ">
               <div
-                class="compact-viewer  tw:flex"
+                class="compact-viewer  tw:flex tw:transition-transform tw:duration-300"
               >
                 {% for product in section.settings.products %}
                   <div name="card" class="tw:shrink-0 {{ breakpoint_sizes }}">{% render 'custom-card-product', product: product, compact_mode: true, image_size: 'small' %}</div>
@@ -42,7 +42,7 @@
             </div>
             <div class="tw:overflow-hidden tw:hidden tw:md:block tw:w-[261px]">
               <div
-                class="normal-viewer tw:flex"
+                class="normal-viewer tw:flex tw:transition-transform tw:duration-300"
               >
                 {% for product in section.settings.products %}
                   <div class="tw:shrink-0 tw:w-[261px]">{% render 'custom-card-product', product: product %}</div>

@@ -4,6 +4,10 @@ const generalCompactViewer = containers[0].querySelector(".compact-viewer");
 let normalTransitionWidth;
 let compactTransitionWidth;
 
+function getTranslateX(el) {
+  return new DOMMatrixReadOnly(getComputedStyle(el).transform).m41;
+}
+
 function computeSizes() {
   normalTransitionWidth = generalNormalViewer.offsetWidth;
   compactTransitionWidth = generalCompactViewer.offsetWidth;
@@ -25,7 +29,31 @@ function prepForInfScrolling(viewer) {
   viewer.style.transition = animation;
 }
 
-function prevSlide(viewer, direction) {}
+function navigateSlide(viewer, direction) {
+  const slides = Array.from(viewer.children);
+
+  // Calculate current index from translation
+  const currentIndex = Math.floor(
+    -getTranslateX(viewer) / normalTransitionWidth
+  );
+  console.log(currentIndex);
+
+  const newIndex = currentIndex + direction;
+  viewer.style.transform = `translateX(${
+    -direction * normalTransitionWidth * newIndex
+  }px)`;
+
+//   const animation = viewer.style.transition;
+//   viewer.style.transition = "none";
+//   if (newIndex < 0) {
+//     viewer.style.transform = `translateX(-${
+//       normalTransitionWidth * slides.length
+//     }px)`;
+//   } else if (newIndex >= slides.length) {
+//     viewer.style.transform = `translateX(-${normalTransitionWidth}px)`;
+//   }
+//   viewer.style.transition = animation;
+}
 
 containers.forEach((container) => {
   const normal_viewer = container.querySelector(".normal-viewer");
@@ -35,6 +63,11 @@ containers.forEach((container) => {
 
   prepForInfScrolling(normal_viewer);
   prepForInfScrolling(compact_viewer);
+
+  prev.addEventListener("click", () => navigateSlide(normal_viewer, -1));
+  prev.addEventListener("click", () => navigateSlide(compact_viewer, -1));
+  next.addEventListener("click", () => navigateSlide(normal_viewer, 1));
+  next.addEventListener("click", () => navigateSlide(compact_viewer, 1));
 });
 
 window.addEventListener("resize", computeSizes);
