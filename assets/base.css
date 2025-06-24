@@ -569,6 +569,9 @@
     transition-timing-function: var(--tw-ease, var(--tw-default-transition-timing-function)) !important;
     transition-duration: var(--tw-duration, var(--tw-default-transition-duration)) !important;
   }
+  .tw\:transition-none {
+    transition-property: none !important;
+  }
   .tw\:duration-70 {
     --tw-duration: 70ms !important;
     transition-duration: 70ms !important;
