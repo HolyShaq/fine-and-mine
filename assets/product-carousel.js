@@ -1,4 +1,6 @@
 const sliderContainers = document.querySelectorAll(".product-carousel");
+if (sliderContainers.length == 0) return;
+
 const carousel = sliderContainers[0].querySelector("[name='carousel']"); // Used to get the general width of all carousels
 const optimalCardWidth = 261; // Based on Figma, actualCardWidth can be a bit larger
 const minGapSize = 4;
