@@ -8,6 +8,7 @@
     --tw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --tw-color-red-700: oklch(50.5% 0.213 27.518);
+    --tw-color-yellow-500: oklch(79.5% 0.184 86.047);
     --tw-color-slate-200: oklch(92.9% 0.013 255.508);
     --tw-color-slate-400: oklch(70.4% 0.04 256.788);
     --tw-color-black: #000;
@@ -20,6 +21,8 @@
     --tw-text-base--line-height: calc(1.5 / 1);
     --tw-text-2xl: 1.5rem;
     --tw-text-2xl--line-height: calc(2 / 1.5);
+    --tw-text-3xl: 1.875rem;
+    --tw-text-3xl--line-height: calc(2.25 / 1.875);
     --tw-text-4xl: 2.25rem;
     --tw-text-4xl--line-height: calc(2.5 / 2.25);
     --tw-text-5xl: 3rem;
@@ -27,6 +30,7 @@
     --tw-text-6xl: 3.75rem;
     --tw-text-6xl--line-height: 1;
     --tw-font-weight-light: 300;
+    --tw-font-weight-medium: 500;
     --tw-font-weight-semibold: 600;
     --tw-font-weight-bold: 700;
     --tw-radius-lg: 0.5rem;
@@ -268,6 +272,10 @@
   .tw\:aspect-square {
     aspect-ratio: 1 / 1 !important;
   }
+  .tw\:size-6 {
+    width: calc(var(--tw-spacing) * 6) !important;
+    height: calc(var(--tw-spacing) * 6) !important;
+  }
   .tw\:size-7 {
     width: calc(var(--tw-spacing) * 7) !important;
     height: calc(var(--tw-spacing) * 7) !important;
@@ -335,8 +343,17 @@
   .tw\:w-\[320px\] {
     width: 320px !important;
   }
+  .tw\:w-\[325px\] {
+    width: 325px !important;
+  }
   .tw\:w-\[380px\] {
     width: 380px !important;
+  }
+  .tw\:w-\[412px\] {
+    width: 412px !important;
+  }
+  .tw\:w-\[812px\] {
+    width: 812px !important;
   }
   .tw\:w-fit {
     width: fit-content !important;
@@ -440,11 +457,17 @@
   .tw\:gap-14 {
     gap: calc(var(--tw-spacing) * 14) !important;
   }
+  .tw\:overflow-auto {
+    overflow: auto !important;
+  }
   .tw\:overflow-hidden {
     overflow: hidden !important;
   }
   .tw\:overflow-x-clip {
     overflow-x: clip !important;
+  }
+  .tw\:overflow-x-visible {
+    overflow-x: visible !important;
   }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px) !important;
@@ -471,6 +494,15 @@
   .tw\:bg-transparent {
     background-color: transparent !important;
   }
+  .tw\:fill-current {
+    fill: currentcolor !important;
+  }
+  .tw\:stroke-current {
+    stroke: currentcolor !important;
+  }
+  .tw\:stroke-1 {
+    stroke-width: 1 !important;
+  }
   .tw\:stroke-2 {
     stroke-width: 2 !important;
   }
@@ -485,6 +517,9 @@
   }
   .tw\:p-4 {
     padding: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:p-6 {
+    padding: calc(var(--tw-spacing) * 6) !important;
   }
   .tw\:p-8 {
     padding: calc(var(--tw-spacing) * 8) !important;
@@ -520,6 +555,10 @@
     font-size: var(--tw-text-2xl) !important;
     line-height: var(--tw-leading, var(--tw-text-2xl--line-height)) !important;
   }
+  .tw\:text-3xl {
+    font-size: var(--tw-text-3xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-3xl--line-height)) !important;
+  }
   .tw\:text-4xl {
     font-size: var(--tw-text-4xl) !important;
     line-height: var(--tw-leading, var(--tw-text-4xl--line-height)) !important;
@@ -536,6 +575,9 @@
     font-size: var(--tw-text-base) !important;
     line-height: var(--tw-leading, var(--tw-text-base--line-height)) !important;
   }
+  .tw\:text-\[1\.75rem\] {
+    font-size: 1.75rem !important;
+  }
   .tw\:font-bold {
     --tw-font-weight: var(--tw-font-weight-bold) !important;
     font-weight: var(--tw-font-weight-bold) !important;
@@ -543,6 +585,10 @@
   .tw\:font-light {
     --tw-font-weight: var(--tw-font-weight-light) !important;
     font-weight: var(--tw-font-weight-light) !important;
+  }
+  .tw\:font-medium {
+    --tw-font-weight: var(--tw-font-weight-medium) !important;
+    font-weight: var(--tw-font-weight-medium) !important;
   }
   .tw\:font-semibold {
     --tw-font-weight: var(--tw-font-weight-semibold) !important;
@@ -559,6 +605,9 @@
   }
   .tw\:text-white {
     color: var(--tw-color-white) !important;
+  }
+  .tw\:text-yellow-500 {
+    color: var(--tw-color-yellow-500) !important;
   }
   .tw\:line-through {
     text-decoration-line: line-through !important;

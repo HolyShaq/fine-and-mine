@@ -1,21 +1,45 @@
 <div class="tw:flex tw:flex-col tw:gap-8 tw:my-8">
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
-  <div class="tw:flex tw:flex-row tw:gap-4 tw:justify-center">
-    {% for testimonal in section.blocks %}
+  <div class="tw:flex tw:flex-row tw:gap-8 tw:overflow-x-visible tw:justify-center">
+    {% for testimonal in section.blocks limit: 3 %}
       <div
-        class="tw:flex tw:flex-col tw:gap-4"
+        class="tw:flex tw:flex-col tw:shrink-0 tw:gap-4 tw:w-[412px] tw:p-6"
         style="background-color: {{ section.settings.background_color }}"
       >
         {% comment %} Star Rating {% endcomment %}
-         {% assign empty_stars = 5 | minus: testimonal.settings.stars %}
-         <div class="tw:flex tw:flex-row tw:gap-1">
-            {% for i in (1..testimonal.settings.stars) %}
-            ⭐
-            {% endfor %}
-            {% for i in (1..empty_stars) %}
-            😭
-            {% endfor %}
-         </div>
+        {% assign empty_stars = 5 | minus: testimonal.settings.stars %}
+        <div class="tw:flex tw:text-2xl tw:items-center tw:flex-row tw:gap-1">
+          {% for i in (1..testimonal.settings.stars) %}
+            <span class="tw:text-yellow-500 tw:size-6">
+              {{ 'icon-star-filled.svg' | inline_asset_content }}
+            </span>
+          {% endfor %}
+          {% for i in (1..empty_stars) %}
+            <span class="tw:text-yellow-500 tw:size-6">
+              {{ 'icon-star.svg' | inline_asset_content }}
+            </span>
+          {% endfor %}
+        </div>
+
+        {% comment %} Title {% endcomment %}
+        <h3 class="tw:text-3xl tw:font-semibold">{{ testimonal.settings.header }}</h3>
+
+        <div class="tw:flex tw:flex-col">
+          {% comment %} Review {% endcomment %}
+          <p class="tw:text-[1.75rem] tw:font-medium tw:w-[325px]">"{{ testimonal.settings.body }}"</p>
+          {% comment %} Author {% endcomment %}
+          <p class="tw:text-[1.75rem] tw:font-medium tw:w-[325px]">— {{ testimonal.settings.author }}</p>
+        </div>
+
+        {% comment %} Product Card {% endcomment %}
+        <div class="tw:w-full">
+          {% render 'custom-card-product',
+            product: testimonal.settings.product,
+            compact_mode: true,
+            image_size: 'small',
+            background_color: '#ffffff'
+          %}
+        </div>
       </div>
     {% endfor %}
   </div>
@@ -54,6 +78,7 @@
           "type": "text",
           "id": "body",
           "label": "Body",
+          "info": "The actual review of the testimonial",
           "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
@@ -82,8 +107,8 @@
   ],
   "presets": [
     {
-        "name": "Testimonials",
-        "category": "Custom"
+      "name": "Testimonials",
+      "category": "Custom"
     }
   ]
 }
