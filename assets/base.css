@@ -266,10 +266,6 @@
   .tw\:aspect-square {
     aspect-ratio: 1 / 1 !important;
   }
-  .tw\:size-6 {
-    width: calc(var(--tw-spacing) * 6) !important;
-    height: calc(var(--tw-spacing) * 6) !important;
-  }
   .tw\:size-7 {
     width: calc(var(--tw-spacing) * 7) !important;
     height: calc(var(--tw-spacing) * 7) !important;
@@ -301,12 +297,6 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
-  .tw\:w-1\/2 {
-    width: calc(1/2 * 100%) !important;
-  }
-  .tw\:w-2\/3 {
-    width: calc(2/3 * 100%) !important;
-  }
   .tw\:w-30 {
     width: calc(var(--tw-spacing) * 30) !important;
   }
@@ -315,12 +305,6 @@
   }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
-  }
-  .tw\:w-\[55\%\] {
-    width: 55% !important;
-  }
-  .tw\:w-\[60\%\] {
-    width: 60% !important;
   }
   .tw\:w-\[261px\] {
     width: 261px !important;
@@ -343,12 +327,6 @@
   .tw\:max-w-75 {
     max-width: calc(var(--tw-spacing) * 75) !important;
   }
-  .tw\:max-w-\[300px\] {
-    max-width: 300px !important;
-  }
-  .tw\:max-w-\[400px\] {
-    max-width: 400px !important;
-  }
   .tw\:max-w-\[1182px\] {
     max-width: 1182px !important;
   }
@@ -363,9 +341,6 @@
   }
   .tw\:shrink-0 {
     flex-shrink: 0 !important;
-  }
-  .tw\:flex-grow {
-    flex-grow: 1 !important;
   }
   .tw\:flex-grow-0 {
     flex-grow: 0 !important;
@@ -436,12 +411,6 @@
   .tw\:overflow-x-clip {
     overflow-x: clip !important;
   }
-  .tw\:overflow-x-scroll {
-    overflow-x: scroll !important;
-  }
-  .tw\:overflow-y-hidden {
-    overflow-y: hidden !important;
-  }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px) !important;
   }
@@ -472,12 +441,6 @@
   }
   .tw\:object-cover {
     object-fit: cover !important;
-  }
-  .tw\:p-0\.5 {
-    padding: calc(var(--tw-spacing) * 0.5) !important;
-  }
-  .tw\:p-1 {
-    padding: calc(var(--tw-spacing) * 1) !important;
   }
   .tw\:p-1\.5 {
     padding: calc(var(--tw-spacing) * 1.5) !important;
@@ -608,16 +571,6 @@
         --tw-scale-x: 130% !important;
         --tw-scale-y: 130% !important;
         --tw-scale-z: 130% !important;
-        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
-      }
-    }
-  }
-  .tw\:group-hover\:scale-150 {
-    &:is(:where(.tw\:group):hover *) {
-      @media (hover: hover) {
-        --tw-scale-x: 150% !important;
-        --tw-scale-y: 150% !important;
-        --tw-scale-z: 150% !important;
         scale: var(--tw-scale-x) var(--tw-scale-y) !important;
       }
     }
