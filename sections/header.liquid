@@ -26,7 +26,7 @@
   padding-top: 20px;
 }
 
-@media screen and (max-width: 990px ) {
+@media screen and (max-width: 1024px ) {
   .custom-nav__menu{
     display: none;
   }  
@@ -43,7 +43,7 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 1024px) {
       header-drawer {
         display: none;
       }
@@ -805,6 +805,22 @@
   "blocks": [
         {
           "type": "@app"
+        },
+        {
+          "type": "highlight",
+          "name": "Highlight",
+          "settings": [
+            {
+              "label": "Name",
+              "id": "highlight_name",
+              "type": "text"
+            },
+            {
+              "label": "Link",
+              "id": "highlight_link",
+              "type": "page",
+            },
+          ]
         },
         {
           "type": "link",

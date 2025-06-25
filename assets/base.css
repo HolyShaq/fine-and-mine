@@ -714,6 +714,20 @@
       }
     }
   }
+  .tw\:hover\:text-\[\#446d8b\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #446d8b !important;
+      }
+    }
+  }
+  .tw\:hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline !important;
+      }
+    }
+  }
   .tw\:hover\:shadow-lg {
     &:hover {
       @media (hover: hover) {
@@ -807,6 +821,11 @@
       display: none !important;
     }
   }
+  .tw\:md\:inline {
+    @media (width >= 48rem) {
+      display: inline !important;
+    }
+  }
   .tw\:md\:aspect-\[400\/167\] {
     @media (width >= 48rem) {
       aspect-ratio: 400/167 !important;
@@ -836,6 +855,11 @@
     @media (width >= 48rem) {
       font-size: var(--tw-text-4xl) !important;
       line-height: var(--tw-leading, var(--tw-text-4xl--line-height)) !important;
+    }
+  }
+  .tw\:lg\:inline {
+    @media (width >= 64rem) {
+      display: inline !important;
     }
   }
   .tw\:lg\:max-w-3xl {

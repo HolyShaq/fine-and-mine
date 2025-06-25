@@ -1,7 +1,13 @@
-
 <nav-menu class="custom-nav">
-  {% for block in section.blocks  %} 
-    <ul class="custom-nav__menu custom-nav__menu--spacing"> 
+  {% for block in section.blocks %}
+    {% if block.type == 'highlight' %}
+      <a href="{{ block.settings.highlight_link.url }}">
+        <span class="tw:font-bold tw:hidden tw:lg:inline tw:text-black tw:hover:text-[#446d8b]">
+          {{ block.settings.highlight_name }}
+        </span>
+      </a>
+    {% else %}
+      <ul class="custom-nav__menu custom-nav__menu--spacing">
         <div class="nav-menu__title-wrapper">
           <span class="custom-nav__menu--title"> {{ block.settings.menu_title }} </span>
         </div>
@@ -9,236 +15,232 @@
           {% assign list_1 = linklists[block.settings.menu_link_1] %}
           {% assign list_2 = linklists[block.settings.menu_link_2] %}
           {% assign list_3 = linklists[block.settings.menu_link_3] %}
-  
-            {%  if list_1 != blank %}        
-              <div class="sub-menu__list-container">
-                <span class="sub-menu__list--title">{{ list_1.title }}</span>
-                <ul class="list">
-                  {% for item in list_1.links %}
-                    <li class="animate-link"><a href="{{ item.url }}" > {{ item.title }} </a></li>
-                  {%  endfor %}  
-                </ul>
-              </div>
-            {%  endif %}
-          
-            {%  if list_2 != blank %}
-              <div class="sub-menu__list-container">
-                <span class="sub-menu__list--title">{{ list_2.title }}</span>
-                <ul class="list">
-                  {% for item in list_2.links %}
-                    <li class="animate-link"><a href="{{ item.url }}" > {{ item.title }} </a></li>
-                  {%  endfor %}  
-                </ul>
-              </div>
-            {%  endif %}
-  
-            {%  if list_3 != blank %}
-              <div class="sub-menu__list-container">
-                <span class="sub-menu__list--title ">{{ list_3.title }}</span>
-                <ul class="list">
-                  {% for item in list_3.links %}
-                    <li class="animate-link"><a href="{{ item.url }}"> {{ item.title }} </a></li>
-                  {%  endfor %}  
-                </ul>
-              </div>
-            {%  endif %}
-          
-            <div class="sub-menu__list-container image-container">
-              
-              {% if block.settings.sub_menu_image_1 != blank %}
-                <div class="sub-menu__image {% if section.settings.checkbox_border_image_1 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">  
-                  <a href="{{ block.settings.sub_menu_image_link_1 }}"><img 
-                    src="{{ block.settings.sub_menu_image_1 | image_url }}" 
-                    width="250" 
-                    height="300" 
-                    alt="First Image"> <span class='image-caption animate-link'>  {{ block.settings.sub_menu_image_1_caption }} </span>
-                   </a>
-                  
-                </div>
-                
-              {% endif %}  
-                
-              {% if block.settings.sub_menu_image_2 != blank %}
-                <div class="sub-menu__image {% if section.settings.checkbox_border_image_2 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">
-                  <a href="{{ block.settings.sub_menu_image_link_2 }}"><img 
-                    src="{{ block.settings.sub_menu_image_2 | image_url }}" 
-                    width="250" 
-                    height="300" 
-                    alt="Second Image"> <span class='image-caption animate-link'>  {{ block.settings.sub_menu_image_2_caption }} </span>
-                  </a> 
-                </div>
-              {%  endif %}
-            </div> 
-          
-        </div>
-      
-    </ul>
 
+          {% if list_1 != blank %}
+            <div class="sub-menu__list-container">
+              <span class="sub-menu__list--title">{{ list_1.title }}</span>
+              <ul class="list">
+                {% for item in list_1.links %}
+                  <li class="animate-link">
+                    <a href="{{ item.url }}"> {{ item.title }} </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          {% if list_2 != blank %}
+            <div class="sub-menu__list-container">
+              <span class="sub-menu__list--title">{{ list_2.title }}</span>
+              <ul class="list">
+                {% for item in list_2.links %}
+                  <li class="animate-link">
+                    <a href="{{ item.url }}"> {{ item.title }} </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          {% if list_3 != blank %}
+            <div class="sub-menu__list-container">
+              <span class="sub-menu__list--title ">{{ list_3.title }}</span>
+              <ul class="list">
+                {% for item in list_3.links %}
+                  <li class="animate-link">
+                    <a href="{{ item.url }}"> {{ item.title }} </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          <div class="sub-menu__list-container image-container">
+            {% if block.settings.sub_menu_image_1 != blank %}
+              <div class="sub-menu__image {% if section.settings.checkbox_border_image_1 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">
+                <a href="{{ block.settings.sub_menu_image_link_1 }}"
+                  ><img
+                    src="{{ block.settings.sub_menu_image_1 | image_url }}"
+                    width="250"
+                    height="300"
+                    alt="First Image"
+                  >
+                  <span class="image-caption animate-link"> {{ block.settings.sub_menu_image_1_caption }} </span>
+                </a>
+              </div>
+            {% endif %}
+
+            {% if block.settings.sub_menu_image_2 != blank %}
+              <div class="sub-menu__image {% if section.settings.checkbox_border_image_2 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">
+                <a href="{{ block.settings.sub_menu_image_link_2 }}"
+                  ><img
+                    src="{{ block.settings.sub_menu_image_2 | image_url }}"
+                    width="250"
+                    height="300"
+                    alt="Second Image"
+                  >
+                  <span class="image-caption animate-link"> {{ block.settings.sub_menu_image_2_caption }} </span>
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </ul>
+    {% endif %}
   {% endfor %}
-  
-  
 </nav-menu>
 
-
-
 {% style %}
+  .custom-nav {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
 
-  
-.custom-nav {
-  grid-column: span 3;
-  display: flex;
-  justify-content: center;
-
-}
-  
-.sub-menu__content {
-  position: absolute;
-  display: flex;
-  visibility: hidden;
-  flex-direction: row;
-  top: 90%;
-  min-height: 42vh;
-  left: 0;
-  width: 100vw;
-  z-index: 10;
-  transition-delay: 250ms;
-
-} 
-  
-.custom-nav__menu:hover .sub-menu__content {
-  visibility: visible;
-  background-color: {{ section.settings.sub_menu_bg_color }};
-}
-
-.custom-nav__menu:hover  {
-  background-color: {{ section.settings.sub_menu_bg_color }};
-}  
-
-.sub-menu__content--inner-design {
-  overflow: hidden;
-  padding: 1rem 1rem 1rem 15rem;
-}  
-
-custom-nav__menu {
-  padding-bottom: 1rem;
-  position: relative;
-  z-index: 11;
-}  
-
-custom-nav__menu--spacing {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.custom-nav__menu--title {
-  pointer-events: none;
-  font-size: {{ section.settings.sub_menu_title_font_size }}px;
-  color: {{ section.settings.sub_menu_title_font_color }};
-  
-}  
-
-.sub-menu__list--title {
-  pointer-events: none;
-  font-size: {{ section.settings.sub_menu_list_title_font_size }}px;
-  margin-bottom: 1rem;
-  
-}
-
-.sub-menu__content--always-show {
-  visibility: visible;
-  background-color: {{ section.settings.sub_menu_bg_color }};
-}
-
-.image-container {
-  display: flex;
-  flex-direction: row !important;
-  width: 900px;
-}  
-
-.sub-menu__image a {
-  margin: auto 2rem auto 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  color: {{ section.settings.sub_menu_title_font_color }};
-  font-size: {{ section.settings.sub_menu_list_title_font_size }}px;
-}  
-
-.sub-menu__image a .image-caption {
-  margin-top: 2rem;
-  color: {{ section.settings.sub_menu_title_font_color }};
-  font-size: {{ section.settings.sub_menu_list_font_size }}px;
-}    
-  
-
-.sub-menu__image--border img {
-  border: {{ section.settings.sub_menu_image_border_thickness }}px solid {{ section.settings.sub_menu_image_border_color }};
-}  
-
-.sub-menu__image--oval-border img {
-  border-radius: 50%;
-}
-
-.sub-menu__list-container {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  
-}
-  
-.sub-menu__list-container ul{
-  padding-left: 0;
-}  
-  
-.sub-menu__list-container a{
-  text-decoration: none;
-  color: {{ section.settings.sub_menu_list_font_color }};
-  font-size: {{ section.settings.sub_menu_list_font_size }}px;
-
-}
-  
-.sub-menu__list-container li {
-  list-style: none;
-}  
-  
-.custom-nav > ul {
-  margin-bottom: 0;
-  padding: 0 3rem 0.75rem 3rem;
-}
-
-
-.sub-menu__image a:hover img {
-  transition: all 150ms linear;  
-}  
-
-.sub-menu__image a:hover img {
-  
-  transform: scale(1.010);
-  opacity: 0.95;
-}  
-
-.animate-link {
-  position: relative;
-  width: max-content;
-} 
-  
-.animate-link::after {
-    position: absolute;
-    content:'';
-    bottom: 0;
-    left: 0;
-    width: 0;
-    min-height: 1px;
-    transition: all {{ section.settings.sub_menu_underline_transition }}s ease-in-out;
   }
-  
-.animate-link:hover::after, .sub-menu__image:hover .animate-link::after {
-  background: linear-gradient(to right, {{ section.settings.sub_menu_underline_color_1 }}, {{ section.settings.sub_menu_underline_color_2 }});
-  width: 100%;
-}  
+
+  .sub-menu__content {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    flex-direction: row;
+    top: 90%;
+    min-height: 42vh;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    transition-delay: 250ms;
+
+  }
+
+  .custom-nav__menu:hover .sub-menu__content {
+    visibility: visible;
+    background-color: {{ section.settings.sub_menu_bg_color }};
+  }
+
+  .custom-nav__menu:hover  {
+    background-color: {{ section.settings.sub_menu_bg_color }};
+  }
+
+  .sub-menu__content--inner-design {
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 15rem;
+  }
+
+  custom-nav__menu {
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 11;
+  }
+
+  custom-nav__menu--spacing {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .custom-nav__menu--title {
+    pointer-events: none;
+    font-size: {{ section.settings.sub_menu_title_font_size }}px;
+    color: {{ section.settings.sub_menu_title_font_color }};
+
+  }
+
+  .sub-menu__list--title {
+    pointer-events: none;
+    font-size: {{ section.settings.sub_menu_list_title_font_size }}px;
+    margin-bottom: 1rem;
+
+  }
+
+  .sub-menu__content--always-show {
+    visibility: visible;
+    background-color: {{ section.settings.sub_menu_bg_color }};
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: row !important;
+    width: 900px;
+  }
+
+  .sub-menu__image a {
+    margin: auto 2rem auto 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: {{ section.settings.sub_menu_title_font_color }};
+    font-size: {{ section.settings.sub_menu_list_title_font_size }}px;
+  }
+
+  .sub-menu__image a .image-caption {
+    margin-top: 2rem;
+    color: {{ section.settings.sub_menu_title_font_color }};
+    font-size: {{ section.settings.sub_menu_list_font_size }}px;
+  }
 
 
+  .sub-menu__image--border img {
+    border: {{ section.settings.sub_menu_image_border_thickness }}px solid {{ section.settings.sub_menu_image_border_color }};
+  }
+
+  .sub-menu__image--oval-border img {
+    border-radius: 50%;
+  }
+
+  .sub-menu__list-container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .sub-menu__list-container ul{
+    padding-left: 0;
+  }
+
+  .sub-menu__list-container a{
+    text-decoration: none;
+    color: {{ section.settings.sub_menu_list_font_color }};
+    font-size: {{ section.settings.sub_menu_list_font_size }}px;
+
+  }
+
+  .sub-menu__list-container li {
+    list-style: none;
+  }
+
+  .custom-nav > ul {
+    margin-bottom: 0;
+    padding: 0 3rem 0.75rem 3rem;
+  }
+
+
+  .sub-menu__image a:hover img {
+    transition: all 150ms linear;
+  }
+
+  .sub-menu__image a:hover img {
+
+    transform: scale(1.010);
+    opacity: 0.95;
+  }
+
+  .animate-link {
+    position: relative;
+    width: max-content;
+  }
+
+  .animate-link::after {
+      position: absolute;
+      content:'';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      min-height: 1px;
+      transition: all {{ section.settings.sub_menu_underline_transition }}s ease-in-out;
+    }
+
+  .animate-link:hover::after, .sub-menu__image:hover .animate-link::after {
+    background: linear-gradient(to right, {{ section.settings.sub_menu_underline_color_1 }}, {{ section.settings.sub_menu_underline_color_2 }});
+    width: 100%;
+  }
 {% endstyle %}
-
-
-
