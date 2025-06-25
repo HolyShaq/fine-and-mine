@@ -248,6 +248,12 @@
   .tw\:mb-8 {
     margin-bottom: calc(var(--tw-spacing) * 8) !important;
   }
+  .tw\:mb-10 {
+    margin-bottom: calc(var(--tw-spacing) * 10) !important;
+  }
+  .tw\:mb-12 {
+    margin-bottom: calc(var(--tw-spacing) * 12) !important;
+  }
   .tw\:line-clamp-2 {
     overflow: hidden !important;
     display: -webkit-box !important;
@@ -265,6 +271,9 @@
   }
   .tw\:hidden {
     display: none !important;
+  }
+  .tw\:aspect-\[400\/167\] {
+    aspect-ratio: 400/167 !important;
   }
   .tw\:aspect-square {
     aspect-ratio: 1 / 1 !important;
@@ -291,6 +300,9 @@
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
+  }
+  .tw\:h-\[501px\] {
+    height: 501px !important;
   }
   .tw\:h-fit {
     height: fit-content !important;
@@ -508,6 +520,9 @@
   }
   .tw\:text-center {
     text-align: center !important;
+  }
+  .tw\:text-left {
+    text-align: left !important;
   }
   .tw\:text-2xl {
     font-size: var(--tw-text-2xl) !important;
@@ -792,6 +807,11 @@
       display: none !important;
     }
   }
+  .tw\:md\:aspect-\[400\/167\] {
+    @media (width >= 48rem) {
+      aspect-ratio: 400/167 !important;
+    }
+  }
   .tw\:md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row !important;
@@ -805,6 +825,11 @@
   .tw\:md\:px-32 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--tw-spacing) * 32) !important;
+    }
+  }
+  .tw\:md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left !important;
     }
   }
   .tw\:md\:text-4xl {
