@@ -17,6 +17,8 @@
     --tw-container-2xl: 42rem;
     --tw-container-3xl: 48rem;
     --tw-container-6xl: 72rem;
+    --tw-text-sm: 0.875rem;
+    --tw-text-sm--line-height: calc(1.25 / 0.875);
     --tw-text-base: 1rem;
     --tw-text-base--line-height: calc(1.5 / 1);
     --tw-text-2xl: 1.5rem;
@@ -547,6 +549,13 @@
   .tw\:text-base {
     font-size: var(--tw-text-base) !important;
     line-height: var(--tw-leading, var(--tw-text-base--line-height)) !important;
+  }
+  .tw\:text-sm {
+    font-size: var(--tw-text-sm) !important;
+    line-height: var(--tw-leading, var(--tw-text-sm--line-height)) !important;
+  }
+  .tw\:text-\[1\.4rem\] {
+    font-size: 1.4rem !important;
   }
   .tw\:text-\[1\.75rem\] {
     font-size: 1.75rem !important;
