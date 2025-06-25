@@ -37,12 +37,8 @@
         "padding_bottom": 36
       }
     },
-    "test": {
-      "type": "demo-product-variants"
-    }
   },
   "order": [
-    "test",
     "banner",
     "product-grid"
   ]
