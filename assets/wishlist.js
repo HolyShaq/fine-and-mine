@@ -38,11 +38,11 @@ async function fetchProduct(handle, brand) {
     `${window.location.origin}/products/${handle}.js`
   ).then(async (response) => {
     let result = await response.json();
-    result.brand = brand
-    return result
+    result.brand = brand;
+    return result;
   });
 
-  return response
+  return response;
 }
 
 function productCard(product) {
@@ -101,9 +101,16 @@ function productCard(product) {
     </div>
   `;
 
-  const formattedPrice = `₱${product.price / 100}`;
+  const formattedPrice = `₱${(product.price / 100).toLocaleString("en-PH", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}`;
+
   const formattedSalePrice = product.compare_at_price
-    ? `₱${product.compare_at_price / 100}`
+    ? `₱${(product.compare_at_price / 100).toLocaleString("en-PH", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })}`
     : "";
   const productDetails = `
     <div class="tw:flex tw:flex-col tw:gap-2">
@@ -216,9 +223,11 @@ async function renderWishlist() {
   } else {
     wishlistEmpty.classList.add("hidden");
 
-    const fetches = wishlist.map((item) => fetchProduct(item.handle, item.brand));
+    const fetches = wishlist.map((item) =>
+      fetchProduct(item.handle, item.brand)
+    );
     const products = await Promise.all(fetches);
-    console.log(products)
+    console.log(products);
 
     wishlistItems.innerHTML = ""; // Clear previous items
     products.forEach((product) => {
