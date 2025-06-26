@@ -1,4 +1,4 @@
-<nav-menu class="custom-nav">
+<nav-menu class="custom-nav tw:mt-8">
   {% for block in section.blocks %}
     {% if block.type == 'highlight' %}
       <a href="{{ block.settings.highlight_link.url }}">
@@ -9,7 +9,7 @@
     {% else %}
       <ul class="custom-nav__menu custom-nav__menu--spacing">
         <div class="nav-menu__title-wrapper">
-          <span class="custom-nav__menu--title"> {{ block.settings.menu_title }} </span>
+          <span class="custom-nav__menu--title tw:text-black"> {{ block.settings.menu_title }} </span>
         </div>
         <div class="sub-menu__content sub-menu__content--inner-design {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
           {% assign list_1 = linklists[block.settings.menu_link_1] %}
