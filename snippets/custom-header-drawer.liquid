@@ -27,10 +27,21 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
-            <ul class="tw:flex tw:flex-col">
+            <ul class="tw:flex tw:flex-col tw:text-4xl tw:p-20 tw:mt-4 tw:gap-16">
               {% for block in section.blocks %}
                 {% if block.type == 'highlight' %}
+                  <a href="{{ block.settings.highlight_link.url }}">
+                    <p class="tw:font-semibold">{{ block.settings.highlight_name }}</p>
+                  </a>
                 {% else %}
+                  <div class="tw:flex tw:flex-row tw:items-center tw:group">
+                    <p class="tw:font-semibold tw:flex-1 transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400">{{ block.settings.menu_title }}</p>
+                    <span
+                      class="tw:m-auto tw:shrink-1 tw:flex tw:size-12 tw:items-center tw:justify-center  transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400"
+                    >
+                      {{- 'icon-arrow.svg' | inline_asset_content -}}
+                    </span>
+                  </div>
                 {% endif %}
               {% endfor %}
             </ul>
