@@ -68,62 +68,51 @@
     "header": {
       "type": "header",
       "blocks": {
+        "highlight_QnMWJY": {
+          "type": "highlight",
+          "settings": {
+            "highlight_name": "Just In: Emporio Armani",
+            "highlight_link": "our-brands"
+          }
+        },
         "link_c7DEhx": {
           "type": "link",
           "settings": {
             "menu_title": "Women",
-            "menu_link_1": "womens-jewelry",
-            "menu_link_2": "",
-            "menu_link_3": "",
-            "sub_menu_image_link_1": "",
-            "sub_menu_image_1_caption": "",
-            "sub_menu_image_link_2": "",
-            "sub_menu_image_2_caption": "Caption 2"
+            "submenu": "womens-jewelry",
+            "collections": []
           }
         },
         "link_XHh6iK": {
           "type": "link",
           "settings": {
             "menu_title": "Men",
-            "menu_link_1": "mens-jewelry",
-            "menu_link_2": "",
-            "menu_link_3": "",
-            "sub_menu_image_link_1": "",
-            "sub_menu_image_1_caption": "",
-            "sub_menu_image_link_2": "",
-            "sub_menu_image_2_caption": ""
+            "submenu": "mens-jewelry",
+            "collections": []
           }
         },
         "link_bkbe86": {
           "type": "link",
           "settings": {
             "menu_title": "Categories",
-            "menu_link_1": "shop-by-brand",
-            "menu_link_2": "shop-all",
-            "menu_link_3": "",
-            "sub_menu_image_1": "shopify://shop_images/HEADER_Brand-Image-LAJ.jpg",
-            "sub_menu_image_link_1": "shopify://collections/lacoste-jewelry",
-            "sub_menu_image_1_caption": "Lacoste Jewelry",
-            "sub_menu_image_2": "shopify://shop_images/HEADER_Brand-Image-TH_6effc2cd-a827-4696-877b-29f37efc53d1.jpg",
-            "sub_menu_image_link_2": "shopify://collections/tommy-hilfiger-jewelry",
-            "sub_menu_image_2_caption": "Tommy Hilfiger Jewelry"
+            "submenu": "shop-by-brand",
+            "collections": [
+              "lacoste-jewelry",
+              "boss-jewelry"
+            ]
           }
         },
         "link_9dRdQg": {
           "type": "link",
           "settings": {
             "menu_title": "About Us",
-            "menu_link_1": "company-info",
-            "menu_link_2": "footer",
-            "menu_link_3": "",
-            "sub_menu_image_link_1": "",
-            "sub_menu_image_1_caption": "",
-            "sub_menu_image_link_2": "",
-            "sub_menu_image_2_caption": ""
+            "submenu": "footer",
+            "collections": []
           }
         }
       },
       "block_order": [
+        "highlight_QnMWJY",
         "link_c7DEhx",
         "link_XHh6iK",
         "link_bkbe86",

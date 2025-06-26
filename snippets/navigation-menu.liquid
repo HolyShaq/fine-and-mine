@@ -11,50 +11,26 @@
         <div class="nav-menu__title-wrapper">
           <span class="custom-nav__menu--title tw:text-black"> {{ block.settings.menu_title }} </span>
         </div>
-        <div class="sub-menu__content sub-menu__content--inner-design {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
+        <div class="sub-menu__content sub-menu__content--inner-design tw:bg-white {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
           {% assign submenu = block.settings.submenu %}
 
           {% if submenu.links != blank %}
-            <div class="sub-menu__list-container">
-              <span class="sub-menu__list--title">{{ submenu.title }}</span>
+            <div class="sub-menu__list-container tw:mr-24">
+              <span class="sub-menu__list--title tw:font-bold">{{ submenu.title }}</span>
               <ul class="list">
                 {% for item in submenu.links %}
                   <li class="animate-link">
-                    <a href="{{ item.url }}"> {{ item.title }} </a>
+                    <a href="{{ item.url }}" class="tw:text-black"> {{ item.title }} </a>
                   </li>
                 {% endfor %}
               </ul>
             </div>
           {% endif %}
 
-          <div class="sub-menu__list-container image-container">
-            {% if block.settings.sub_menu_image_1 != blank %}
-              <div class="sub-menu__image {% if section.settings.checkbox_border_image_1 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">
-                <a href="{{ block.settings.sub_menu_image_link_1 }}"
-                  ><img
-                    src="{{ block.settings.sub_menu_image_1 | image_url }}"
-                    width="250"
-                    height="300"
-                    alt="First Image"
-                  >
-                  <span class="image-caption animate-link"> {{ block.settings.sub_menu_image_1_caption }} </span>
-                </a>
-              </div>
-            {% endif %}
-
-            {% if block.settings.sub_menu_image_2 != blank %}
-              <div class="sub-menu__image {% if section.settings.checkbox_border_image_2 %} sub-menu__image--oval-border {% endif %} sub-menu__image--border ">
-                <a href="{{ block.settings.sub_menu_image_link_2 }}"
-                  ><img
-                    src="{{ block.settings.sub_menu_image_2 | image_url }}"
-                    width="250"
-                    height="300"
-                    alt="Second Image"
-                  >
-                  <span class="image-caption animate-link"> {{ block.settings.sub_menu_image_2_caption }} </span>
-                </a>
-              </div>
-            {% endif %}
+          <div class="tw:flex tw:flex-row tw:gap-6">
+            {% for collection in block.settings.collections %}
+              <div class="tw:h-full tw:aspect-square">{% render 'card-collection', card_collection: collection, media_aspect_ratio: "square" %}</div>
+            {% endfor %}
           </div>
         </div>
       </ul>

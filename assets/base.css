@@ -266,6 +266,12 @@
   .tw\:mt-24 {
     margin-top: calc(var(--tw-spacing) * 24) !important;
   }
+  .tw\:mr-16 {
+    margin-right: calc(var(--tw-spacing) * 16) !important;
+  }
+  .tw\:mr-24 {
+    margin-right: calc(var(--tw-spacing) * 24) !important;
+  }
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4) !important;
   }
@@ -327,6 +333,10 @@
   .tw\:size-18 {
     width: calc(var(--tw-spacing) * 18) !important;
     height: calc(var(--tw-spacing) * 18) !important;
+  }
+  .tw\:size-24 {
+    width: calc(var(--tw-spacing) * 24) !important;
+    height: calc(var(--tw-spacing) * 24) !important;
   }
   .tw\:h-20 {
     height: calc(var(--tw-spacing) * 20) !important;
