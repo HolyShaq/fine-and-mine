@@ -2,7 +2,7 @@
   {% for block in section.blocks %}
     {% if block.type == 'highlight' %}
       <a href="{{ block.settings.highlight_link.url }}">
-        <span class="tw:font-bold tw:hidden tw:lg:inline tw:text-[1.4rem] tw:text-black tw:hover:text-[#446d8b]">
+        <span class="{% if block.settings.is_bold %}tw:font-bold{% endif %} tw:hidden tw:lg:inline tw:text-[1.4rem] tw:text-black tw:hover:text-[#446d8b]">
           {{ block.settings.highlight_name }}
         </span>
       </a>
@@ -16,7 +16,7 @@
 
           {% if submenu.links != blank %}
             <div class="sub-menu__list-container tw:mr-24">
-              <span class="sub-menu__list--title {% if submenu.is_bold %}tw:font-bold{% endif %}">{{ submenu.title }}</span>
+              <span class="sub-menu__list--title tw:font-bold">{{ submenu.title }}</span>
               <ul class="list">
                 {% for item in submenu.links %}
                   <li class="animate-link">
