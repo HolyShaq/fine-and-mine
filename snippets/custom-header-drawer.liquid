@@ -26,7 +26,7 @@
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
-          <nav class="">
+          <nav>
             <ul class="tw:flex tw:flex-col tw:text-4xl tw:px-20">
               <div class="tw:flex tw:flex-row tw:items-center tw:gap-4 tw:py-4 tw:h-20"></div>
               <div class="tw:flex tw:flex-col tw:text-4xl tw:py-4 tw:gap-16">
@@ -63,11 +63,11 @@
                               {{- 'icon-arrow-sized.svg' | inline_asset_content -}}
                             </span>
                             <p class="tw:text-3xl tw:font-medium transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400">
-                              {{ block.settings.menu_title }}
+                              {{ block.settings.menu.title }}
                             </p>
                           </button>
                           <div class="tw:flex tw:flex-col tw:text-4xl tw:py-8 tw:gap-16">
-                            {% for link in block.settings.menu_link_1.links %}
+                            {% for link in block.settings.submenu.links %}
                               <a href="{{ link.url }}">
                                 <p class="tw:font-semibold transition-all tw:duration-300 tw:ease-in-out tw:hover:text-slate-400">
                                   {{ link.title }}

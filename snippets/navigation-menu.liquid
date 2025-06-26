@@ -12,41 +12,13 @@
           <span class="custom-nav__menu--title tw:text-black"> {{ block.settings.menu_title }} </span>
         </div>
         <div class="sub-menu__content sub-menu__content--inner-design {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
-          {% assign list_1 = linklists[block.settings.menu_link_1] %}
-          {% assign list_2 = linklists[block.settings.menu_link_2] %}
-          {% assign list_3 = linklists[block.settings.menu_link_3] %}
+          {% assign submenu = block.settings.submenu %}
 
-          {% if list_1 != blank %}
+          {% if submenu.links != blank %}
             <div class="sub-menu__list-container">
-              <span class="sub-menu__list--title">{{ list_1.title }}</span>
+              <span class="sub-menu__list--title">{{ submenu.title }}</span>
               <ul class="list">
-                {% for item in list_1.links %}
-                  <li class="animate-link">
-                    <a href="{{ item.url }}"> {{ item.title }} </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
-
-          {% if list_2 != blank %}
-            <div class="sub-menu__list-container">
-              <span class="sub-menu__list--title">{{ list_2.title }}</span>
-              <ul class="list">
-                {% for item in list_2.links %}
-                  <li class="animate-link">
-                    <a href="{{ item.url }}"> {{ item.title }} </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
-
-          {% if list_3 != blank %}
-            <div class="sub-menu__list-container">
-              <span class="sub-menu__list--title ">{{ list_3.title }}</span>
-              <ul class="list">
-                {% for item in list_3.links %}
+                {% for item in submenu.links %}
                   <li class="animate-link">
                     <a href="{{ item.url }}"> {{ item.title }} </a>
                   </li>
