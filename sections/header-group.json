@@ -72,7 +72,8 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Just In: Emporio Armani",
-            "highlight_link": "our-brands"
+            "highlight_link": "our-brands",
+            "is_bold": false
           }
         },
         "link_c7DEhx": {
@@ -80,7 +81,10 @@
           "settings": {
             "menu_title": "Women",
             "submenu": "womens-jewelry",
-            "collections": []
+            "collections": [
+              "rings",
+              "bangles"
+            ]
           }
         },
         "link_XHh6iK": {

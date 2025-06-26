@@ -16,7 +16,7 @@
 
           {% if submenu.links != blank %}
             <div class="sub-menu__list-container tw:mr-24">
-              <span class="sub-menu__list--title tw:font-bold">{{ submenu.title }}</span>
+              <span class="sub-menu__list--title {% if submenu.is_bold %}tw:font-bold{% endif %}">{{ submenu.title }}</span>
               <ul class="list">
                 {% for item in submenu.links %}
                   <li class="animate-link">
