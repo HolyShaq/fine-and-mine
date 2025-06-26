@@ -27,66 +27,12 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
-            <ul class="u-list menu-drawer__list " role="list">
+            <ul class="tw:flex tw:flex-col">
               {% for block in section.blocks %}
                 {% if block.type == 'highlight' %}
                 {% else %}
-                  <div class="custom-header-drawer__inner-container">
-                    <details class="menu-drawer__inner-list" id="menu-drawer__inner-list-ID">
-                      <summary>
-                        <div class="header-drawer__menu-title icon-chevron--animate">
-                          <span class="chevron-icon">
-                            {{- 'icon-chevron.svg' | inline_asset_content -}}
-                          </span>
-                          <span class="header-drawer__menu-title title">{{ block.settings.menu_title }}</span>
-                        </div>
-                      </summary>
-                      {% assign menus = 'menu_link_1,menu_link_2,menu_link_3' | split: ',' %}
-
-                      {% for menu in menus %}
-                        {% assign link_list = linklists[block.settings[menu]] %}
-
-                        {% if link_list and link_list.links.size > 0 %}
-                          <div class="header-drawermenu-column">
-                            <span class="linklist-title"> {{ link_list.title }} </span>
-                            <ul>
-                              {% for link in link_list.links %}
-                                <li>
-                                  <a class="header-drawer__childlinks" href="{{ link.url }}">{{ link.title }}</a>
-                                </li>
-                              {% endfor %}
-                            </ul>
-                          </div>
-                        {% endif %}
-                      {% endfor %}
-                    </details>
-                  </div>
                 {% endif %}
               {% endfor %}
-
-              {% comment %}
-                  {% assign menu = linklists[block.settings.menu_link] %}
-                  {% if menu.links.size > 1 %}
-                      <details class="menu-drawer__inner-list" id="menu-drawer__inner-list-ID">
-                        <summary class="menu-drawer__summary--inline">
-                          <span class="menu-drawer__icon-wrapper">
-                            {{- 'icon-chevron.svg' | inline_asset_content -}}
-                          </span>
-                          <span class="menu-drawer__link-title">{{ block.settings.link_title }}</span>
-                        </summary>
-                        <ul class="menu-drawer__sub-menu">
-                            {% for link in menu.links %}
-                              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-                            {% endfor %}
-                        </ul>
-                      </details>
-                 {%  else if %}
-                      <a href="{{ menu.links.first.url }}" class="menu-drawer__single-link">
-                       <span class="menu-drawer__single-link-title menu-drawer__inner-list">{{ menu.links.first.title }}</span>
-                      </a>
-                 {% endif %}
-                {% endfor %}
-              {% endcomment %}
             </ul>
           </nav>
 
