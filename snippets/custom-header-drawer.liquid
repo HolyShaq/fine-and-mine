@@ -26,24 +26,61 @@
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
-          <nav class="menu-drawer__navigation">
-            <ul class="tw:flex tw:flex-col tw:text-4xl tw:p-20 tw:mt-4 tw:gap-16">
-              {% for block in section.blocks %}
-                {% if block.type == 'highlight' %}
-                  <a href="{{ block.settings.highlight_link.url }}">
-                    <p class="tw:font-semibold">{{ block.settings.highlight_name }}</p>
-                  </a>
-                {% else %}
-                  <div class="tw:flex tw:flex-row tw:items-center tw:group">
-                    <p class="tw:font-semibold tw:flex-1 transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400">{{ block.settings.menu_title }}</p>
-                    <span
-                      class="tw:m-auto tw:shrink-1 tw:flex tw:size-12 tw:items-center tw:justify-center  transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400"
-                    >
-                      {{- 'icon-arrow.svg' | inline_asset_content -}}
-                    </span>
-                  </div>
-                {% endif %}
-              {% endfor %}
+          <nav class="">
+            <ul class="tw:flex tw:flex-col tw:text-4xl tw:px-20">
+              <div class="tw:flex tw:flex-row tw:items-center tw:gap-4 tw:py-4 tw:h-20"></div>
+              <div class="tw:flex tw:flex-col tw:text-4xl tw:py-4 tw:gap-16">
+                {% for block in section.blocks %}
+                  {% if block.type == 'highlight' %}
+                    <a href="{{ block.settings.highlight_link.url }}">
+                      <p class="tw:font-semibold transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400">
+                        {{ block.settings.highlight_name }}
+                      </p>
+                    </a>
+                  {% else %}
+                    <details>
+                      <summary>
+                        <div class="tw:flex tw:flex-row tw:items-center tw:group">
+                          <p class="tw:font-semibold tw:flex-1 transition-all tw:duration-300 tw:ease-in-out tw:hover:text-slate-400">
+                            {{ block.settings.menu_title }}
+                          </p>
+                          <span
+                            class="tw:m-auto tw:shrink-1 tw:flex tw:size-10 tw:items-center tw:justify-center  transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400"
+                          >
+                            {{- 'icon-arrow-sized.svg' | inline_asset_content -}}
+                          </span>
+                        </div>
+                      </summary>
+                      <div class="menu-drawer__submenu">
+                        <div class="tw:flex tw:flex-col tw:px-20">
+                          <button
+                            class="tw:group tw:cursor-pointer tw:flex tw:flex-row tw:items-center tw:gap-4 tw:py-8 tw:h-20"
+                            onclick="this.parentElement.removeAttribute('open')"
+                          >
+                            <span
+                              class="tw:shrink-1 tw:flex tw:size-10 tw:rotate-180 tw:items-center tw:justify-center transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400"
+                            >
+                              {{- 'icon-arrow-sized.svg' | inline_asset_content -}}
+                            </span>
+                            <p class="tw:text-3xl tw:font-medium transition-all tw:duration-300 tw:ease-in-out tw:group-hover:text-slate-400">
+                              {{ block.settings.menu_title }}
+                            </p>
+                          </button>
+                          <div class="tw:flex tw:flex-col tw:text-4xl tw:py-8 tw:gap-16">
+                            {% for link in block.settings.menu_link_1.links %}
+                              <a href="{{ link.url }}">
+                                <p class="tw:font-semibold transition-all tw:duration-300 tw:ease-in-out tw:hover:text-slate-400">
+                                  {{ link.title }}
+                                </p>
+                              </a>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </details>
+                  {% endif %}
+                {% endfor %}
+              </div>
             </ul>
           </nav>
 

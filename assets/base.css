@@ -191,8 +191,14 @@
   .tw\:pointer-events-none {
     pointer-events: none !important;
   }
+  .tw\:visible {
+    visibility: visible !important;
+  }
   .tw\:absolute {
     position: absolute !important;
+  }
+  .tw\:fixed {
+    position: fixed !important;
   }
   .tw\:relative {
     position: relative !important;
@@ -227,6 +233,9 @@
   .tw\:mx-auto {
     margin-inline: auto !important;
   }
+  .tw\:my-4 {
+    margin-block: calc(var(--tw-spacing) * 4) !important;
+  }
   .tw\:my-6 {
     margin-block: calc(var(--tw-spacing) * 6) !important;
   }
@@ -250,6 +259,9 @@
   }
   .tw\:mt-18 {
     margin-top: calc(var(--tw-spacing) * 18) !important;
+  }
+  .tw\:mt-20 {
+    margin-top: calc(var(--tw-spacing) * 20) !important;
   }
   .tw\:mt-24 {
     margin-top: calc(var(--tw-spacing) * 24) !important;
@@ -300,6 +312,10 @@
     width: calc(var(--tw-spacing) * 9) !important;
     height: calc(var(--tw-spacing) * 9) !important;
   }
+  .tw\:size-10 {
+    width: calc(var(--tw-spacing) * 10) !important;
+    height: calc(var(--tw-spacing) * 10) !important;
+  }
   .tw\:size-12 {
     width: calc(var(--tw-spacing) * 12) !important;
     height: calc(var(--tw-spacing) * 12) !important;
@@ -311,6 +327,9 @@
   .tw\:size-18 {
     width: calc(var(--tw-spacing) * 18) !important;
     height: calc(var(--tw-spacing) * 18) !important;
+  }
+  .tw\:h-20 {
+    height: calc(var(--tw-spacing) * 20) !important;
   }
   .tw\:h-\[470px\] {
     height: 470px !important;
@@ -390,8 +409,20 @@
   .tw\:flex-grow-0 {
     flex-grow: 0 !important;
   }
+  .tw\:translate-0 {
+    --tw-translate-x: calc(var(--tw-spacing) * 0) !important;
+    --tw-translate-y: calc(var(--tw-spacing) * 0) !important;
+    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
+  }
+  .tw\:translate-x-0 {
+    --tw-translate-x: calc(var(--tw-spacing) * 0) !important;
+    translate: var(--tw-translate-x) var(--tw-translate-y) !important;
+  }
   .tw\:rotate-90 {
     rotate: 90deg !important;
+  }
+  .tw\:rotate-180 {
+    rotate: 180deg !important;
   }
   .tw\:rotate-270 {
     rotate: 270deg !important;
@@ -493,6 +524,9 @@
   .tw\:bg-transparent {
     background-color: transparent !important;
   }
+  .tw\:bg-white {
+    background-color: var(--tw-color-white) !important;
+  }
   .tw\:stroke-2 {
     stroke-width: 2 !important;
   }
@@ -529,11 +563,20 @@
   .tw\:px-16 {
     padding-inline: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:px-20 {
+    padding-inline: calc(var(--tw-spacing) * 20) !important;
+  }
   .tw\:py-1 {
     padding-block: calc(var(--tw-spacing) * 1) !important;
   }
   .tw\:py-3 {
     padding-block: calc(var(--tw-spacing) * 3) !important;
+  }
+  .tw\:py-4 {
+    padding-block: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:py-8 {
+    padding-block: calc(var(--tw-spacing) * 8) !important;
   }
   .tw\:py-16 {
     padding-block: calc(var(--tw-spacing) * 16) !important;
@@ -760,6 +803,13 @@
     &:hover {
       @media (hover: hover) {
         color: #446d8b !important;
+      }
+    }
+  }
+  .tw\:hover\:text-slate-400 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--tw-color-slate-400) !important;
       }
     }
   }
@@ -3605,6 +3655,21 @@ header-menu > details, details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -3705,6 +3770,9 @@ header-menu > details, details-disclosure > details {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-duration: initial;

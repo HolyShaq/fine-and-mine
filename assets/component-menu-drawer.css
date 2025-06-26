@@ -141,8 +141,8 @@ details[open].menu-opening > .menu-drawer__submenu {
   bottom: 0;
   left: 0;
   background-color: rgb(var(--color-background));
-  z-index: 1;
-  transform: translateX(100%);
+  z-index: 4;
+  transform: translateX(-100%);
   visibility: hidden;
 }
 
