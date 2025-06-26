@@ -275,6 +275,9 @@
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4) !important;
   }
+  .tw\:mb-6 {
+    margin-bottom: calc(var(--tw-spacing) * 6) !important;
+  }
   .tw\:mb-8 {
     margin-bottom: calc(var(--tw-spacing) * 8) !important;
   }
