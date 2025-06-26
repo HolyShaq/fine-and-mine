@@ -151,6 +151,7 @@
                       >
                     {%- endif -%}
                     <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
+                      <span class="tw:text-[0.9rem] tw:font-light">{{ product.metafields.custom.product_brand }}</span>
                       {%- if settings.predictive_search_show_vendor -%}
                         <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
                         <div class="predictive-search__item-vendor caption-with-letter-spacing">
