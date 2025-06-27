@@ -12,12 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.product_brand.value }}",
-            "text_style": "uppercase"
-          }
+        "brand_name_HnkUaT": {
+          "type": "brand_name",
+          "settings": {}
         },
         "title": {
           "type": "title",
@@ -38,12 +35,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "custom_liquid_W7kfGi": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if settings.enable-wishlist %}\n                  <button onclick=\"toggleWishlist()\" class=\"wishlist_button\">\n                    <svg width=\"30px\" height=\"30px\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                      <rect x=\"0\" fill=\"none\" width=\"24\" height=\"24\"/>\n\n                      <g>\n\n                      <path d=\"M16.5 4.5c2.206 0 4 1.794 4 4 0 4.67-5.543 8.94-8.5 11.023C9.043 17.44 3.5 13.17 3.5 8.5c0-2.206 1.794-4 4-4 1.298 0 2.522.638 3.273 1.706L12 7.953l1.227-1.746c.75-1.07 1.975-1.707 3.273-1.707m0-1.5c-1.862 0-3.505.928-4.5 2.344C11.005 3.928 9.362 3 7.5 3 4.462 3 2 5.462 2 8.5c0 5.72 6.5 10.438 10 12.85 3.5-2.412 10-7.13 10-12.85C22 5.462 19.538 3 16.5 3z\"/>\n\n                      </g>\n                    </svg>\n                  </button>\n                {% endif %}"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -51,15 +42,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "text_zaeypF": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
+        "wishlist_button_fQywMB": {
+          "type": "wishlist_button",
+          "settings": {}
         },
         "description": {
           "type": "description",
+          "settings": {}
+        },
+        "additional_details_MR3TUa": {
+          "type": "additional_details",
           "settings": {}
         },
         "share": {
@@ -67,27 +59,19 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "text_XbTLmH": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
-        "vendor",
+        "brand_name_HnkUaT",
         "title",
         "price",
         "variant_picker",
         "quantity_selector",
-        "custom_liquid_W7kfGi",
         "buy_buttons",
-        "text_zaeypF",
+        "wishlist_button_fQywMB",
         "description",
-        "share",
-        "text_XbTLmH"
+        "additional_details_MR3TUa",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": false,
