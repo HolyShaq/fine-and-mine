@@ -1,3 +1,6 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -193,7 +196,7 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description tw:mt-0 rte quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="product__description tw:mt-0 tw:mb-0 rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
                 {%- endif -%}
@@ -476,6 +479,149 @@
                   </button>
                   <p class="wishlist_text">Add to Wishlist</p>
                 </div>
+              {%- when 'additional_details' -%}
+                {% comment %} Materials {% endcomment %}
+                {% if product.metafields.custom.materials %}
+                  <div class="accordion tw:mt-0" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-material.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">Materials</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ product.metafields.custom.materials }}
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
+                {% comment %} Dimensions {% endcomment %}
+                {% if product.metafields.custom.dimensions %}
+                  <div class="accordion" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-ruler.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">Dimensions</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        <ul class="tw:list-disc">
+                          {% for detail in product.metafields.custom.dimensions.value %}
+                            <li>{{ detail }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
+                {% comment %} Jewelry Care {% endcomment %}
+                {% if product.metafields.custom.jewelry_care %}
+                  <div class="accordion" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">Jewelry Care</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ product.metafields.custom.jewelry_care }}
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
+                {% comment %} About the Brand {% endcomment %}
+                {% if product.metafields.custom.about_the_brand %}
+                  <div class="accordion" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-price-tag.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">About the Brand</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ product.metafields.custom.about_the_brand }}
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
+                {% comment %} Shipping & Returns {% endcomment %}
+                {% if product.metafields.custom.shipping_returns %}
+                  <div class="accordion" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-box.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">Shipping & Returns</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ product.metafields.custom.shipping_returns }}
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
+                {% comment %} Warranty {% endcomment %}
+                {% if product.metafields.custom.warranty %}
+                  <div class="accordion" {{ block.shopify_attributes }}>
+                    <details
+                      id="Details-{{ block.id }}-{{ section.id }}"
+                    >
+                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                        <span class="svg-wrapper">{{ 'icon-question-mark.svg' | inline_asset_content }}</span>
+                        <h3 class="accordion__title inline-richtext h4">Warranty</h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte tw:px-6"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ product.metafields.custom.warranty }}
+                      </div>
+                    </details>
+                  </div>
+                {% endif %}
+
               {%- when 'buy_buttons' -%}
                 <div class="tw:flex tw:flex-col tw:gap-2">
                   {%- assign current_variant = product.selected_or_first_available_variant -%}
@@ -971,7 +1117,12 @@
     {
       "type": "wishlist_button",
       "name": "Wishlist Button",
-      "limit": 1,
+      "limit": 1
+    },
+    {
+      "type": "additional_details",
+      "name": "Additional Details",
+      "limit": 1
     },
     {
       "type": "description",

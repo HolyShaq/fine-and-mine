@@ -251,6 +251,9 @@
   .tw\:mr-24 {
     margin-right: calc(var(--tw-spacing) * 24) !important;
   }
+  .tw\:mb-0 {
+    margin-bottom: calc(var(--tw-spacing) * 0) !important;
+  }
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4) !important;
   }
@@ -400,6 +403,9 @@
   }
   .tw\:cursor-pointer {
     cursor: pointer !important;
+  }
+  .tw\:list-disc {
+    list-style-type: disc !important;
   }
   .tw\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
