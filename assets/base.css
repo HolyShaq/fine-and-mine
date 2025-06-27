@@ -236,6 +236,9 @@
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:mt-0 {
+    margin-top: calc(var(--tw-spacing) * 0) !important;
+  }
   .tw\:mt-4 {
     margin-top: calc(var(--tw-spacing) * 4) !important;
   }
