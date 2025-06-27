@@ -14,8 +14,11 @@
     --tw-color-black: #000;
     --tw-color-white: #fff;
     --tw-spacing: 0.25rem;
+    --tw-container-md: 28rem;
+    --tw-container-lg: 32rem;
     --tw-container-2xl: 42rem;
     --tw-container-3xl: 48rem;
+    --tw-container-4xl: 56rem;
     --tw-container-6xl: 72rem;
     --tw-text-base: 1rem;
     --tw-text-base--line-height: calc(1.5 / 1);
@@ -329,6 +332,12 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
+  .tw\:w-2xl {
+    width: var(--tw-container-2xl) !important;
+  }
+  .tw\:w-4xl {
+    width: var(--tw-container-4xl) !important;
+  }
   .tw\:w-30 {
     width: calc(var(--tw-spacing) * 30) !important;
   }
@@ -344,6 +353,9 @@
   .tw\:w-\[220px\] {
     width: 220px !important;
   }
+  .tw\:w-\[240px\] {
+    width: 240px !important;
+  }
   .tw\:w-\[261px\] {
     width: 261px !important;
   }
@@ -358,6 +370,12 @@
   }
   .tw\:w-full {
     width: 100% !important;
+  }
+  .tw\:w-lg {
+    width: var(--tw-container-lg) !important;
+  }
+  .tw\:w-md {
+    width: var(--tw-container-md) !important;
   }
   .tw\:max-w-2xl {
     max-width: var(--tw-container-2xl) !important;
