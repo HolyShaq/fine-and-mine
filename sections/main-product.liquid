@@ -94,6 +94,13 @@
                 {% render block %}
               {%- when 'text' -%}
                 <p
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.text -}}
+                </p>
+              {% when 'brand_name' %}
+                <p
                   class="product__text tw:font-bold tw:mb-4 tw:text-2xl inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
@@ -1113,6 +1120,11 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
         }
       ]
+    },
+    {
+      "type": "brand_name",
+      "name": "Brand Name",
+      "limit": 1
     },
     {
       "type": "wishlist_button",
