@@ -91,10 +91,10 @@
                 {% render block %}
               {%- when 'text' -%}
                 <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  class="product__text tw:font-bold tw:mb-4 tw:text-2xl inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  {{- block.settings.text -}}
+                  {{- product.metafields.custom.product_brand -}}
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
@@ -464,13 +464,53 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
-                  block: block,
-                  product: product,
-                  product_form_id: product_form_id,
-                  section_id: section.id,
-                  show_pickup_availability: true
-                -%}
+                <div class="tw:flex tw:flex-col tw:gap-2">
+                  {%- assign current_variant = product.selected_or_first_available_variant -%}
+                  <product-form>
+                    {%- form 'product',
+                      product,
+                      class: 'form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      <input type="hidden" name="id" value="{{ current_variant.id }}">
+                      <button
+                        class="tw:w-full tw:bg-transparent tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:py-3 tw:rounded-xl tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102 {% unless current_variant.available %} tw:bg-transparent tw:text-[#C2CFD6] tw:border-2 tw:border-[#C2CFD6] tw:pointer-events-none {% else %} tw:border-2 tw:border-black tw:font-bold tw:text-black {% endunless %}"
+                        type="submit"
+                        name="add"
+                        {% if current_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span>
+                          {%- if current_variant.available -%}
+                            Add to Cart
+                          {%- else -%}
+                            Sold Out
+                          {%- endif -%}
+                        </span>
+                        {% render 'custom-loading-spinner' %}
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+                  {% if current_variant.available %}
+                    {%- form 'product',
+                      product,
+                      class: 'form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      <input type="hidden" name="id" value="{{ current_variant.id }}">
+                      <button
+                        class="tw:font-bold tw:w-full tw:cursor-pointer tw:flex tw:justify-center tw:min-h-20 tw:items-center tw:py-3 tw:rounded-lg tw:transition-all tw:duration-100 tw:ease-in-out tw:hover:shadow-lg tw:hover:scale-102"
+                        style="background-color: #426c8a; color: #f9f9f9;"
+                        type="submit"
+                      >
+                        Checkout Now
+                      </button>
+                    {%- endform -%}
+                  {% endif %}
+                </div>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
