@@ -13,12 +13,19 @@ function toggleWishlist(productObject, button) {
   );
 
   const span = button.querySelector("span");
+  const text = button.nextElementSibling;
   if (index > -1) {
     wishlist.splice(index, 1); // remove
     span.innerHTML = window.themeAssets.wishlistEmpty;
+    if (text) {
+      text.innerHTML = "Add to wishlist";
+    }
   } else {
     wishlist.push(productObject); // add
     span.innerHTML = window.themeAssets.wishlistFilled;
+    if (text) {
+      text.innerHTML = "Remove from wishlist";
+    }
   }
 
   saveWishlist(wishlist);
@@ -252,10 +259,17 @@ document.querySelectorAll(".wishlist_toggle").forEach((button) => {
   // Set initial icon
   const wishlist = getWishlist();
   const span = button.querySelector("span");
+  const text = button.nextElementSibling;
   if (wishlist.some((item) => item.handle === productObject.handle)) {
     span.innerHTML = window.themeAssets.wishlistFilled;
+    if (text) {
+      text.innerHTML = "Remove from wishlist";
+    }
   } else {
     span.innerHTML = window.themeAssets.wishlistEmpty;
+    if (text) {
+      text.innerHTML = "Add to wishlist";
+    }
   }
 
   button.addEventListener("click", (evt) => {

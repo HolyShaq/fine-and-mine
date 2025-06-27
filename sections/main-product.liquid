@@ -463,6 +463,19 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              {%- when 'wishlist_button' -%}
+                <div class="tw:flex tw:flex-row tw:gap-2 tw:items-center">
+                  <button
+                    data-handle="{{ product.handle }}"
+                    data-brand="{{ product.metafields.custom.product_brand }}"
+                    class="wishlist_toggle tw:cursor-pointer"
+                  >
+                    <span class="tw:flex tw:size-12 tw:items-center tw:justify-center tw:p-2 tw:rounded-full">
+                      {% comment %} {{- 'icon-heart.svg' | inline_asset_content -}} {% endcomment %}
+                    </span>
+                  </button>
+                  <p class="wishlist_text">Add to Wishlist</p>
+                </div>
               {%- when 'buy_buttons' -%}
                 <div class="tw:flex tw:flex-col tw:gap-2">
                   {%- assign current_variant = product.selected_or_first_available_variant -%}
@@ -954,6 +967,11 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
         }
       ]
+    },
+    {
+      "type": "wishlist_button",
+      "name": "Wishlist Button",
+      "limit": 1,
     },
     {
       "type": "description",
