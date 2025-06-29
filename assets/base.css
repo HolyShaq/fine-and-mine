@@ -332,12 +332,6 @@
   .tw\:min-h-\[4rem\] {
     min-height: 4rem !important;
   }
-  .tw\:w-2xl {
-    width: var(--tw-container-2xl) !important;
-  }
-  .tw\:w-4xl {
-    width: var(--tw-container-4xl) !important;
-  }
   .tw\:w-30 {
     width: calc(var(--tw-spacing) * 30) !important;
   }
@@ -352,9 +346,6 @@
   }
   .tw\:w-\[220px\] {
     width: 220px !important;
-  }
-  .tw\:w-\[240px\] {
-    width: 240px !important;
   }
   .tw\:w-\[261px\] {
     width: 261px !important;
@@ -371,14 +362,11 @@
   .tw\:w-full {
     width: 100% !important;
   }
-  .tw\:w-lg {
-    width: var(--tw-container-lg) !important;
-  }
-  .tw\:w-md {
-    width: var(--tw-container-md) !important;
-  }
   .tw\:max-w-2xl {
     max-width: var(--tw-container-2xl) !important;
+  }
+  .tw\:max-w-3xl {
+    max-width: var(--tw-container-3xl) !important;
   }
   .tw\:max-w-6xl {
     max-width: var(--tw-container-6xl) !important;
@@ -389,11 +377,23 @@
   .tw\:max-w-\[380px\] {
     max-width: 380px !important;
   }
+  .tw\:max-w-\[400px\] {
+    max-width: 400px !important;
+  }
+  .tw\:max-w-\[500px\] {
+    max-width: 500px !important;
+  }
+  .tw\:max-w-\[600px\] {
+    max-width: 600px !important;
+  }
   .tw\:max-w-\[1182px\] {
     max-width: 1182px !important;
   }
   .tw\:max-w-full {
     max-width: 100% !important;
+  }
+  .tw\:max-w-md {
+    max-width: var(--tw-container-md) !important;
   }
   .tw\:min-w-\[4rem\] {
     min-width: 4rem !important;

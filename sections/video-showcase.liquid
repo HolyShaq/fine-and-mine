@@ -1,0 +1,44 @@
+<div class="page-width">
+  <div class="tw:flex tw:flex-col tw:gap-8">
+    <div class="tw:flex tw:flex-col tw:text-center tw:gap-4 tw:items-center">
+      <h1 class="tw:text-6xl tw:font-bold">{{ section.settings.title }}</h1>
+      <p class="tw:max-w-[500px]">{{ section.settings.subtitle }}</p>
+    </div>
+
+    {% if section.settings.video %}
+      {{ section.settings.video | video_tag: controls: true, loop:"loop" }}
+    {% endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Video Showcase",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Own your Shine"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "A Shopify-hosted video"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Showcase",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
