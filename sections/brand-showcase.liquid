@@ -1,4 +1,4 @@
-<div class="page-width">
+<div class="page-width tw:my-8">
   <div class="tw:lg:flex tw:hidden tw:flex-col tw:gap-8">
     <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4 tw:flex-wrap">
       {% for logo in section.blocks limit: 4 %}
@@ -40,8 +40,8 @@
     </div>
   </div>
 
-  <div class="tw:px-4 tw:py-8">
-      <ul class="tw:grid tw:lg:hidden tw:grid-cols-2 tw:sm:grid-cols-3 tw:lg:grid-cols-4 tw:gap-x-8 tw:gap-y-12 tw:items-center">
+  <div class="tw:px-4 tw:py-8 tw:lg:hidden">
+      <ul class="tw:grid tw:grid-cols-2 tw:sm:grid-cols-3 tw:lg:grid-cols-4 tw:gap-x-8 tw:gap-y-12 tw:items-center">
         {% for logo in section.blocks %}
           <li class="tw:flex tw:justify-center" {{ logo.shopify_attributes }}>
             {%- assign logo_image = logo.settings.image -%}

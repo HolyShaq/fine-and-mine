@@ -590,6 +590,9 @@
   .tw\:py-4 {
     padding-block: calc(var(--tw-spacing) * 4) !important;
   }
+  .tw\:py-5 {
+    padding-block: calc(var(--tw-spacing) * 5) !important;
+  }
   .tw\:py-6 {
     padding-block: calc(var(--tw-spacing) * 6) !important;
   }
