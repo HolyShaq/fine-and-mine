@@ -11,10 +11,52 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "cta_banner_akm4bR": {
+      "type": "cta-banner",
+      "name": "CTA Banner",
+      "settings": {
+        "collection": "",
+        "header": "New Arrivals for Spring/Summer 2025",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Shop Now",
+        "image": "shopify://shop_images/EGS3150040.jpg",
+        "text_color": "#10181f",
+        "background_color": "#f0f0f0"
+      }
+    },
+    "multi_column_text_banner_MadPAQ": {
+      "type": "multi-column-text-banner",
+      "blocks": {
+        "column_q8Jcry": {
+          "type": "column",
+          "name": "Column 1",
+          "settings": {
+            "header": "Lorem ipsum dolor sit amet",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          }
+        },
+        "column_RUrwR8": {
+          "type": "column",
+          "name": "Column 2",
+          "settings": {
+            "header": "Lorem ipsum dolor sit amet",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          }
+        }
+      },
+      "block_order": [
+        "column_q8Jcry",
+        "column_RUrwR8"
+      ],
+      "name": "Multi Column Text Banner",
+      "settings": {
+        "text_color": "#10181f",
+        "background_color": "#ffffff"
       }
     },
     "collection_list_zzWM6d": {
@@ -46,9 +88,9 @@
         "featured_collection_RL4zmi"
       ],
       "settings": {
-        "title": "Our Brands",
-        "link": "",
-        "link_url": "",
+        "title": "Shop Category",
+        "link": "View All",
+        "link_url": "shopify://collections",
         "link_size": 18,
         "link_color": "#000000",
         "link_hover_color": "#000000",
@@ -70,20 +112,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "custom_liquid_MAdGLU": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     }
   },
   "order": [
     "main",
-    "collection_list_zzWM6d",
-    "custom_liquid_MAdGLU"
+    "cta_banner_akm4bR",
+    "multi_column_text_banner_MadPAQ",
+    "collection_list_zzWM6d"
   ]
 }
