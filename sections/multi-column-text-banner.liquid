@@ -1,13 +1,15 @@
-<div
-  class="tw:flex tw:flex-col tw:px-16 tw:gap-4 tw:sm:gap-0 tw:sm:flex-row tw:md:px-32 tw:lg:px-57 tw:py-16"
-  style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
->
-  {% for block in section.blocks %}
-    <div class="tw:flex tw:flex-col tw:p-4 tw:gap-4">
-      <h2 class="tw:font-semibold">{{ block.settings.header }}</h2>
-      <p>{{ block.settings.content }}</p>
-    </div>
-  {% endfor %}
+<div class="page-width">
+  <div
+    class="tw:flex tw:flex-col tw:gap-4 tw:sm:gap-0 tw:sm:flex-row tw:py-16"
+    style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
+  >
+    {% for block in section.blocks %}
+      <div class="tw:flex tw:flex-col tw:p-4 tw:gap-4">
+        <h2 class="tw:font-semibold">{{ block.settings.header }}</h2>
+        <p>{{ block.settings.content }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}
