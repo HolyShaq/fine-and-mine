@@ -223,6 +223,9 @@
   .tw\:row-span-1 {
     grid-row: span 1 / span 1 !important;
   }
+  .tw\:m-8 {
+    margin: calc(var(--tw-spacing) * 8) !important;
+  }
   .tw\:m-auto {
     margin: auto !important;
   }
@@ -336,6 +339,9 @@
   }
   .tw\:h-full {
     height: 100% !important;
+  }
+  .tw\:max-h-full {
+    max-height: 100% !important;
   }
   .tw\:min-h-20 {
     min-height: calc(var(--tw-spacing) * 20) !important;
@@ -584,6 +590,9 @@
   .tw\:py-4 {
     padding-block: calc(var(--tw-spacing) * 4) !important;
   }
+  .tw\:py-6 {
+    padding-block: calc(var(--tw-spacing) * 6) !important;
+  }
   .tw\:py-8 {
     padding-block: calc(var(--tw-spacing) * 8) !important;
   }
@@ -826,6 +835,16 @@
   .tw\:sm\:row-span-2 {
     @media (width >= 40rem) {
       grid-row: span 2 / span 2 !important;
+    }
+  }
+  .tw\:sm\:m-0 {
+    @media (width >= 40rem) {
+      margin: calc(var(--tw-spacing) * 0) !important;
+    }
+  }
+  .tw\:sm\:m-8 {
+    @media (width >= 40rem) {
+      margin: calc(var(--tw-spacing) * 8) !important;
     }
   }
   .tw\:sm\:my-16 {
