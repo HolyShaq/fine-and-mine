@@ -1,0 +1,98 @@
+<div class="page-width">
+  <div class="tw:lg:flex tw:hidden tw:flex-col tw:gap-8">
+    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4 tw:flex-wrap">
+      {% for logo in section.blocks limit: 4 %}
+        {% assign logo_image = logo.settings.image %}
+        <img
+          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+          src="{{ logo_image | image_url }}"
+          width="{{ logo_image.width }}"
+          height="{{ logo_image.height }}"
+          loading="lazy"
+        >
+      {% endfor %}
+    </div>
+
+    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4">
+      {% for logo in section.blocks limit: 3 offset: 4 %}
+        {% assign logo_image = logo.settings.image %}
+        <img
+          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+          src="{{ logo_image | image_url }}"
+          width="{{ logo_image.width }}"
+          height="{{ logo_image.height }}"
+          loading="lazy"
+        >
+      {% endfor %}
+    </div>
+
+    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4">
+      {% for logo in section.blocks limit: 2 offset: 7 %}
+        {% assign logo_image = logo.settings.image %}
+        <img
+          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+          src="{{ logo_image | image_url }}"
+          width="{{ logo_image.width }}"
+          height="{{ logo_image.height }}"
+          loading="lazy"
+        >
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="tw:px-4 tw:py-8">
+      <ul class="tw:grid tw:lg:hidden tw:grid-cols-2 tw:sm:grid-cols-3 tw:lg:grid-cols-4 tw:gap-x-8 tw:gap-y-12 tw:items-center">
+        {% for logo in section.blocks %}
+          <li class="tw:flex tw:justify-center" {{ logo.shopify_attributes }}>
+            {%- assign logo_image = logo.settings.image -%}
+            {% if logo_image != blank %}
+              <img
+                class="tw:object-contain tw:h-16 lg:tw:h-20"
+                src="{{ logo_image | image_url: width: 400 }}"
+                alt="{{ logo_image.alt | escape }}"
+                width="{{ logo_image.width }}"
+                height="{{ logo_image.height }}"
+                loading="lazy"
+              >
+            {% else %}
+              {% comment %} Shopify placeholder for when no image is selected in a block {% endcomment %}
+              <div class="tw:w-full tw:max-w-[180px]">
+                {{ 'image' | placeholder_svg_tag: 'tw:w-full tw:h-auto tw:text-gray-400' }}
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+
+  {% if section.blocks.size == 0 %}
+    <p class="tw:text-center">Add logo blocks in the theme editor to display them here.</p>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Brand Showcase",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 9,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Showcase",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
