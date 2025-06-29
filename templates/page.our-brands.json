@@ -11,9 +11,18 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "page_intro_AgzxJ3": {
+      "type": "page-intro",
+      "name": "Page Intro",
+      "settings": {
+        "title": "Lorem Ipsum",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       }
     },
     "cta_banner_akm4bR": {
@@ -116,6 +125,7 @@
   },
   "order": [
     "main",
+    "page_intro_AgzxJ3",
     "cta_banner_akm4bR",
     "multi_column_text_banner_MadPAQ",
     "collection_list_zzWM6d"
