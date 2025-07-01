@@ -15,7 +15,6 @@
     --tw-color-black: #000;
     --tw-color-white: #fff;
     --tw-spacing: 0.25rem;
-    --tw-container-md: 28rem;
     --tw-container-2xl: 42rem;
     --tw-container-3xl: 48rem;
     --tw-container-6xl: 72rem;
@@ -223,11 +222,14 @@
   .tw\:row-span-1 {
     grid-row: span 1 / span 1 !important;
   }
-  .tw\:m-8 {
-    margin: calc(var(--tw-spacing) * 8) !important;
-  }
   .tw\:m-auto {
     margin: auto !important;
+  }
+  .tw\:mx-7 {
+    margin-inline: calc(var(--tw-spacing) * 7) !important;
+  }
+  .tw\:mx-30 {
+    margin-inline: calc(var(--tw-spacing) * 30) !important;
   }
   .tw\:mx-auto {
     margin-inline: auto !important;
@@ -400,9 +402,6 @@
   .tw\:max-w-\[500px\] {
     max-width: 500px !important;
   }
-  .tw\:max-w-\[1182px\] {
-    max-width: 1182px !important;
-  }
   .tw\:max-w-full {
     max-width: 100% !important;
   }
@@ -548,9 +547,6 @@
   .tw\:object-cover {
     object-fit: cover !important;
   }
-  .tw\:object-center {
-    object-position: center !important;
-  }
   .tw\:p-1\.5 {
     padding: calc(var(--tw-spacing) * 1.5) !important;
   }
@@ -575,11 +571,11 @@
   .tw\:px-6 {
     padding-inline: calc(var(--tw-spacing) * 6) !important;
   }
-  .tw\:px-16 {
-    padding-inline: calc(var(--tw-spacing) * 16) !important;
-  }
   .tw\:px-20 {
     padding-inline: calc(var(--tw-spacing) * 20) !important;
+  }
+  .tw\:px-30 {
+    padding-inline: calc(var(--tw-spacing) * 30) !important;
   }
   .tw\:py-1 {
     padding-block: calc(var(--tw-spacing) * 1) !important;
@@ -593,20 +589,11 @@
   .tw\:py-5 {
     padding-block: calc(var(--tw-spacing) * 5) !important;
   }
-  .tw\:py-6 {
-    padding-block: calc(var(--tw-spacing) * 6) !important;
-  }
   .tw\:py-8 {
     padding-block: calc(var(--tw-spacing) * 8) !important;
   }
   .tw\:py-16 {
     padding-block: calc(var(--tw-spacing) * 16) !important;
-  }
-  .tw\:pt-5 {
-    padding-top: calc(var(--tw-spacing) * 5) !important;
-  }
-  .tw\:pb-5 {
-    padding-bottom: calc(var(--tw-spacing) * 5) !important;
   }
   .tw\:text-center {
     text-align: center !important;
@@ -845,16 +832,6 @@
       margin: calc(var(--tw-spacing) * 0) !important;
     }
   }
-  .tw\:sm\:m-8 {
-    @media (width >= 40rem) {
-      margin: calc(var(--tw-spacing) * 8) !important;
-    }
-  }
-  .tw\:sm\:my-16 {
-    @media (width >= 40rem) {
-      margin-block: calc(var(--tw-spacing) * 16) !important;
-    }
-  }
   .tw\:sm\:block {
     @media (width >= 40rem) {
       display: block !important;
@@ -910,11 +887,6 @@
       gap: calc(var(--tw-spacing) * 0) !important;
     }
   }
-  .tw\:sm\:px-16 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--tw-spacing) * 16) !important;
-    }
-  }
   .tw\:md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--tw-spacing) * 0) !important;
@@ -943,11 +915,6 @@
   .tw\:md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--tw-spacing) * 8) !important;
-    }
-  }
-  .tw\:md\:px-32 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--tw-spacing) * 32) !important;
     }
   }
   .tw\:md\:text-left {
@@ -989,11 +956,6 @@
   .tw\:lg\:p-16 {
     @media (width >= 64rem) {
       padding: calc(var(--tw-spacing) * 16) !important;
-    }
-  }
-  .tw\:lg\:px-57 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--tw-spacing) * 57) !important;
     }
   }
 }

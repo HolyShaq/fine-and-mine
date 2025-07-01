@@ -89,6 +89,49 @@
         "padding_bottom": 12
       }
     },
+    "cta_banner_heXNPk": {
+      "type": "cta-banner",
+      "name": "CTA Banner",
+      "settings": {
+        "collection": "",
+        "header": "Lorem Ipsum Dolor Sit Amet",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Shop Now",
+        "image": "shopify://shop_images/62f1cdf137260c577ac4ca867647bef9b3b6f52a.jpg",
+        "text_color": "#10181f",
+        "background_color": "#f0f0f0"
+      }
+    },
+    "multi_column_text_banner_LGc6Li": {
+      "type": "multi-column-text-banner",
+      "blocks": {
+        "column_GhGpRw": {
+          "type": "column",
+          "name": "Column 1",
+          "settings": {
+            "header": "[PROMO] Lorem ipsum dolor sit amet",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          }
+        },
+        "column_QHz8qX": {
+          "type": "column",
+          "name": "Column 2",
+          "settings": {
+            "header": "[PROMO] Consectetur adipiscing elit",
+            "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          }
+        }
+      },
+      "block_order": [
+        "column_GhGpRw",
+        "column_QHz8qX"
+      ],
+      "name": "Multi Column Text Banner",
+      "settings": {
+        "text_color": "#10181f",
+        "background_color": "#ffffff"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -116,6 +159,8 @@
   },
   "order": [
     "main",
+    "cta_banner_heXNPk",
+    "multi_column_text_banner_LGc6Li",
     "related-products",
     "17393397124c90a68d"
   ]

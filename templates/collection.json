@@ -11,11 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-5"
-      }
+      "settings": {}
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -37,9 +33,25 @@
         "padding_bottom": 36
       }
     },
+    "collection_showcase_3MTQzA": {
+      "type": "collection-showcase",
+      "name": "Collection Showcase",
+      "settings": {
+        "collections": [
+          "boss-jewelry",
+          "earrings",
+          "bracelets"
+        ],
+        "title": "Explore more collections",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "nav_text": "View All",
+        "page": "our-brands"
+      }
+    }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "collection_showcase_3MTQzA"
   ]
 }

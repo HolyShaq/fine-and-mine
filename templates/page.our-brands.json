@@ -25,6 +25,78 @@
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       }
     },
+    "brand_showcase_Xi3HCN": {
+      "type": "brand-showcase",
+      "blocks": {
+        "logo_UVWPqK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/f40db532e43f7328f76185d3ca05f9685d8c5962.png"
+          }
+        },
+        "logo_t3fPAN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/88fc05968d73b038dd48842d2e514354042dc73d.png"
+          }
+        },
+        "logo_HBhkLw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/cd237f64a7a87be7e6388c7c506f3d04948db6a9.png"
+          }
+        },
+        "logo_q9eLfL": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/121afcf6bbf2b9cdf77a0ed20b62c48544f69d17.png"
+          }
+        },
+        "logo_XeQyNJ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/2ddead86ff0408fb48d9fea3ea6426834b54f959.png"
+          }
+        },
+        "logo_gLJGWt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/154b080cd180f06cef0a9b23dec201417cff9dc7.png"
+          }
+        },
+        "logo_webfdc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/8983161cbe37a74829daeee32dfd119eb0fe42ae.png"
+          }
+        },
+        "logo_dVkyVg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/16e052390f26b2740e019c878b2c50d82b1ef235.png"
+          }
+        },
+        "logo_LwUJk3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/48be0621ef89730d371353f063ef363acf55f75d.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_UVWPqK",
+        "logo_t3fPAN",
+        "logo_HBhkLw",
+        "logo_q9eLfL",
+        "logo_XeQyNJ",
+        "logo_gLJGWt",
+        "logo_webfdc",
+        "logo_dVkyVg",
+        "logo_LwUJk3"
+      ],
+      "name": "Brand Showcase",
+      "settings": {}
+    },
     "cta_banner_akm4bR": {
       "type": "cta-banner",
       "name": "CTA Banner",
@@ -74,27 +146,34 @@
         "featured_collection_mWY3Gq": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lacoste-jewelry"
+            "collection": "earrings"
           }
         },
         "featured_collection_8CX6aR": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tommy-hilfiger-jewelry"
+            "collection": "bracelets"
           }
         },
         "featured_collection_RL4zmi": {
           "type": "featured_collection",
           "disabled": true,
           "settings": {
-            "collection": "boss-jewelry"
+            "collection": "bangles"
+          }
+        },
+        "featured_collection_E3LLGg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rings"
           }
         }
       },
       "block_order": [
         "featured_collection_mWY3Gq",
         "featured_collection_8CX6aR",
-        "featured_collection_RL4zmi"
+        "featured_collection_RL4zmi",
+        "featured_collection_E3LLGg"
       ],
       "settings": {
         "title": "Shop Category",
@@ -126,6 +205,7 @@
   "order": [
     "main",
     "page_intro_AgzxJ3",
+    "brand_showcase_Xi3HCN",
     "cta_banner_akm4bR",
     "multi_column_text_banner_MadPAQ",
     "collection_list_zzWM6d"

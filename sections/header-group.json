@@ -98,20 +98,37 @@
         "link_bkbe86": {
           "type": "link",
           "settings": {
-            "menu_title": "Categories",
-            "submenu": "shop-by-brand",
+            "menu_title": "Shop All",
+            "submenu": "shop-all",
             "collections": [
               "lacoste-jewelry",
-              "boss-jewelry"
+              "boss-jewelry",
+              "rings"
             ]
           }
         },
-        "link_9dRdQg": {
-          "type": "link",
+        "highlight_dAcJzi": {
+          "type": "highlight",
           "settings": {
-            "menu_title": "About Us",
-            "submenu": "footer",
-            "collections": []
+            "highlight_name": "New Arrivals",
+            "highlight_link": "our-brands",
+            "is_bold": false
+          }
+        },
+        "highlight_hyqCfY": {
+          "type": "highlight",
+          "settings": {
+            "highlight_name": "Sale",
+            "highlight_link": "our-brands",
+            "is_bold": false
+          }
+        },
+        "highlight_cLnYeR": {
+          "type": "highlight",
+          "settings": {
+            "highlight_name": "Jewelry Care",
+            "highlight_link": "jewelry-care",
+            "is_bold": false
           }
         }
       },
@@ -120,7 +137,9 @@
         "link_c7DEhx",
         "link_XHh6iK",
         "link_bkbe86",
-        "link_9dRdQg"
+        "highlight_dAcJzi",
+        "highlight_hyqCfY",
+        "highlight_cLnYeR"
       ],
       "custom_css": [],
       "settings": {
