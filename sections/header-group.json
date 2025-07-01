@@ -72,7 +72,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Just In: Emporio Armani",
-            "highlight_link": "our-brands",
+            "highlight_link": "",
             "is_bold": true
           }
         },
@@ -111,7 +111,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "New Arrivals",
-            "highlight_link": "our-brands",
+            "highlight_link": "",
             "is_bold": false
           }
         },
@@ -119,7 +119,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Sale",
-            "highlight_link": "our-brands",
+            "highlight_link": "",
             "is_bold": false
           }
         },
@@ -127,7 +127,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Jewelry Care",
-            "highlight_link": "jewelry-care",
+            "highlight_link": "",
             "is_bold": false
           }
         }

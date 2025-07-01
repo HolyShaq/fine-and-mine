@@ -225,18 +225,6 @@
   .tw\:m-auto {
     margin: auto !important;
   }
-  .tw\:mx-7 {
-    margin-inline: calc(var(--tw-spacing) * 7) !important;
-  }
-  .tw\:mx-7\.5 {
-    margin-inline: calc(var(--tw-spacing) * 7.5) !important;
-  }
-  .tw\:mx-13 {
-    margin-inline: calc(var(--tw-spacing) * 13) !important;
-  }
-  .tw\:mx-30 {
-    margin-inline: calc(var(--tw-spacing) * 30) !important;
-  }
   .tw\:mx-\[30px\] {
     margin-inline: 30px !important;
   }
@@ -582,9 +570,6 @@
   }
   .tw\:px-20 {
     padding-inline: calc(var(--tw-spacing) * 20) !important;
-  }
-  .tw\:px-30 {
-    padding-inline: calc(var(--tw-spacing) * 30) !important;
   }
   .tw\:py-1 {
     padding-block: calc(var(--tw-spacing) * 1) !important;
