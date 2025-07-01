@@ -228,8 +228,17 @@
   .tw\:mx-7 {
     margin-inline: calc(var(--tw-spacing) * 7) !important;
   }
+  .tw\:mx-7\.5 {
+    margin-inline: calc(var(--tw-spacing) * 7.5) !important;
+  }
+  .tw\:mx-13 {
+    margin-inline: calc(var(--tw-spacing) * 13) !important;
+  }
   .tw\:mx-30 {
     margin-inline: calc(var(--tw-spacing) * 30) !important;
+  }
+  .tw\:mx-\[30px\] {
+    margin-inline: 30px !important;
   }
   .tw\:mx-auto {
     margin-inline: auto !important;
