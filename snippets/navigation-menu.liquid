@@ -2,7 +2,7 @@
   {% for block in section.blocks %}
     {% if block.type == 'highlight' %}
       <a href="{{ block.settings.highlight_link.url }}">
-        <span class="{% if block.settings.is_bold %}tw:font-bold{% endif %} tw:hidden tw:mx-7 tw:lg:inline tw:text-[1.4rem] tw:text-black tw:hover:text-[#446d8b]">
+        <span class="{% if block.settings.is_bold %}tw:font-bold{% endif %} tw:hidden tw:mx-[30px] tw:lg:inline tw:text-[1.4rem] tw:text-black tw:hover:text-[#446d8b]">
           {{ block.settings.highlight_name }}
         </span>
       </a>
