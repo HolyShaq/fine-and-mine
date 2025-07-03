@@ -60,7 +60,7 @@
       <div class="tw:relative {% if compact_mode %}{{image_tw_size}}{% endif %} tw:aspect-square tw:items-center tw:group/img">
         {% comment %} Featured Image {% endcomment %}
         <img
-          class="{{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity"
+          class="{{ image_tw_size }} tw:aspect-square tw:object-cover {% if product.images[1] != null and show_secondary_image %} tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity {% endif %}"
           src="{{ product.featured_image | image_url }}"
           width="{{ product.featured_image.width }}"
           height="{{ product.featured_image.height }}"
