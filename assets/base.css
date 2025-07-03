@@ -276,9 +276,6 @@
   .tw\:mb-8 {
     margin-bottom: calc(var(--tw-spacing) * 8) !important;
   }
-  .tw\:mb-12 {
-    margin-bottom: calc(var(--tw-spacing) * 12) !important;
-  }
   .tw\:line-clamp-2 {
     overflow: hidden !important;
     display: -webkit-box !important;
@@ -468,6 +465,9 @@
   .tw\:justify-center {
     justify-content: center !important;
   }
+  .tw\:justify-start {
+    justify-content: flex-start !important;
+  }
   .tw\:gap-1 {
     gap: calc(var(--tw-spacing) * 1) !important;
   }
@@ -594,9 +594,6 @@
   }
   .tw\:py-8 {
     padding-block: calc(var(--tw-spacing) * 8) !important;
-  }
-  .tw\:py-12 {
-    padding-block: calc(var(--tw-spacing) * 12) !important;
   }
   .tw\:py-16 {
     padding-block: calc(var(--tw-spacing) * 16) !important;
@@ -828,6 +825,13 @@
       }
     }
   }
+  .tw\:hover\:\[animation-play-state\:paused\] {
+    &:hover {
+      @media (hover: hover) {
+        animation-play-state: paused !important;
+      }
+    }
+  }
   .tw\:sm\:row-span-2 {
     @media (width >= 40rem) {
       grid-row: span 2 / span 2 !important;
@@ -913,11 +917,6 @@
       display: none !important;
     }
   }
-  .tw\:md\:aspect-\[400\/167\] {
-    @media (width >= 48rem) {
-      aspect-ratio: 400/167 !important;
-    }
-  }
   .tw\:md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row !important;
@@ -926,11 +925,6 @@
   .tw\:md\:gap-8 {
     @media (width >= 48rem) {
       gap: calc(var(--tw-spacing) * 8) !important;
-    }
-  }
-  .tw\:md\:px-6 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--tw-spacing) * 6) !important;
     }
   }
   .tw\:md\:text-left {
