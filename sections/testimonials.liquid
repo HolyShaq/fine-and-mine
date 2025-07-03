@@ -12,12 +12,12 @@
 </style>
 
 <div
-  class="tw:flex tw:flex-col tw:gap-8 tw:my-12"
+  class="tw:flex tw:flex-col tw:gap-8 tw:my-12 tw:overflow-hidden"
   style="padding-top: calc(var(--tw-spacing) * {{ section.settings.padding_y }}); padding-bottom: calc(var(--tw-spacing) * {{ section.settings.padding_y }});"
 >
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
   <div
-    class="tw:flex tw:flex-row tw:gap-8 {% if section.settings.pause_on_hover %}tw:hover:[animation-play-state:paused]{% endif %} tw:w-fit tw:overflow-x-hidden tw:justify-start"
+    class="tw:flex tw:flex-row tw:gap-8 {% if section.settings.pause_on_hover %}tw:hover:[animation-play-state:paused]{% endif %} tw:w-fit tw:overflow-hidden tw:justify-start"
     style="animation: scroll {{ section.settings.scroll_speed }}s linear infinite"
   >
     {% for i in (1..4) %}
