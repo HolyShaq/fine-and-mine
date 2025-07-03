@@ -237,6 +237,9 @@
   .tw\:my-8 {
     margin-block: calc(var(--tw-spacing) * 8) !important;
   }
+  .tw\:my-9 {
+    margin-block: calc(var(--tw-spacing) * 9) !important;
+  }
   .tw\:my-12 {
     margin-block: calc(var(--tw-spacing) * 12) !important;
   }
@@ -257,6 +260,9 @@
   }
   .tw\:mt-8 {
     margin-top: calc(var(--tw-spacing) * 8) !important;
+  }
+  .tw\:mt-9 {
+    margin-top: calc(var(--tw-spacing) * 9) !important;
   }
   .tw\:mt-12 {
     margin-top: calc(var(--tw-spacing) * 12) !important;
@@ -326,6 +332,9 @@
   }
   .tw\:h-20 {
     height: calc(var(--tw-spacing) * 20) !important;
+  }
+  .tw\:h-\[1px\] {
+    height: 1px !important;
   }
   .tw\:h-\[116px\] {
     height: 116px !important;

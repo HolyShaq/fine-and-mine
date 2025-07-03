@@ -75,6 +75,18 @@
                               </a>
                             {% endfor %}
                           </div>
+                          {% if block.settings.collections != empty %}
+                            <p class="tw:text-3xl tw:text-center tw:font-medium tw:mt-12">Featured Collections</p>
+                            <div class="tw:flex tw:flex-col tw:texttw:font-bold-4xl tw:py-8 tw:gap-16">
+                              {% for collection in block.settings.collections %}
+                                <a href="{{ collection.url }}">
+                                  <p class="tw:font-semibold transition-all tw:duration-300 tw:ease-in-out tw:hover:text-slate-400">
+                                    {{ collection.title }}
+                                  </p>
+                                </a>
+                              {% endfor %}
+                            </div>
+                          {% endif %}
                         </div>
                       </div>
                     </details>
