@@ -17,7 +17,7 @@
 >
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
   <div
-    class="tw:flex tw:flex-row tw:gap-8 tw:hover:[animation-play-state:paused] tw:w-fit tw:overflow-x-hidden tw:justify-start"
+    class="tw:flex tw:flex-row tw:gap-8 {% if section.settings.pause_on_hover %}tw:hover:[animation-play-state:paused]{% endif %} tw:w-fit tw:overflow-x-hidden tw:justify-start"
     style="animation: scroll {{ section.settings.scroll_speed }}s linear infinite"
   >
     {% for i in (1..4) %}
@@ -91,6 +91,13 @@
       "max": 40,
       "default": 20,
       "unit": "s"
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on Hover",
+      "info": "Whether to pause scrolling on mouse hover",
+      "default": false,
     },
     {
       "type": "range",
