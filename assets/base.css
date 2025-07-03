@@ -562,6 +562,9 @@
   .tw\:p-16 {
     padding: calc(var(--tw-spacing) * 16) !important;
   }
+  .tw\:px-0 {
+    padding-inline: calc(var(--tw-spacing) * 0) !important;
+  }
   .tw\:px-4 {
     padding-inline: calc(var(--tw-spacing) * 4) !important;
   }
@@ -831,6 +834,11 @@
       display: block !important;
     }
   }
+  .tw\:sm\:aspect-\[400\/167\] {
+    @media (width >= 40rem) {
+      aspect-ratio: 400/167 !important;
+    }
+  }
   .tw\:sm\:h-\[280px\] {
     @media (width >= 40rem) {
       height: 280px !important;
@@ -911,6 +919,11 @@
       gap: calc(var(--tw-spacing) * 8) !important;
     }
   }
+  .tw\:md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--tw-spacing) * 6) !important;
+    }
+  }
   .tw\:md\:text-left {
     @media (width >= 48rem) {
       text-align: left !important;
@@ -950,6 +963,11 @@
   .tw\:lg\:p-16 {
     @media (width >= 64rem) {
       padding: calc(var(--tw-spacing) * 16) !important;
+    }
+  }
+  .tw\:lg\:px-6 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--tw-spacing) * 6) !important;
     }
   }
 }
