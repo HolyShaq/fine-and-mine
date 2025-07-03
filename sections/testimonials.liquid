@@ -1,4 +1,6 @@
-<div class="tw:flex tw:flex-col tw:gap-8 tw:my-8">
+<div class="tw:flex tw:flex-col tw:gap-8 tw:my-12"
+  style="padding-top: calc(var(--tw-spacing) * {{ section.settings.padding_y }}); padding-bottom: calc(var(--tw-spacing) * {{ section.settings.padding_y }});"
+>
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
   <div class="tw:flex tw:flex-row tw:gap-8 tw:overflow-x-visible tw:justify-center">
     {% for testimonal in section.blocks limit: 3 %}
@@ -61,6 +63,15 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Vertical Padding",
+      "min": 0,
+      "max": 16,
+      "default": 8,
+      "info": "Use this to adjust the spacing above and below the section."
     }
   ],
   "blocks": [

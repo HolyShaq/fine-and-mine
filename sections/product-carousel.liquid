@@ -1,4 +1,6 @@
-<div class="product-carousel page-width tw:my-8">
+<div class="product-carousel page-width tw:my-8"
+  style="padding-top: calc(var(--tw-spacing) * {{ section.settings.padding_y }}); padding-bottom: calc(var(--tw-spacing) * {{ section.settings.padding_y }});"
+>
   {% comment %} Header {% endcomment %}
   {% liquid
     assign title = section.settings.collection.title
@@ -84,6 +86,15 @@
       "id": "nav_text",
       "label": "Navigation Text",
       "default": "Shop the brand"
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Vertical Padding",
+      "min": 0,
+      "max": 16,
+      "default": 0,
+      "info": "Use this to adjust the spacing above and below the section."
     }
   ],
   "presets": [

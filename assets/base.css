@@ -237,6 +237,9 @@
   .tw\:my-8 {
     margin-block: calc(var(--tw-spacing) * 8) !important;
   }
+  .tw\:my-12 {
+    margin-block: calc(var(--tw-spacing) * 12) !important;
+  }
   .tw\:my-16 {
     margin-block: calc(var(--tw-spacing) * 16) !important;
   }
@@ -591,6 +594,9 @@
   }
   .tw\:py-8 {
     padding-block: calc(var(--tw-spacing) * 8) !important;
+  }
+  .tw\:py-12 {
+    padding-block: calc(var(--tw-spacing) * 12) !important;
   }
   .tw\:py-16 {
     padding-block: calc(var(--tw-spacing) * 16) !important;

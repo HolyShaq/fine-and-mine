@@ -1,4 +1,6 @@
-<div class="page-width tw:my-8">
+<div class="page-width tw:my-8"
+  style="padding-top: calc(var(--tw-spacing) * {{ section.settings.padding_y }}); padding-bottom: calc(var(--tw-spacing) * {{ section.settings.padding_y }});"
+>
   <div
     class="tw:items-center{% if section.settings.image %} tw:flex tw:flex-col tw:sm:flex-row-reverse tw:h-fit tw:sm:h-[280px] {% endif %}"
     style="background-color: {{ section.settings.background_color }}; color: {{ section.settings.text_color }};"
@@ -67,6 +69,15 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "#f0f0f0"
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Vertical Padding",
+      "min": 0,
+      "max": 16,
+      "default": 0,
+      "info": "Use this to adjust the spacing above and below the section."
     }
   ],
   "presets": [
