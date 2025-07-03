@@ -6,7 +6,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-50% - 56px));
+      transform: translateX(calc(-50% - 10px));
     }
   }
 </style>
@@ -17,7 +17,7 @@
 >
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
   <div
-    class="tw:flex tw:flex-row tw:gap-8 tw:hover:[animation-play-state:paused] tw:overflow-x-visible tw:justify-start"
+    class="tw:flex tw:flex-row tw:gap-8 tw:hover:[animation-play-state:paused] tw:w-fit tw:overflow-x-hidden tw:justify-start"
     style="animation: scroll {{ section.settings.scroll_speed }}s linear infinite"
   >
     {% for i in (1..4) %}
@@ -88,8 +88,8 @@
       "id": "scroll_speed",
       "label": "Scroll Speed",
       "min": 1,
-      "max": 30,
-      "default": 5,
+      "max": 40,
+      "default": 20,
       "unit": "s"
     },
     {
