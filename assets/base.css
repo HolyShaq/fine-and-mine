@@ -237,9 +237,6 @@
   .tw\:my-8 {
     margin-block: calc(var(--tw-spacing) * 8) !important;
   }
-  .tw\:my-9 {
-    margin-block: calc(var(--tw-spacing) * 9) !important;
-  }
   .tw\:my-12 {
     margin-block: calc(var(--tw-spacing) * 12) !important;
   }
@@ -260,9 +257,6 @@
   }
   .tw\:mt-8 {
     margin-top: calc(var(--tw-spacing) * 8) !important;
-  }
-  .tw\:mt-9 {
-    margin-top: calc(var(--tw-spacing) * 9) !important;
   }
   .tw\:mt-12 {
     margin-top: calc(var(--tw-spacing) * 12) !important;
@@ -333,9 +327,6 @@
   .tw\:h-20 {
     height: calc(var(--tw-spacing) * 20) !important;
   }
-  .tw\:h-\[1px\] {
-    height: 1px !important;
-  }
   .tw\:h-\[116px\] {
     height: 116px !important;
   }
@@ -372,26 +363,14 @@
   .tw\:w-\[80\%\] {
     width: 80% !important;
   }
-  .tw\:w-\[125px\] {
-    width: 125px !important;
-  }
-  .tw\:w-\[212px\] {
-    width: 212px !important;
-  }
   .tw\:w-\[220px\] {
     width: 220px !important;
-  }
-  .tw\:w-\[225px\] {
-    width: 225px !important;
   }
   .tw\:w-\[261px\] {
     width: 261px !important;
   }
   .tw\:w-\[262px\] {
     width: 262px !important;
-  }
-  .tw\:w-\[312px\] {
-    width: 312px !important;
   }
   .tw\:w-\[325px\] {
     width: 325px !important;
@@ -530,12 +509,6 @@
   }
   .tw\:overflow-x-clip {
     overflow-x: clip !important;
-  }
-  .tw\:overflow-x-hidden {
-    overflow-x: hidden !important;
-  }
-  .tw\:overflow-x-visible {
-    overflow-x: visible !important;
   }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px) !important;
@@ -766,13 +739,6 @@
       }
     }
   }
-  .tw\:group-hover\:\[animation-play-state\:paused\] {
-    &:is(:where(.tw\:group):hover *) {
-      @media (hover: hover) {
-        animation-play-state: paused !important;
-      }
-    }
-  }
   .tw\:group-hover\/div\:underline {
     &:is(:where(.tw\:group\/div):hover *) {
       @media (hover: hover) {
@@ -946,16 +912,6 @@
   .tw\:md\:hidden {
     @media (width >= 48rem) {
       display: none !important;
-    }
-  }
-  .tw\:md\:w-\[325px\] {
-    @media (width >= 48rem) {
-      width: 325px !important;
-    }
-  }
-  .tw\:md\:w-\[412px\] {
-    @media (width >= 48rem) {
-      width: 412px !important;
     }
   }
   .tw\:md\:flex-row {

@@ -111,7 +111,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "New Arrivals",
-            "highlight_link": "",
+            "highlight_link": "shopify://collections/new-arrivals",
             "is_bold": false
           }
         },
@@ -119,7 +119,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Sale",
-            "highlight_link": "",
+            "highlight_link": "shopify://collections/sale",
             "is_bold": false
           }
         },
@@ -127,7 +127,7 @@
           "type": "highlight",
           "settings": {
             "highlight_name": "Jewelry Care",
-            "highlight_link": "",
+            "highlight_link": "shopify://pages/jewelry-care",
             "is_bold": false
           }
         }

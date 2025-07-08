@@ -237,7 +237,8 @@
         "collection": "lacoste-jewelry",
         "title": "",
         "subtitle": "Adorn yourself in jewelry in the style of the crocodile",
-        "nav_text": "Shop the brand"
+        "nav_text": "Shop the brand",
+        "padding_y": 0
       }
     },
     "slideshow_cxNinT": {
@@ -327,7 +328,8 @@
         "collection": "tommy-hilfiger-jewelry",
         "title": "",
         "subtitle": "Infuse classic Americana style with jewelry designed for everyday wear",
-        "nav_text": "Shop the brand"
+        "nav_text": "Shop the brand",
+        "padding_y": 0
       }
     },
     "shop_the_look_4Mbw49": {
@@ -367,16 +369,30 @@
             "product": "adjustable-braided-metal-bracelet-bracelet-thj-2790434",
             "stars": 4
           }
+        },
+        "testimonal_8jKYgj": {
+          "type": "testimonal",
+          "settings": {
+            "header": "Testimonial",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "author": "Review",
+            "product": "adventurer-necklace-laj-2040090",
+            "stars": 4
+          }
         }
       },
       "block_order": [
         "testimonal_Ya3HEH",
-        "testimonal_Jhxaah"
+        "testimonal_Jhxaah",
+        "testimonal_8jKYgj"
       ],
       "name": "Testimonials",
       "settings": {
         "title": "What People Say",
-        "background_color": "#f9f9f9"
+        "background_color": "#f9f9f9",
+        "scroll_speed": 40,
+        "pause_on_hover": true,
+        "padding_y": 8
       }
     },
     "video_showcase_zrMwz7": {
@@ -395,7 +411,8 @@
         "collection": "bestsellers",
         "title": "The Fine & Mine Edit",
         "subtitle": "Shop the team’s top picks and favorites for the month",
-        "nav_text": "View All"
+        "nav_text": "View All",
+        "padding_y": 0
       }
     },
     "product_carousel_pB8EKE": {
@@ -405,20 +422,22 @@
         "collection": "new-arrivals",
         "title": "New Arrivals",
         "subtitle": "Discover the hottest styles from the latest collections",
-        "nav_text": "View All"
+        "nav_text": "View All",
+        "padding_y": 0
       }
     },
     "cta_banner_WHGiPL": {
       "type": "cta-banner",
       "name": "CTA Banner",
       "settings": {
-        "collection": "",
+        "collection": "new-arrivals",
         "header": "New Arrivals for Spring/Summer 2025",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "button_text": "Shop Now",
+        "button_text": "Explore New Arrivals",
         "image": "shopify://shop_images/62f1cdf137260c577ac4ca867647bef9b3b6f52a.jpg",
         "text_color": "#10181f",
-        "background_color": "#f0f0f0"
+        "background_color": "#f0f0f0",
+        "padding_y": 0
       }
     },
     "1741917053243975dc": {
@@ -431,8 +450,8 @@
             "title_color": "{{ shop.brand.colors.secondary[0].foreground }}",
             "title_size_v2": 0,
             "alignment": "center",
-            "instafeed_margin_top": 0,
-            "instafeed_margin_bottom": 0,
+            "instafeed_margin_top": 30,
+            "instafeed_margin_bottom": 30,
             "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
