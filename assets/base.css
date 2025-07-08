@@ -563,6 +563,9 @@
   .tw\:object-cover {
     object-fit: cover !important;
   }
+  .tw\:p-0 {
+    padding: calc(var(--tw-spacing) * 0) !important;
+  }
   .tw\:p-1\.5 {
     padding: calc(var(--tw-spacing) * 1.5) !important;
   }
