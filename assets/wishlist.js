@@ -262,12 +262,12 @@ document.querySelectorAll(".wishlist_toggle").forEach((button) => {
   const text = button.nextElementSibling;
   if (wishlist.some((item) => item.handle === productObject.handle)) {
     span.innerHTML = window.themeAssets.wishlistFilled;
-    if (text) {
+    if (text && text.classList.contains("wishlist_text")) {
       text.innerHTML = "Remove from wishlist";
     }
   } else {
     span.innerHTML = window.themeAssets.wishlistEmpty;
-    if (text) {
+    if (text && text.classList.contains("wishlist_text")) {
       text.innerHTML = "Add to wishlist";
     }
   }
