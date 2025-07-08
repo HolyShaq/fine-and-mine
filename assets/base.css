@@ -358,14 +358,8 @@
   .tw\:w-1\/2 {
     width: calc(1/2 * 100%) !important;
   }
-  .tw\:w-24 {
-    width: calc(var(--tw-spacing) * 24) !important;
-  }
   .tw\:w-30 {
     width: calc(var(--tw-spacing) * 30) !important;
-  }
-  .tw\:w-32 {
-    width: calc(var(--tw-spacing) * 32) !important;
   }
   .tw\:w-66 {
     width: calc(var(--tw-spacing) * 66) !important;
@@ -384,12 +378,6 @@
   }
   .tw\:w-\[262px\] {
     width: 262px !important;
-  }
-  .tw\:w-\[325px\] {
-    width: 325px !important;
-  }
-  .tw\:w-\[412px\] {
-    width: 412px !important;
   }
   .tw\:w-fit {
     width: fit-content !important;
@@ -423,9 +411,6 @@
   }
   .tw\:flex-1 {
     flex: 1 !important;
-  }
-  .tw\:flex-1\/2 {
-    flex: calc(1/2 * 100%) !important;
   }
   .tw\:shrink-0 {
     flex-shrink: 0 !important;
@@ -544,9 +529,6 @@
   }
   .tw\:border-black {
     border-color: var(--tw-color-black) !important;
-  }
-  .tw\:bg-red-300 {
-    background-color: var(--tw-color-red-300) !important;
   }
   .tw\:bg-red-700 {
     background-color: var(--tw-color-red-700) !important;
@@ -844,13 +826,6 @@
       }
     }
   }
-  .tw\:hover\:\[animation-play-state\:paused\] {
-    &:hover {
-      @media (hover: hover) {
-        animation-play-state: paused !important;
-      }
-    }
-  }
   .tw\:sm\:row-span-2 {
     @media (width >= 40rem) {
       grid-row: span 2 / span 2 !important;
@@ -914,11 +889,6 @@
   .tw\:sm\:items-start {
     @media (width >= 40rem) {
       align-items: flex-start !important;
-    }
-  }
-  .tw\:sm\:gap-0 {
-    @media (width >= 40rem) {
-      gap: calc(var(--tw-spacing) * 0) !important;
     }
   }
   .tw\:md\:mt-0 {
