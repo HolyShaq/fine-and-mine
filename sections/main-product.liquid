@@ -504,7 +504,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {{ product.metafields.custom.materials }}
+                        {{ product.metafields.custom.materials | newline_to_br }}
                       </div>
                     </details>
                   </div>
@@ -554,7 +554,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {{ product.metafields.custom.jewelry_care }}
+                        {{ product.metafields.custom.jewelry_care | newline_to_br }}
                       </div>
                     </details>
                   </div>
@@ -577,7 +577,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {{ product.metafields.custom.about_the_brand }}
+                        {{ product.metafields.custom.about_the_brand | newline_to_br }}
                       </div>
                     </details>
                   </div>
@@ -600,7 +600,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {{ product.metafields.custom.shipping_returns }}
+                        {{ product.metafields.custom.shipping_returns | newline_to_br }}
                       </div>
                     </details>
                   </div>
@@ -623,7 +623,7 @@
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {{ product.metafields.custom.warranty }}
+                        {{ product.metafields.custom.warranty | newline_to_br }}
                       </div>
                     </details>
                   </div>
