@@ -906,6 +906,11 @@
       display: none !important;
     }
   }
+  .tw\:md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%) !important;
+    }
+  }
   .tw\:md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row !important;
