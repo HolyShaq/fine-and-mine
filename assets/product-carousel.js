@@ -1,19 +1,17 @@
 const sliderContainers = document.querySelectorAll(".product-carousel");
-const carousel = sliderContainers.length > 0 ? sliderContainers[0].querySelector("[name='carousel']"): []; // Used to get the general width of all carousels
-const optimalCardWidth = 261; // Based on Figma, actualCardWidth can be a bit larger
 const minGapSize = 4;
 const maxGapSize = 32;
-let gapSize;
-let translateDistance;
-let cardsPerPage;
-let cardWidth;
 
-function calculateSizes() {
-  cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth); // global var
+function calculateSize(container) {
+  const carousel = container.querySelector("[name='carousel']");
+  const optimalCardWidth = parseInt(carousel.dataset.optimalCardWidth, 10);
+  console.log(optimalCardWidth);
+  const cardsPerPage = Math.floor(carousel.offsetWidth / optimalCardWidth); // global var
 
   // Calculate card width and gap
   const gapNum = cardsPerPage - 1;
-  gapSize = (carousel.offsetWidth - cardsPerPage * optimalCardWidth) / gapNum;
+  let gapSize =
+    (carousel.offsetWidth - cardsPerPage * optimalCardWidth) / gapNum;
 
   // If gap size is within the allowed range, use optimal card width
   if (gapSize > minGapSize && gapSize < maxGapSize) {
@@ -25,23 +23,22 @@ function calculateSizes() {
     gapSize = targetGapSize;
   }
 
-  translateDistance = carousel.offsetWidth + gapSize; // global var
-
-  sliderContainers.forEach((container) => {
-    // Resize cards to fill containers
-    const carousel = container.querySelector("[name='carousel']");
-    const carouselCards = carousel.querySelectorAll("[name='carousel-card']");
-    carousel.style.transform = "translateX(0px)"; // Reset all carousel translations
-    carousel.style.gap = `${gapSize}px`;
-    carouselCards.forEach((card) => {
-      card.style.width = `${cardWidth}px`;
-    });
-
-    // Update nav text to match total pages
-    const totalPages = Math.ceil(carouselCards.length / cardsPerPage);
-    const navText = container.querySelector("[name='nav-text']");
-    navText.textContent = `1 of ${totalPages}`;
+  // Resize cards to fill containers
+  const carouselCards = carousel.querySelectorAll("[name='carousel-card']");
+  carousel.style.transform = "translateX(0px)"; // Reset all carousel translations
+  carousel.style.gap = `${gapSize}px`;
+  carouselCards.forEach((card) => {
+    card.style.width = `${cardWidth}px`;
   });
+
+  // Update nav text to match total pages
+  const totalPages = Math.ceil(carouselCards.length / cardsPerPage);
+  const navText = container.querySelector("[name='nav-text']");
+  navText.textContent = `1 of ${totalPages}`;
+}
+
+function calculateSizes() {
+  sliderContainers.forEach((container) => calculateSize(container));
 }
 calculateSizes();
 
@@ -61,14 +58,21 @@ function navigate(carousel, navText, direction) {
   }
 
   // Calculate empty space in last page
-  cardsNum = carousel.querySelectorAll("[name='carousel-card']").length;
+  const cards = carousel.querySelectorAll("[name='carousel-card']");
+  const cardWidth = cards[0].offsetWidth;
+  const cardsPerPage = Math.floor(carousel.offsetWidth / cardWidth);
+  const gapSize = parseInt(carousel.style.gap, 10);
+  const translateDistance = carousel.offsetWidth + gapSize;
+  console.log(translateDistance);
+
+  cardsNum = cards.length;
   excessCards = cardsNum % cardsPerPage;
-  emptyCards = cardsPerPage - excessCards;
+  emptyCards = excessCards != 0 ? cardsPerPage - excessCards : 0;
   let emptySpaceOffset = 0;
   if (newIndex == totalPages) {
-    emptySpaceOffset = emptyCards * (cardWidth + gapSize)
+    emptySpaceOffset = emptyCards * (cardWidth + gapSize);
   }
-
+  
   carousel.style.transform = `translateX(-${
     (newIndex - 1) * translateDistance - emptySpaceOffset
   }px)`;

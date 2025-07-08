@@ -12,58 +12,99 @@
 </style>
 
 <div
-  class="tw:flex tw:flex-col tw:gap-8 tw:my-12 tw:overflow-hidden"
+  class="product-carousel page-width tw:flex tw:flex-col tw:gap-8 tw:my-12 tw:overflow-hidden"
   style="padding-top: calc(var(--tw-spacing) * {{ section.settings.padding_y }}); padding-bottom: calc(var(--tw-spacing) * {{ section.settings.padding_y }});"
 >
+  {% comment %} Title {% endcomment %}
   <h1 class="tw:text-6xl tw:font-bold tw:text-center">{{ section.settings.title }}</h1>
-  <div
-    class="tw:flex tw:flex-row tw:gap-8 {% if section.settings.pause_on_hover %}tw:hover:[animation-play-state:paused]{% endif %} tw:w-fit tw:overflow-hidden tw:justify-start"
-    style="animation: scroll {{ section.settings.scroll_speed }}s linear infinite"
-  >
-    {% for i in (1..4) %}
+
+  {% comment %} Product Carousel {% endcomment %}
+  <div class="tw:overflow-x-clip tw:w-full">
+    <div
+      id="{{ section.id }}"
+      name="carousel"
+      data-optimal-card-width="312"
+      class="tw:flex tw:flex-row tw:my-6 tw:transition-transform tw:duration-300"
+    >
+      {% for i in (1..2) %}
+
       {% for testimonal in section.blocks %}
-        <div
-          class="tw:flex tw:flex-col tw:shrink-0 tw:gap-4 tw:w-[412px] tw:p-6"
-          style="background-color: {{ section.settings.background_color }}"
-        >
-          {% comment %} Star Rating {% endcomment %}
-          {% assign empty_stars = 5 | minus: testimonal.settings.stars %}
-          <div class="tw:flex tw:text-2xl tw:items-center tw:flex-row tw:gap-1">
-            {% for i in (1..testimonal.settings.stars) %}
-              <span class="tw:text-yellow-500 tw:size-6">
-                {{ 'icon-star-filled.svg' | inline_asset_content }}
-              </span>
-            {% endfor %}
-            {% for i in (1..empty_stars) %}
-              <span class="tw:text-yellow-500 tw:size-6">
-                {{ 'icon-star.svg' | inline_asset_content }}
-              </span>
-            {% endfor %}
-          </div>
-
-          {% comment %} Title {% endcomment %}
-          <h3 class="tw:text-3xl tw:font-semibold">{{ testimonal.settings.header }}</h3>
-
-          <div class="tw:flex tw:flex-col">
-            {% comment %} Review {% endcomment %}
-            <p class="tw:text-[1.75rem] tw:font-medium tw:w-[325px]">"{{ testimonal.settings.body }}"</p>
-            {% comment %} Author {% endcomment %}
-            <p class="tw:text-[1.75rem] tw:font-medium tw:w-[325px]">— {{ testimonal.settings.author }}</p>
-          </div>
-
-          {% comment %} Product Card {% endcomment %}
-          <div class="tw:w-full">
-            {% render 'custom-card-product',
-              product: testimonal.settings.product,
-              compact_mode: true,
-              image_size: 'small',
-              background_color: '#ffffff'
-            %}
+        <div name="carousel-card" class="tw:shrink-0" style="width: 312px">
+          <div
+            class="tw:flex tw:flex-col tw:shrink-0 tw:gap-4 tw:w-full tw:p-6"
+            style="background-color: {{ section.settings.background_color }}"
+          >
+            {% comment %} Star Rating {% endcomment %}
+            {% assign empty_stars = 5 | minus: testimonal.settings.stars %}
+            <div class="tw:flex tw:text-2xl tw:items-center tw:flex-row tw:gap-1">
+              {% for i in (1..testimonal.settings.stars) %}
+                <span class="tw:text-yellow-500 tw:size-6">
+                  {{ 'icon-star-filled.svg' | inline_asset_content }}
+                </span>
+              {% endfor %}
+              {% for i in (1..empty_stars) %}
+                <span class="tw:text-yellow-500 tw:size-6">
+                  {{ 'icon-star.svg' | inline_asset_content }}
+                </span>
+              {% endfor %}
+            </div>
+            {% comment %} Title {% endcomment %}
+            <h3 class="tw:text-3xl tw:font-semibold">{{ testimonal.settings.header }}</h3>
+            <div class="tw:flex tw:flex-col">
+              {% comment %} Review {% endcomment %}
+              <p class="tw:text-[1.75rem] tw:font-medium">"{{ testimonal.settings.body }}"</p>
+              {% comment %} Author {% endcomment %}
+              <p class="tw:text-[1.75rem] tw:font-medium">— {{ testimonal.settings.author }}</p>
+            </div>
+            {% comment %} Product Card {% endcomment %}
+            <div class="tw:w-full">
+              {% render 'custom-card-product',
+                product: testimonal.settings.product,
+                compact_mode: true,
+                image_size: 'small',
+                background_color: '#ffffff'
+              %}
+            </div>
           </div>
         </div>
       {% endfor %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
+
+  {% comment %} Navigation Arrows {% endcomment %}
+  <div
+    class="tw:flex tw:flex-row tw:justify-center tw:items-center tw:gap-14"
+  >
+    <button
+      type="button"
+      class="tw:flex tw:items-center tw:hover:scale-110 tw:stroke-2 tw:cursor-pointer tw:duration-100 tw:transition-all"
+      name="prev"
+      aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper tw:size-9 tw:rotate-90">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
+
+    <p name="nav-text" class="tw:lg tw:w-30 tw:flex tw:justify-center">
+        1 of 6
+    </p>
+
+    <button
+      type="button"
+      class="tw:flex tw:items-center tw:hover:scale-110 tw:stroke-2 tw:cursor-pointer tw:duration-100 tw:transition-all"
+      name="next"
+      aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper tw:size-9 tw:rotate-270">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
+  </div>
+
 </div>
 
 {% schema %}
@@ -97,7 +138,7 @@
       "id": "pause_on_hover",
       "label": "Pause on Hover",
       "info": "Whether to pause scrolling on mouse hover",
-      "default": false,
+      "default": false
     },
     {
       "type": "range",
@@ -113,7 +154,6 @@
     {
       "type": "testimonal",
       "name": "Testimonial",
-      "limit": 5,
       "settings": [
         {
           "type": "text",

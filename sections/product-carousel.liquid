@@ -17,7 +17,7 @@
 
   {% comment %} Product Carousel {% endcomment %}
   <div class="tw:overflow-x-clip tw:w-full">
-    <div id="{{ section.id }}" name="carousel" class="tw:flex tw:flex-row tw:my-6 tw:transition-transform tw:duration-300">
+    <div id="{{ section.id }}" name="carousel" data-optimal-card-width="261" class="tw:flex tw:flex-row tw:my-6 tw:transition-transform tw:duration-300">
       {% for product in section.settings.collection.products %}
         <div name="carousel-card" class="tw:shrink-0" style="width: 261px">
           {% render 'custom-card-product', product: product, show_secondary_image: true, lazy_load: true %}
