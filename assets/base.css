@@ -262,6 +262,9 @@
   .tw\:mt-12 {
     margin-top: calc(var(--tw-spacing) * 12) !important;
   }
+  .tw\:mt-16 {
+    margin-top: calc(var(--tw-spacing) * 16) !important;
+  }
   .tw\:mr-24 {
     margin-right: calc(var(--tw-spacing) * 24) !important;
   }
