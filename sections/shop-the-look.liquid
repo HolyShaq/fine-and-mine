@@ -3,14 +3,16 @@
     class="tw:flex tw:flex-col tw:md:flex-row tw:w-full tw:p-8"
     style="background-color: {{ section.settings.background_color }};"
   >
-    <img
-      class="tw:aspect-square tw:object-cover tw:w-full"
-      src="{{ section.settings.image | image_url }}"
-      width="{{ section.settings.image.width }}"
-      height="{{ section.settings.image.height }}"
-    >
+    <div class="tw:w-1/2 tw:flex tw:items-center tw:justify-center">
+      <img
+        class="tw:aspect-square tw:object-cover tw:w-full"
+        src="{{ section.settings.image | image_url }}"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    </div>
 
-    <div class="tw:flex tw:flex-row tw:w-full tw:justify-center tw:items-center tw:p-4">
+    <div class="tw:flex tw:flex-row tw:w-1/2 tw:justify-center tw:items-center tw:p-4">
       <div class="tw:w-fit tw:max-w-full tw:flex tw:flex-col tw:gap-6">
         <h2
           class="tw:text-5xl tw:mt-4 tw:md:mt-0 tw:md:text-4xl tw:font-semibold tw:text-center"
