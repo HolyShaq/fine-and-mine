@@ -160,7 +160,7 @@
         {%- endif -%}
 
         <div
-          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="tw:justify-start footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
@@ -235,15 +235,24 @@
               {%- endform -%}
             </div>
           {%- endif -%}
-
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
               {{ shop | login_button: action: 'follow' }}
             </div>
           {%- endif -%}
-
           {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
+            <div class="tw:flex tw:flex-col tw:items-start tw:gap-2">
+              <img
+                src="{{ 'logo-white.png' | asset_url }}"
+                class="header__heading-logo motion-reduce"
+                alt="{{ logo_alt }}"
+                width="{{ settings.logo_width }}"
+                height="{{ logo_height }}"
+                loading="lazy"
+              >
+
+              {%- render 'social-icons', class: 'footer__list-social' -%}
+            </div>
           {%- endif -%}
         </div>
       </div>
