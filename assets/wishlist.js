@@ -17,13 +17,13 @@ function toggleWishlist(productObject, button) {
   if (index > -1) {
     wishlist.splice(index, 1); // remove
     span.innerHTML = window.themeAssets.wishlistEmpty;
-    if (text) {
+    if (text && text.classList.contains("wishlist_text")) {
       text.innerHTML = "Add to wishlist";
     }
   } else {
     wishlist.push(productObject); // add
     span.innerHTML = window.themeAssets.wishlistFilled;
-    if (text) {
+    if (text && text.classList.contains("wishlist_text")) {
       text.innerHTML = "Remove from wishlist";
     }
   }
@@ -273,7 +273,6 @@ document.querySelectorAll(".wishlist_toggle").forEach((button) => {
   }
 
   button.addEventListener("click", (evt) => {
-    console.log("Wishlist button clicked", productObject);
     evt.preventDefault();
     toggleWishlist(productObject, button);
   });
