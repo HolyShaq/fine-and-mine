@@ -47,8 +47,8 @@
 
     <script>
       window.themeAssets = {
-        wishlistFilled: '{{ "icon-heart-filled.svg" | inline_asset_content | strip_newlines }}',
-        wishlistEmpty: '{{ "icon-heart.svg" | inline_asset_content | strip_newlines }}',
+        wishlistFilled: '<img src="{{ 'icon-heart-filled.svg' | asset_url }}" alt="Icon">',
+        wishlistEmpty: '<img src="{{ 'icon-heart.svg' | asset_url }}" alt="Icon">',
       }
     </script>
     <script src="{{ 'wishlist.js' | asset_url }}" defer="defer"></script>

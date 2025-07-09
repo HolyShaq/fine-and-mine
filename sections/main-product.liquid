@@ -544,7 +544,9 @@
                       id="Details-{{ block.id }}-{{ section.id }}"
                     >
                       <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                        <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+                        <span class="svg-wrapper">
+                          <img src="{{ 'icon-heart.svg' | asset_url }}" width="20" height="20" alt="Icon">
+                        </span>
                         <h3 class="accordion__title inline-richtext h4">Jewelry Care</h3>
                         {{- 'icon-caret.svg' | inline_asset_content -}}
                       </summary>
