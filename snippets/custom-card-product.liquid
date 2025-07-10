@@ -102,7 +102,7 @@
       </div>
       {% comment %} Product Information {% endcomment %}
       <div class="tw:flex tw:flex-col tw:gap-2">
-        <h3 class="tw:font-semibold tw:text-base tw:truncate">{{ product.metafields.custom.product_brand | upcase }}</h3>
+        <h3 class="tw:font-semibold tw:text-base tw:line-clamp-1 tw:text-ellipsis">{{ product.metafields.custom.product_brand | upcase }}</h3>
         <a href="{{ product.url }}">
           <h2 class="tw:line-clamp-2 tw:text-2xl tw:max-w-75 tw:min-w-[4rem] tw:group-hover/div:underline tw:transition-all tw:duration-300">
             {{ product.title }}
