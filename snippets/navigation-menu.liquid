@@ -11,7 +11,7 @@
         <div class="nav-menu__title-wrapper">
           <span class="custom-nav__menu--title tw:text-black"> {{ block.settings.menu_title }} </span>
         </div>
-        <div class="sub-menu__content sub-menu__content--inner-design tw:bg-white {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
+        <div class="tw:flex tw:justify-center sub-menu__content sub-menu__content--inner-design tw:bg-white {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
           {% assign submenu = block.settings.submenu %}
 
           {% if submenu.links != blank %}
@@ -43,7 +43,6 @@
     grid-column: span 3;
     display: flex;
     justify-content: center;
-
   }
 
   .sub-menu__content {
@@ -57,7 +56,7 @@
     width: 100vw;
     z-index: 10;
     transition-delay: 250ms;
-
+    align-items: center;
   }
 
   .custom-nav__menu:hover .sub-menu__content {
@@ -71,7 +70,7 @@
 
   .sub-menu__content--inner-design {
     overflow: hidden;
-    padding: 1rem 1rem 1rem 15rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
 
   custom-nav__menu {
