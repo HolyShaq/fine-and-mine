@@ -285,6 +285,9 @@
   .tw\:mb-8 {
     margin-bottom: calc(var(--tw-spacing) * 8) !important;
   }
+  .tw\:mb-20 {
+    margin-bottom: calc(var(--tw-spacing) * 20) !important;
+  }
   .tw\:line-clamp-2 {
     overflow: hidden !important;
     display: -webkit-box !important;
@@ -632,6 +635,12 @@
   }
   .tw\:py-16 {
     padding-block: calc(var(--tw-spacing) * 16) !important;
+  }
+  .tw\:pt-4 {
+    padding-top: calc(var(--tw-spacing) * 4) !important;
+  }
+  .tw\:pb-20 {
+    padding-bottom: calc(var(--tw-spacing) * 20) !important;
   }
   .tw\:text-center {
     text-align: center !important;
