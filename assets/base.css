@@ -833,6 +833,16 @@
       }
     }
   }
+  .tw\:hover\:scale-103 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 103% !important;
+        --tw-scale-y: 103% !important;
+        --tw-scale-z: 103% !important;
+        scale: var(--tw-scale-x) var(--tw-scale-y) !important;
+      }
+    }
+  }
   .tw\:hover\:scale-107 {
     &:hover {
       @media (hover: hover) {
@@ -864,6 +874,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--tw-color-slate-400) !important;
+      }
+    }
+  }
+  .tw\:hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline !important;
       }
     }
   }
