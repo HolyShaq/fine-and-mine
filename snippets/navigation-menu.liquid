@@ -29,8 +29,26 @@
 
           <div class="tw:flex tw:flex-row tw:gap-6">
             {% for collection in block.settings.collections %}
-              <div class="tw:h-[240px] tw:w-[200px] tw:mt-[2rem]">
-                {% render 'card-collection', card_collection: collection, media_aspect_ratio: 'square' %}
+              {% liquid
+                case forloop.index
+                  when 1
+                    assign custom_title = block.settings.collection_1_name
+                  when 2
+                    assign custom_title = block.settings.collection_2_name
+                  when 3
+                    assign custom_title = block.settings.collection_3_name
+                  when 4
+                    assign custom_title = block.settings.collection_4_name
+                endcase
+              %}
+              <div class="tw:h-[260px] tw:w-[220px] tw:mt-[2rem]">
+                {% render 'card-collection',
+                  card_collection: collection,
+                  media_aspect_ratio: 'square',
+                  bg_color: '#f0f0f0',
+                  custom_title: custom_title,
+                  title_font_size: block.settings.collection_title_font_size
+                %}
               </div>
             {% endfor %}
           </div>

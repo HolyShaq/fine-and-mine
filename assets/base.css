@@ -387,6 +387,12 @@
   .tw\:w-\[80\%\] {
     width: 80% !important;
   }
+  .tw\:w-\[160px\] {
+    width: 160px !important;
+  }
+  .tw\:w-\[180px\] {
+    width: 180px !important;
+  }
   .tw\:w-\[200px\] {
     width: 200px !important;
   }
@@ -524,6 +530,11 @@
   }
   .tw\:gap-y-12 {
     row-gap: calc(var(--tw-spacing) * 12) !important;
+  }
+  .tw\:truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
   }
   .tw\:overflow-hidden {
     overflow: hidden !important;
@@ -676,6 +687,12 @@
   .tw\:font-semibold {
     --tw-font-weight: var(--tw-font-weight-semibold) !important;
     font-weight: var(--tw-font-weight-semibold) !important;
+  }
+  .tw\:text-ellipsis {
+    text-overflow: ellipsis !important;
+  }
+  .tw\:whitespace-nowrap {
+    white-space: nowrap !important;
   }
   .tw\:text-\[\#9E9E9E\] {
     color: #9E9E9E !important;

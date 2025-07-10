@@ -8,6 +8,9 @@
   - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
   - wrapper_class: {String} Wrapper class for card (optional)
   - placeholder_image: {String} Placeholder image when collection is empty (optional)
+  - bg_color: {String} BG Color for the card
+  - custom_title: {String} Custom title to override collection title
+  - title_font_size: {Number} Font size of collection title
 
   Usage:
   {% render 'card-collection' %}
@@ -117,7 +120,7 @@
       {%- endif -%}
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
-      <div class="card__content">
+      <div class="card__content" style="{% if bg_color != null %}background-color: {{ bg_color }};{% endif %}">
         <div class="card__information">
           <h3 class="card__heading">
             <a
@@ -129,7 +132,16 @@
               class="full-unstyled-link"
             >
               {%- if card_collection.title != blank -%}
-                {{- card_collection.title | escape -}}
+                <span
+                  class="tw:w-[160px] tw:truncate tw:whitespace-nowrap tw:overflow-hidden"
+                  style="{% if title_font_size != null %}font-size: {{ title_font_size }}px{% endif %}"
+                >
+                  {% if custom_title == '' %}
+                    {{- card_collection.title | escape -}}
+                  {% else %}
+                    {{- custom_title | escape -}}
+                  {% endif %}
+                </span>
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
