@@ -446,6 +446,9 @@
   .tw\:min-w-\[4rem\] {
     min-width: 4rem !important;
   }
+  .tw\:min-w-\[160px\] {
+    min-width: 160px !important;
+  }
   .tw\:flex-1 {
     flex: 1 !important;
   }
@@ -564,6 +567,9 @@
   }
   .tw\:overflow-hidden {
     overflow: hidden !important;
+  }
+  .tw\:overflow-visible {
+    overflow: visible !important;
   }
   .tw\:overflow-x-clip {
     overflow-x: clip !important;

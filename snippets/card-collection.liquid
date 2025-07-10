@@ -121,7 +121,7 @@
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content" style="{% if bg_color != null %}background-color: {{ bg_color }};{% endif %}">
-        <div class="card__information">
+        <div class="card__information tw:truncate tw:w-full">
           <h3 class="card__heading">
             <a
               {% if card_collection == blank %}
@@ -133,7 +133,7 @@
             >
               {%- if card_collection.title != blank -%}
                 <span
-                  class="tw:w-[160px] tw:truncate tw:whitespace-nowrap tw:overflow-hidden"
+                  class="tw:min-w-[160px] tw:truncate tw:whitespace-nowrap tw:overflow-hidden"
                   style="{% if title_font_size != null %}font-size: {{ title_font_size }}px{% endif %}"
                 >
                   {% if custom_title == '' or custom_title == null %}
