@@ -34,6 +34,7 @@
           "settings": {
             "feature_title": "Free Shipping",
             "feature_text": "<p>We ship Metro Manila orders above ₱2,990 at no cost to you. No promo code required.</p>",
+            "feature_image": "shopify://shop_images/free_shipping-blue.svg",
             "feature_url": "shopify://pages/shipping-returns",
             "hide_image": false
           }
@@ -43,6 +44,7 @@
           "settings": {
             "feature_title": "All-authentic",
             "feature_text": "<p>We guarantee 100% authenticity for all products that you shop from use</p>",
+            "feature_image": "shopify://shop_images/authentic-blue.svg",
             "feature_url": "shopify://collections/new-arrivals",
             "hide_image": false
           }
@@ -52,6 +54,7 @@
           "settings": {
             "feature_title": "Express Delivery",
             "feature_text": "<p>Same-day and next-day delivery options available at checkout</p>",
+            "feature_image": "shopify://shop_images/express_delivery-blue.svg",
             "feature_url": "shopify://pages/frequently-asked-questions-faqs",
             "hide_image": false
           }
@@ -61,6 +64,7 @@
           "settings": {
             "feature_title": "Exclusive Promos",
             "feature_text": "<p>Join our VIP list to stay updated on limited-time sales and events</p>",
+            "feature_image": "shopify://shop_images/promos-blue.svg",
             "feature_url": "shopify://collections/sale",
             "hide_image": false
           }

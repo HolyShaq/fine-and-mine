@@ -33,12 +33,12 @@
       "name": "Collection Showcase",
       "settings": {
         "collections": [
-          "boss-jewelry",
-          "bracelets",
-          "earrings"
+          "emporio-armani-jewelry",
+          "michael-kors-jewelry",
+          "lacoste-jewelry"
         ],
-        "title": "Explore more collections",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "title": "Our Brands",
+        "subtitle": "Discover designer jewelry collections for men and women",
         "nav_text": "View All",
         "page": ""
       }

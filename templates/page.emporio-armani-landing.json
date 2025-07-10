@@ -23,9 +23,9 @@
         "slide_zFigEn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_TH_Lucien-A.jpg",
-            "image_link": "shopify://collections/tommy-hilfiger-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_TH_Lucien-A.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_MK_MK-Mono.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_MK_MK-Heart.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -42,6 +42,7 @@
         },
         "slide_nFdxEW": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BANNER_MAR2025_TH-Product-Men.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
@@ -62,6 +63,7 @@
         },
         "slide_7pTVXy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BANNER_MAR2025_TH-Product-Women.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
@@ -89,23 +91,44 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "custom_liquid_xNnfwR": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "product_carousel_M9mCdb": {
       "type": "product-carousel",
       "name": "Product Carousel",
       "settings": {
-        "collection": "tommy-hilfiger-jewelry",
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-        "nav_text": "Shop the brand"
+        "collection": "michael-kors-jewelry",
+        "title": "Michael Kors Jewelry",
+        "subtitle": "Uniquely personal jewelry made featuring modern and sophisticated silhouettes",
+        "nav_text": "View all",
+        "padding_y": 2
+      }
+    },
+    "custom_liquid_hJnHaD": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "video_showcase_FKRfcr": {
@@ -124,7 +147,8 @@
         "collection": "tommy-hilfiger-jewelry",
         "title": "Lorem Ipsum Dolor Sit Amet",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-        "nav_text": "Shop the brand"
+        "nav_text": "Shop the brand",
+        "padding_y": 0
       }
     },
     "shop_the_look_ig6ArU": {
@@ -141,14 +165,25 @@
         "title": "Shop the Look"
       }
     },
+    "custom_liquid_6jBb3i": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "product_carousel_r7LJNa": {
       "type": "product-carousel",
       "name": "Product Carousel",
       "settings": {
-        "collection": "tommy-hilfiger-jewelry",
-        "title": "Lorem Ipsum Dolor Sit Amet",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-        "nav_text": "Shop the brand"
+        "collection": "michael-kors-jewelry",
+        "title": "More from Michael Kors",
+        "subtitle": "",
+        "nav_text": "Shop the brand",
+        "padding_y": 5
       }
     },
     "collection_list_G4HX84": {
@@ -157,7 +192,7 @@
         "featured_collection_zKaJM4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "boss-jewelry"
+            "collection": "emporio-armani-jewelry"
           }
         },
         "featured_collection_XpC9jt": {
@@ -180,14 +215,14 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Collections",
+        "title": "Our Brands",
         "link": "View all",
         "link_url": "",
         "link_size": 18,
         "link_color": "#000000",
         "link_hover_color": "#000000",
         "link_arrow_color": "#000000",
-        "link_background_color": "#E6E6E6",
+        "link_background_color": "#e6e6e6",
         "link_background_hover_color": "#000000",
         "link_font": "assistant_n4",
         "link_height": 100,
@@ -209,10 +244,13 @@
   "order": [
     "main",
     "slideshow_QG7Epz",
+    "custom_liquid_xNnfwR",
     "product_carousel_M9mCdb",
+    "custom_liquid_hJnHaD",
     "video_showcase_FKRfcr",
     "product_carousel_Mk7zBA",
     "shop_the_look_ig6ArU",
+    "custom_liquid_6jBb3i",
     "product_carousel_r7LJNa",
     "collection_list_G4HX84"
   ]

@@ -13,6 +13,57 @@
       "type": "main-collection-banner",
       "settings": {}
     },
+    "image_with_text_3Qtk9j": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7TQXp8": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>{{ collection.title }}</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_txXgVq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ collection.description }}",
+            "text_style": "body"
+          }
+        },
+        "button_QgJPbR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7TQXp8",
+        "text_txXgVq",
+        "button_QgJPbR"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "{{ collection.image }}",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -26,11 +77,92 @@
         "show_rating": false,
         "quick_add": "standard",
         "enable_filtering": true,
-        "filter_type": "drawer",
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "custom_liquid_gakbGP": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "collection_list_x87MME": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_BhJGiy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bangles"
+          }
+        },
+        "featured_collection_kPDbrd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "featured_collection_kViryg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "featured_collection_mLRE4M": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_BhJGiy",
+        "featured_collection_kPDbrd",
+        "featured_collection_kViryg",
+        "featured_collection_mLRE4M"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Category",
+        "link": "View all",
+        "link_url": "shopify://collections",
+        "link_size": 18,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#e6e6e6",
+        "link_background_hover_color": "#000000",
+        "link_font": "assistant_n4",
+        "link_height": 100,
+        "link_letter": 0,
+        "link_position": false,
+        "link_mobile": true,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_wtTkcC": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "collection_showcase_3MTQzA": {
@@ -38,20 +170,35 @@
       "name": "Collection Showcase",
       "settings": {
         "collections": [
-          "boss-jewelry",
-          "earrings",
-          "bracelets"
+          "michael-kors-jewelry",
+          "lacoste-jewelry",
+          "emporio-armani-jewelry"
         ],
         "title": "Explore more collections",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "subtitle": "Discover designer jewelry collections for men and women",
         "nav_text": "View All",
-        "page": ""
+        "page": "shopify://pages/our-brands"
+      }
+    },
+    "custom_liquid_ERRh3X": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
   "order": [
     "banner",
+    "image_with_text_3Qtk9j",
     "product-grid",
-    "collection_showcase_3MTQzA"
+    "custom_liquid_gakbGP",
+    "collection_list_x87MME",
+    "custom_liquid_wtTkcC",
+    "collection_showcase_3MTQzA",
+    "custom_liquid_ERRh3X"
   ]
 }

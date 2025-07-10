@@ -12,9 +12,93 @@
     "wishlist": {
       "type": "wishlist",
       "settings": {}
+    },
+    "custom_liquid_bBjVRY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_iWYN78": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6EGjCc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "emporio-armani-jewelry"
+          }
+        },
+        "featured_collection_DDE6eH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "michael-kors-jewelry"
+          }
+        },
+        "featured_collection_wkRwUM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lacoste-jewelry"
+          }
+        },
+        "featured_collection_TqCC9B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tommy-hilfiger-jewelry"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6EGjCc",
+        "featured_collection_DDE6eH",
+        "featured_collection_wkRwUM",
+        "featured_collection_TqCC9B"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Brand",
+        "link": "View all",
+        "link_url": "shopify://pages/our-brands",
+        "link_size": 16,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#E6E6E6",
+        "link_background_hover_color": "#000000",
+        "link_font": "assistant_n4",
+        "link_height": 100,
+        "link_letter": 0,
+        "link_position": false,
+        "link_mobile": true,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_EMW4kA": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "wishlist"
+    "wishlist",
+    "custom_liquid_bBjVRY",
+    "collection_list_iWYN78",
+    "custom_liquid_EMW4kA"
   ]
 }

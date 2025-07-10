@@ -78,10 +78,10 @@
         "color_scheme": "scheme-1",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "gallery_layout": "stacked",
         "media_position": "left",
-        "image_zoom": "none",
+        "image_zoom": "hover",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": true,
@@ -93,13 +93,14 @@
       "type": "cta-banner",
       "name": "CTA Banner",
       "settings": {
-        "collection": "",
-        "header": "Lorem Ipsum Dolor Sit Amet",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "collection": "new-arrivals",
+        "header": "Exclusively on Fine & Mine",
+        "content": "Enjoy first pick privilege and checkout new arrivals from Michael Kors and Emporio Armani before they hit the shelves. You won't be able to get there anywhere else but here!",
         "button_text": "Shop Now",
-        "image": "shopify://shop_images/62f1cdf137260c577ac4ca867647bef9b3b6f52a.jpg",
+        "image": "shopify://shop_images/PROMO-BOX_Text_ff3a931b-0193-431d-a20e-7f779c3e0b3e.jpg",
         "text_color": "#10181f",
-        "background_color": "#f0f0f0"
+        "background_color": "#f0f0f0",
+        "padding_y": 0
       }
     },
     "multi_column_text_banner_LGc6Li": {
@@ -109,16 +110,16 @@
           "type": "column",
           "name": "Column 1",
           "settings": {
-            "header": "[PROMO] Lorem ipsum dolor sit amet",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "header": "Free Shipping on orders above ₱2,990",
+            "content": "Enjoy free shipping within Metro Manila when you spend at least ₱2,990. No promo code required."
           }
         },
         "column_QHz8qX": {
           "type": "column",
           "name": "Column 2",
           "settings": {
-            "header": "[PROMO] Consectetur adipiscing elit",
-            "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "header": "Express Delivery Available",
+            "content": "Got a fashion emergency? Choose between same-day or next-day delivery at checkout. Daily cut-offs apply."
           }
         }
       },

@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Returns Process",
             "icon": "chat_bubble",
-            "row_content": "<p>All approved returns must be <strong>postmarked within seven (7) days of the delivery date</strong>.</p><p>All returned items must be in <strong>new and unused condition, with all original tags and labels attached</strong>. Please return the watch in the original box with all original packing material, manuals, and any other materials that came with the watch.</p><p>To return an item, please contact us on our <a href=\"https://www.facebook.com/fineandmine.ph\" target=\"_blank\" title=\"https://www.facebook.com/fineandmine.ph\">official Facebook page</a> to obtain a Return Merchandise Authorization (RMA) number.</p>",
+            "row_content": "<p>All approved returns must be <strong>postmarked within seven (7) days of the delivery date</strong>.</p><p>All returned items must be in <strong>new and unused condition, with all original tags and labels attached</strong>. Please return the jewelry item/s in the original box with all original packing material, manuals, and any other materials that came with the item.</p><p>To return an item, please contact us on our <a href=\"https://www.facebook.com/fineandmine.ph\" target=\"_blank\" title=\"https://www.facebook.com/fineandmine.ph\">official Facebook page</a> to obtain a Return Merchandise Authorization (RMA) number.</p>",
             "page": ""
           }
         },
@@ -96,10 +96,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_liquid_wgRqBT": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_ppiexY"
+    "collapsible_content_ppiexY",
+    "custom_liquid_wgRqBT"
   ]
 }

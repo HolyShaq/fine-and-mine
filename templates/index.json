@@ -15,9 +15,29 @@
         "slide_g6jyjw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_FM_Color.jpg",
-            "image_link": "https://fineandmine.ph/",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_FM.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_FM.jpg",
+            "image_link": "shopify://collections/frontpage",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_FM.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jtm34z": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ_KJ-APA-01.jpg",
+            "image_link": "shopify://collections/lacoste-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ_KJ-Apa-01.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -35,9 +55,9 @@
         "slide_NNYNAp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_LAJ_KJ-APA-01.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ-Product_CROCODILE-BRACELETS.jpg",
             "image_link": "shopify://collections/lacoste-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_LAJ_KJ-Apa-01.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ-Product_CROCODILE-BRACELETS.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -55,9 +75,29 @@
         "slide_XnVNcJ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_TH_Lucien-A.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_TH_Lucien-A.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_TH_Lucien-A.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH_Lucien-A.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ct8dkk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_TH-W_Womens-Model.jpg",
+            "image_link": "shopify://collections/tommy-hilfiger-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH-W.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -75,8 +115,10 @@
       },
       "block_order": [
         "slide_g6jyjw",
+        "slide_jtm34z",
         "slide_NNYNAp",
-        "slide_XnVNcJ"
+        "slide_XnVNcJ",
+        "slide_ct8dkk"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -113,7 +155,7 @@
         "featured_collection_jkcEnk": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rings"
+            "collection": "sets"
           }
         }
       },
@@ -150,15 +192,55 @@
         "padding_bottom": 20
       }
     },
+    "custom_liquid_wCek9W": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_liquid_M3GK8R": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "slideshow_DUCf8E": {
       "type": "slideshow",
       "blocks": {
         "slide_UJtjPa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_LAJ-SALE_Product_ARTHOR-UMPIRE-VIGOR.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ_KJ-APA-02.jpg",
             "image_link": "shopify://collections/lacoste-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_LAJ-Product_ARTHOR-UMPIRE-VIGOR_1f434dee-3247-4786-ba0d-e24501b15cd2.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ_KJ-Apa-02.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_PLFJTh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ-Product_UMPIRE-LA-2040454.jpg",
+            "image_link": "shopify://collections/lacoste-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ-Product_UMPIRE-2040454.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -176,9 +258,9 @@
         "slide_gLbpYC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_LAJ-SALE_Product_SCRIPT.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ-Product_METROPOLE.jpg",
             "image_link": "shopify://collections/lacoste-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_LAJ-Product_SCRIPT_67e5eccf-22e0-4808-9e2b-b2e39ffc30e0.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ-Product_METROPOLE.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -196,9 +278,9 @@
         "slide_X7HxaC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_LAJ-SALE_Product_METROPOLE.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_LAJ-Product_MATCHPOINT.jpg",
             "image_link": "shopify://collections/lacoste-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_LAJ-Product_METROPOLE_955186a4-7afb-4d81-8926-e72ad51da496.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_LAJ-Product_MATCHPOINT.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -216,6 +298,7 @@
       },
       "block_order": [
         "slide_UJtjPa",
+        "slide_PLFJTh",
         "slide_gLbpYC",
         "slide_X7HxaC"
       ],
@@ -235,10 +318,134 @@
       "name": "Product Carousel",
       "settings": {
         "collection": "lacoste-jewelry",
-        "title": "",
+        "title": "Lacoste Jewelry",
         "subtitle": "Adorn yourself in jewelry in the style of the crocodile",
         "nav_text": "Shop the brand",
-        "padding_y": 0
+        "padding_y": 3
+      }
+    },
+    "slideshow_zFGP7U": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_A7Fi39": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_ZY_EG3621040_EG3620040.jpg",
+            "image_link": "shopify://collections/emporio-armani-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_ZY_EG3621040_EG3620040.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_bqcRpR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_EG3620040.jpg",
+            "image_link": "shopify://collections/emporio-armani-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_EG3620040.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_M7DwPh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_ZS_EGS3172001_EGS3174710.jpg",
+            "image_link": "shopify://collections/emporio-armani-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_ZS_EG3625221.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Kg9wzK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_EG3615040_EG3616040.jpg",
+            "image_link": "shopify://collections/emporio-armani-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_EG3615040_EG3616040.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_A7Fi39",
+        "slide_bqcRpR",
+        "slide_M7DwPh",
+        "slide_Kg9wzK"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "product_carousel_xtk4Ue": {
+      "type": "product-carousel",
+      "disabled": true,
+      "name": "Product Carousel",
+      "settings": {
+        "collection": "emporio-armani-jewelry",
+        "title": "Emporio Armani Jewelry",
+        "subtitle": "Bold and distinctive designs that inspire unapologetic confidence",
+        "nav_text": "Shop the brand",
+        "padding_y": 3
+      }
+    },
+    "custom_liquid_YnkEjw": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "slideshow_cxNinT": {
@@ -247,9 +454,9 @@
         "slide_zKxxex": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_TH-Product-Circles.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_TH_Lucien-B.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_TH-Product_Circles.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH_Lucien-B.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -264,12 +471,12 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_UWUpNW": {
+        "slide_bXi3Ub": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_TH-Product-Men.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_TH-Product_SALE_Circles.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_TH-Product_Mens-Jewelry.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH-Product_SALE_CIRCLES-FAMILY.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -284,12 +491,32 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_pwHa8D": {
+        "slide_RAHPX8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_MAR2025_TH-Product-Women.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_TH-Product_SALE_Mens.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH-Product_SALE_Mens-Jewelry.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_hAj3HJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_TH-Product_SALE_Womens.jpg",
             "image_link": "shopify://collections/tommy-hilfiger-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_MAR2025_TH-Product_Womens.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_TH-Product_SALE_Womens-Jewelry.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -307,8 +534,9 @@
       },
       "block_order": [
         "slide_zKxxex",
-        "slide_UWUpNW",
-        "slide_pwHa8D"
+        "slide_bXi3Ub",
+        "slide_RAHPX8",
+        "slide_hAj3HJ"
       ],
       "settings": {
         "layout": "grid",
@@ -326,10 +554,178 @@
       "name": "Product Carousel",
       "settings": {
         "collection": "tommy-hilfiger-jewelry",
-        "title": "",
+        "title": "Tommy Hilfiger Jewelry",
         "subtitle": "Infuse classic Americana style with jewelry designed for everyday wear",
         "nav_text": "Shop the brand",
-        "padding_y": 0
+        "padding_y": 4
+      }
+    },
+    "slideshow_znt3HC": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_aXJLaH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_MK_MK-Heart.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_MK_MK-Heart.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_JRAYDn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_MK-Product_MK-Mono-Gold.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_MK-Product_MK-Mono-Gold.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_tafeYD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_MK-Product_MK-Tennis-Gold.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_MK-Product_MK-Tennis-Gold.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Dnth6T": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_JUL2025_MK-Product_MK-Heart-Silver.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_MK-Product_MK-Heart-Silver.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_aXJLaH",
+        "slide_JRAYDn",
+        "slide_tafeYD",
+        "slide_Dnth6T"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "product_carousel_CHVbdT": {
+      "type": "product-carousel",
+      "disabled": true,
+      "name": "Product Carousel",
+      "settings": {
+        "collection": "michael-kors-jewelry",
+        "title": "Michael Kors Jewelry",
+        "subtitle": "Uniquely personal jewelry made featuring modern and sophisticated silhouettes",
+        "nav_text": "Shop the brand",
+        "padding_y": 4
+      }
+    },
+    "custom_liquid_8XEFmE": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_7WP6RX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GUrHaN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Own Your Shine</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Pz7QQC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our curated jewelry collections for men and woman feature gleaming metals, shining crystals, and colorful stones. Browse our wide range of bracelets, earrings, necklaces, and more.</p>"
+          }
+        },
+        "button_yhHPcR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GUrHaN",
+        "text_Pz7QQC",
+        "button_yhHPcR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 28
       }
     },
     "shop_the_look_4Mbw49": {
@@ -337,11 +733,10 @@
       "name": "Shop the Look Section",
       "settings": {
         "products": [
-          "adjustable-braided-metal-bracelet-bracelet-thj-2790434",
-          "crystal-bangle-thj-2780570",
-          "bold-hearts-necklace-thj-2780927"
+          "metropole-bracelet-la-2040120",
+          "stencil-bracelet-laj-2040219"
         ],
-        "image": "shopify://shop_images/716b9eaca2f8d8ebcda018cbbefc6ebc9a5f68a3.jpg",
+        "image": "shopify://shop_images/FM_Shop-Look_LAJ-KJ_APA.jpg",
         "text_color": "#426c8a",
         "background_color": "#c2cfd6",
         "title": "Shop the Look"
@@ -386,6 +781,7 @@
         "testimonal_Jhxaah",
         "testimonal_8jKYgj"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "title": "What People Say",
@@ -397,11 +793,22 @@
     },
     "video_showcase_zrMwz7": {
       "type": "video-showcase",
+      "disabled": true,
       "name": "Video Showcase",
       "settings": {
         "title": "Own your Shine",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "video": "shopify://files/videos/4236565-uhd_3840_2160_24fps.mp4"
+      }
+    },
+    "custom_liquid_DAieFi": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "product_carousel_TrFzYi": {
@@ -412,7 +819,7 @@
         "title": "The Fine & Mine Edit",
         "subtitle": "Shop the team’s top picks and favorites for the month",
         "nav_text": "View All",
-        "padding_y": 0
+        "padding_y": 5
       }
     },
     "product_carousel_pB8EKE": {
@@ -423,7 +830,7 @@
         "title": "New Arrivals",
         "subtitle": "Discover the hottest styles from the latest collections",
         "nav_text": "View All",
-        "padding_y": 0
+        "padding_y": 5
       }
     },
     "cta_banner_WHGiPL": {
@@ -431,13 +838,13 @@
       "name": "CTA Banner",
       "settings": {
         "collection": "new-arrivals",
-        "header": "New Arrivals for Spring/Summer 2025",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "button_text": "Explore New Arrivals",
-        "image": "shopify://shop_images/62f1cdf137260c577ac4ca867647bef9b3b6f52a.jpg",
+        "header": "Exclusively on Fine & Mine",
+        "content": "Enjoy first pick privilege and checkout new arrivals from Michael Kors and Emporio Armani before they hit the shelves. You won't be able to get there anywhere else but here!",
+        "button_text": "Shop Now",
+        "image": "shopify://shop_images/PROMO-BOX_Text_ff3a931b-0193-431d-a20e-7f779c3e0b3e.jpg",
         "text_color": "#10181f",
         "background_color": "#f0f0f0",
-        "padding_y": 0
+        "padding_y": 5
       }
     },
     "1741917053243975dc": {
@@ -489,14 +896,24 @@
   },
   "order": [
     "slideshow_MVec98",
+    "custom_liquid_wCek9W",
     "collection_list_dRE43m",
+    "custom_liquid_M3GK8R",
     "slideshow_DUCf8E",
     "product_carousel_JFzDX8",
+    "slideshow_zFGP7U",
+    "product_carousel_xtk4Ue",
+    "custom_liquid_YnkEjw",
     "slideshow_cxNinT",
     "product_carousel_c4HVUh",
+    "slideshow_znt3HC",
+    "product_carousel_CHVbdT",
+    "custom_liquid_8XEFmE",
+    "rich_text_7WP6RX",
     "shop_the_look_4Mbw49",
     "testimonials_ccfUfm",
     "video_showcase_zrMwz7",
+    "custom_liquid_DAieFi",
     "product_carousel_TrFzYi",
     "product_carousel_pB8EKE",
     "cta_banner_WHGiPL",

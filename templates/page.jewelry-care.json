@@ -23,7 +23,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I clean my jewelry?",
-            "icon": "heart",
+            "icon": "chat_bubble",
             "row_content": "<p>After wear, you may buff and polish your jewelry with a soft microfiber cloth. </p><p>For deep cleaning, you can wipe your jewelry with a slightly damp cloth. Avoid using abrasive and harsh chemicals for cleaning to preserve its color and finish.</p><p>Warm, soapy water is recommended to remove dirt and residue.</p>",
             "page": ""
           }
@@ -32,7 +32,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I store my jewelry?",
-            "icon": "heart",
+            "icon": "chat_bubble",
             "row_content": "<p>Keep jewelry in a dry area and avoid storing it in humid places. If you're using pouches or organizers, we recommend placing silica gel packs to absorb moisture in your jewelry storage.</p>",
             "page": ""
           }
@@ -41,7 +41,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I protect my jewelry from discoloration and fading?",
-            "icon": "heart",
+            "icon": "chat_bubble",
             "row_content": "<p>Do not expose your jewelry to extreme temperatures and harsh chemicals. It may cause damage which includes discoloration, deformation, and chipping.</p><p>Daily use items like perfumes, lotions, and hairspray may contain chemicals that can potentially damage the finish.</p>",
             "page": ""
           }
@@ -50,7 +50,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I wear my jewelry while showering/swimming/exercising?",
-            "icon": "heart",
+            "icon": "chat_bubble",
             "row_content": "<p>Your jewelry is generally safe for daily wear.</p><p>However, we recommend removing your jewelry if you're expecting prolonged exposure to sun, sweat, and chlorine to keep its shine longer.</p><p>Wipe your jewelry after each use and deep clean as needed.</p>",
             "page": ""
           }
@@ -76,10 +76,94 @@
         "padding_top": 12,
         "padding_bottom": 32
       }
+    },
+    "custom_liquid_ieEUA7": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_pMiqQ9": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PHbexH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bangles"
+          }
+        },
+        "featured_collection_nywBqb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "featured_collection_QNtPwk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "featured_collection_dErEbk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PHbexH",
+        "featured_collection_nywBqb",
+        "featured_collection_QNtPwk",
+        "featured_collection_dErEbk"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Category",
+        "link": "View all",
+        "link_url": "shopify://collections/new-arrivals",
+        "link_size": 16,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#e6e6e6",
+        "link_background_hover_color": "#000000",
+        "link_font": "assistant_n4",
+        "link_height": 100,
+        "link_letter": 0,
+        "link_position": false,
+        "link_mobile": true,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_LaNUFJ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_TfhRVk"
+    "collapsible_content_TfhRVk",
+    "custom_liquid_ieEUA7",
+    "collection_list_pMiqQ9",
+    "custom_liquid_LaNUFJ"
   ]
 }

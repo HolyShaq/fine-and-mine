@@ -21,78 +21,75 @@
       "type": "page-intro",
       "name": "Page Intro",
       "settings": {
-        "title": "Lorem Ipsum",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "Our Brands",
+        "body": "Discover designer jewelry collections for men and women. We offer a wide range of bracelets, earrings, necklaces, and more from global brands."
+      }
+    },
+    "rich_text_ydjnEd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3eWy8C": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Brands</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Y3DeGm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover designer jewelry collections for men and women. We offer a wide range of bracelets, earrings, necklaces, and more from global brands.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3eWy8C",
+        "text_Y3DeGm"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "brand_showcase_Xi3HCN": {
       "type": "brand-showcase",
       "blocks": {
-        "logo_UVWPqK": {
+        "logo_webfdc": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/f40db532e43f7328f76185d3ca05f9685d8c5962.png"
-          }
-        },
-        "logo_t3fPAN": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/88fc05968d73b038dd48842d2e514354042dc73d.png"
-          }
-        },
-        "logo_HBhkLw": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/cd237f64a7a87be7e6388c7c506f3d04948db6a9.png"
+            "image": "shopify://shop_images/FM_Logos__COA.png"
           }
         },
         "logo_q9eLfL": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/121afcf6bbf2b9cdf77a0ed20b62c48544f69d17.png"
-          }
-        },
-        "logo_XeQyNJ": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/2ddead86ff0408fb48d9fea3ea6426834b54f959.png"
+            "image": "shopify://shop_images/FM_Logos__EAG.png"
           }
         },
         "logo_gLJGWt": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/154b080cd180f06cef0a9b23dec201417cff9dc7.png"
+            "image": "shopify://shop_images/FM_Logos_-04.png"
           }
         },
-        "logo_webfdc": {
+        "logo_XeQyNJ": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/8983161cbe37a74829daeee32dfd119eb0fe42ae.png"
-          }
-        },
-        "logo_dVkyVg": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/16e052390f26b2740e019c878b2c50d82b1ef235.png"
-          }
-        },
-        "logo_LwUJk3": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/48be0621ef89730d371353f063ef363acf55f75d.png"
+            "image": "shopify://shop_images/FM_Logos__MK.png"
           }
         }
       },
       "block_order": [
-        "logo_UVWPqK",
-        "logo_t3fPAN",
-        "logo_HBhkLw",
-        "logo_q9eLfL",
-        "logo_XeQyNJ",
-        "logo_gLJGWt",
         "logo_webfdc",
-        "logo_dVkyVg",
-        "logo_LwUJk3"
+        "logo_q9eLfL",
+        "logo_gLJGWt",
+        "logo_XeQyNJ"
       ],
       "name": "Brand Showcase",
       "settings": {}
@@ -101,13 +98,14 @@
       "type": "cta-banner",
       "name": "CTA Banner",
       "settings": {
-        "collection": "",
-        "header": "New Arrivals for Spring/Summer 2025",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "collection": "new-arrivals",
+        "header": "Exclusively on Fine & Mine",
+        "content": "Enjoy first pick privilege and checkout new arrivals from Michael Kors and Emporio Armani before they hit the shelves. You won't be able to get there anywhere else but here!",
         "button_text": "Shop Now",
-        "image": "shopify://shop_images/EGS3150040.jpg",
+        "image": "shopify://shop_images/PROMO-BOX_Text_ff3a931b-0193-431d-a20e-7f779c3e0b3e.jpg",
         "text_color": "#10181f",
-        "background_color": "#f0f0f0"
+        "background_color": "#f0f0f0",
+        "padding_y": 0
       }
     },
     "multi_column_text_banner_MadPAQ": {
@@ -117,16 +115,16 @@
           "type": "column",
           "name": "Column 1",
           "settings": {
-            "header": "Lorem ipsum dolor sit amet",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "header": "Free Shipping on orders above ₱2,990",
+            "content": "Enjoy free shipping within Metro Manila when you spend at least ₱2,990. No promo code required."
           }
         },
         "column_RUrwR8": {
           "type": "column",
           "name": "Column 2",
           "settings": {
-            "header": "Lorem ipsum dolor sit amet",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "header": "Express Delivery Available",
+            "content": "Got a fashion emergency? Choose between same-day or next-day delivery at checkout. Daily cut-offs apply."
           }
         }
       },
@@ -143,10 +141,10 @@
     "collection_list_zzWM6d": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_mWY3Gq": {
+        "featured_collection_RL4zmi": {
           "type": "featured_collection",
           "settings": {
-            "collection": "earrings"
+            "collection": "bangles"
           }
         },
         "featured_collection_8CX6aR": {
@@ -155,28 +153,27 @@
             "collection": "bracelets"
           }
         },
-        "featured_collection_RL4zmi": {
+        "featured_collection_mWY3Gq": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
-            "collection": "bangles"
+            "collection": "earrings"
           }
         },
         "featured_collection_E3LLGg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "rings"
+            "collection": "sets"
           }
         }
       },
       "block_order": [
-        "featured_collection_mWY3Gq",
-        "featured_collection_8CX6aR",
         "featured_collection_RL4zmi",
+        "featured_collection_8CX6aR",
+        "featured_collection_mWY3Gq",
         "featured_collection_E3LLGg"
       ],
       "settings": {
-        "title": "Shop Category",
+        "title": "Shop by Category",
         "link": "View All",
         "link_url": "shopify://collections",
         "link_size": 18,
@@ -205,6 +202,7 @@
   "order": [
     "main",
     "page_intro_AgzxJ3",
+    "rich_text_ydjnEd",
     "brand_showcase_Xi3HCN",
     "cta_banner_akm4bR",
     "multi_column_text_banner_MadPAQ",

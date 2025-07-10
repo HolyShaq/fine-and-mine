@@ -12,9 +12,71 @@
     "main": {
       "type": "main-404",
       "settings": {}
+    },
+    "collection_list_i8Dw79": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_GFbHzW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bangles"
+          }
+        },
+        "featured_collection_gtFbfT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bracelets"
+          }
+        },
+        "featured_collection_U3rht3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "featured_collection_g4bpHX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sets"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_GFbHzW",
+        "featured_collection_gtFbfT",
+        "featured_collection_U3rht3",
+        "featured_collection_g4bpHX"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "You might like these",
+        "link": "View all",
+        "link_url": "shopify://collections",
+        "link_size": 16,
+        "link_color": "#000000",
+        "link_hover_color": "#000000",
+        "link_arrow_color": "#000000",
+        "link_background_color": "#E6E6E6",
+        "link_background_hover_color": "#000000",
+        "link_font": "assistant_n4",
+        "link_height": 100,
+        "link_letter": 0,
+        "link_position": false,
+        "link_mobile": true,
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_list_i8Dw79"
   ]
 }

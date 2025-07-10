@@ -27,7 +27,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "EXCLUSIVE LAUNCH SALE: 10% OFF until Mar 31, 2025 only",
+            "text": "OPENING DAY PROMO: 10% OFF SITEWIDE",
             "link": "shopify://collections/sale"
           }
         },
@@ -35,14 +35,14 @@
           "type": "announcement",
           "settings": {
             "text": "Express Delivery within Metro Manila available!",
-            "link": "shopify://collections/new-arrivals"
+            "link": "shopify://pages/shipping-returns"
           }
         },
         "announcement_qNNaHE": {
           "type": "announcement",
           "settings": {
             "text": "FREE SHIPPING on orders above ₱2,990",
-            "link": "shopify://collections/bestsellers"
+            "link": "shopify://collections/all"
           }
         }
       },
@@ -71,8 +71,8 @@
         "highlight_QnMWJY": {
           "type": "highlight",
           "settings": {
-            "highlight_name": "Just In: Emporio Armani",
-            "highlight_link": "",
+            "highlight_name": "Store Exclusive: Michael Kors",
+            "highlight_link": "shopify://collections/michael-kors-jewelry",
             "is_bold": true
           }
         },
@@ -82,8 +82,10 @@
             "menu_title": "Women",
             "submenu": "womens-jewelry",
             "collections": [
-              "rings",
-              "bangles"
+              "womens-michael-kors-jewelry",
+              "emporio-armani-jewelry-for-women",
+              "lacoste-jewelry-for-women",
+              "tommy-hilfiger-jewelry-for-women"
             ]
           }
         },
@@ -92,7 +94,10 @@
           "settings": {
             "menu_title": "Men",
             "submenu": "mens-jewelry",
-            "collections": []
+            "collections": [
+              "lacoste-jewelry-for-men",
+              "tommy-hilfiger-for-men"
+            ]
           }
         },
         "link_bkbe86": {
@@ -101,9 +106,10 @@
             "menu_title": "Shop All",
             "submenu": "shop-all",
             "collections": [
+              "michael-kors-jewelry",
+              "emporio-armani-jewelry",
               "lacoste-jewelry",
-              "boss-jewelry",
-              "rings"
+              "tommy-hilfiger-jewelry"
             ]
           }
         },

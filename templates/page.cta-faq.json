@@ -60,7 +60,7 @@
           "settings": {
             "heading": "How do I take care of my jewelry?",
             "icon": "chat_bubble",
-            "row_content": "<p>Our jewelry are tarnish-resistant but require effortless care.</p><p>Take a moment to read through our Jewelry Care page to learn how to prolong its shine.</p>",
+            "row_content": "<p>Our jewelry are tarnish-resistant but require effortless care.</p><p>Take a moment to read through our <a href=\"/pages/jewelry-care\" target=\"_blank\" title=\"Jewelry Care\">Jewelry Care</a> page to learn how to prolong its shine.</p>",
             "page": ""
           }
         }
