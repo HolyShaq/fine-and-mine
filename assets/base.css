@@ -20,6 +20,8 @@
     --tw-container-6xl: 72rem;
     --tw-text-base: 1rem;
     --tw-text-base--line-height: calc(1.5 / 1);
+    --tw-text-xl: 1.25rem;
+    --tw-text-xl--line-height: calc(1.75 / 1.25);
     --tw-text-2xl: 1.5rem;
     --tw-text-2xl--line-height: calc(2 / 1.5);
     --tw-text-3xl: 1.875rem;
@@ -387,6 +389,9 @@
   .tw\:w-66 {
     width: calc(var(--tw-spacing) * 66) !important;
   }
+  .tw\:w-75 {
+    width: calc(var(--tw-spacing) * 75) !important;
+  }
   .tw\:w-96 {
     width: calc(var(--tw-spacing) * 96) !important;
   }
@@ -681,6 +686,10 @@
     font-size: var(--tw-text-base) !important;
     line-height: var(--tw-leading, var(--tw-text-base--line-height)) !important;
   }
+  .tw\:text-xl {
+    font-size: var(--tw-text-xl) !important;
+    line-height: var(--tw-leading, var(--tw-text-xl--line-height)) !important;
+  }
   .tw\:text-\[0\.9rem\] {
     font-size: 0.9rem !important;
   }
@@ -966,6 +975,12 @@
       align-items: flex-start !important;
     }
   }
+  .tw\:sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--tw-text-2xl) !important;
+      line-height: var(--tw-leading, var(--tw-text-2xl--line-height)) !important;
+    }
+  }
   .tw\:md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--tw-spacing) * 0) !important;
@@ -1001,10 +1016,22 @@
       text-align: left !important;
     }
   }
+  .tw\:md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--tw-text-2xl) !important;
+      line-height: var(--tw-leading, var(--tw-text-2xl--line-height)) !important;
+    }
+  }
   .tw\:md\:text-4xl {
     @media (width >= 48rem) {
       font-size: var(--tw-text-4xl) !important;
       line-height: var(--tw-leading, var(--tw-text-4xl--line-height)) !important;
+    }
+  }
+  .tw\:md\:font-bold {
+    @media (width >= 48rem) {
+      --tw-font-weight: var(--tw-font-weight-bold) !important;
+      font-weight: var(--tw-font-weight-bold) !important;
     }
   }
   .tw\:lg\:my-8 {
