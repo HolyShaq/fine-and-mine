@@ -59,24 +59,28 @@
       {% comment %} Product Image {% endcomment %}
       <div class="tw:relative {% if compact_mode %}{{image_tw_size}}{% endif %} tw:aspect-square tw:items-center tw:group/img">
         {% comment %} Featured Image {% endcomment %}
-        <img
-          class="{{ image_tw_size }} tw:aspect-square tw:object-cover {% if product.images[1] != null and show_secondary_image %} tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity {% endif %}"
-          src="{{ product.featured_image | image_url }}"
-          width="{{ product.featured_image.width }}"
-          height="{{ product.featured_image.height }}"
-          {% if lazy_load %}
-            loading="lazy"
-          {% endif %}
-        >
+        <a href="{{ product.url }}">
+          <img
+            class="{{ image_tw_size }} tw:aspect-square tw:object-cover {% if product.images[1] != null and show_secondary_image %} tw:opacity-100 tw:group-hover/img:opacity-0 tw:duration-300 tw:transition-opacity {% endif %}"
+            src="{{ product.featured_image | image_url }}"
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
+            {% if lazy_load %}
+              loading="lazy"
+            {% endif %}
+          >
+        </a>
         {% comment %} Secondary Image on Hover {% endcomment %}
         {% if product.images[1] != null and show_secondary_image %}
-          <img
-            class="tw:absolute tw:top-0 tw:left-0 {{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
-            src="{{ product.images[1] | image_url }}"
-            width="{{ product.images[1].width }}"
-            height="{{ product.images[1].height }}"
-            loading="lazy"
-          >
+          <a href="{{ product.url }}">
+            <img
+              class="tw:absolute tw:top-0 tw:left-0 {{ image_tw_size }} tw:aspect-square tw:object-cover tw:opacity-0 tw:group-hover/img:opacity-100 tw:duration-300 tw:transition-opacity"
+              src="{{ product.images[1] | image_url }}"
+              width="{{ product.images[1].width }}"
+              height="{{ product.images[1].height }}"
+              loading="lazy"
+            >
+          </a>
         {% endif %}
         {% comment %} Favorite Icon {% endcomment %}
         {% unless compact_mode %}
