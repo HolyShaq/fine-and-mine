@@ -11,7 +11,7 @@
         <div class="nav-menu__title-wrapper">
           <span class="custom-nav__menu--title tw:text-black"> {{ block.settings.menu_title }} </span>
         </div>
-        <div class="tw:flex tw:justify-center sub-menu__content sub-menu__content--inner-design tw:bg-white {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
+        <div class="tw:flex tw:justify-center tw:items-start tw:bg-[#f9f9f9] sub-menu__content sub-menu__content--inner-design {%  if section.settings.checkbox_sub_menu_always_show %} sub-menu__content--always-show {% endif %}">
           {% assign submenu = block.settings.submenu %}
 
           {% if submenu.links != blank %}
@@ -29,7 +29,9 @@
 
           <div class="tw:flex tw:flex-row tw:gap-6">
             {% for collection in block.settings.collections %}
-              <div class="tw:h-full tw:aspect-square">{% render 'card-collection', card_collection: collection, media_aspect_ratio: "square" %}</div>
+              <div class="tw:h-[240px] tw:w-[200px] tw:mt-[2rem]">
+                {% render 'card-collection', card_collection: collection, media_aspect_ratio: 'square' %}
+              </div>
             {% endfor %}
           </div>
         </div>
