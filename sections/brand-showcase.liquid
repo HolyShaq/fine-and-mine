@@ -1,68 +1,88 @@
-<div class="page-width tw:my-8">
-  <div class="tw:lg:flex tw:hidden tw:flex-col tw:gap-8">
-    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4">
+<div class="page-width tw:my-0 tw:lg:my-8">
+  <div
+    class="tw:lg:flex tw:hidden tw:flex-col"
+    style="gap: calc(var(--tw-spacing) * {{ section.settings.vertical_gap }})"
+  >
+    <div
+      class="tw:flex tw:flex-row tw:justify-center"
+      style="gap: calc(var(--tw-spacing) * {{ section.settings.horizontal_gap }})"
+    >
       {% for logo in section.blocks limit: 4 %}
         {% assign logo_image = logo.settings.image %}
-        <img
-          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
-          src="{{ logo_image | image_url }}"
-          width="{{ logo_image.width }}"
-          height="{{ logo_image.height }}"
-          loading="lazy"
-        >
+        <a href="{{ logo.settings.brand_collection.url }}">
+          <img
+            class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+            src="{{ logo_image | image_url }}"
+            width="{{ logo_image.width }}"
+            height="{{ logo_image.height }}"
+            loading="lazy"
+          >
+        </a>
       {% endfor %}
     </div>
 
-    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4">
+    <div
+      class="tw:flex tw:flex-row tw:justify-center"
+      style="gap: calc(var(--tw-spacing) * {{ section.settings.horizontal_gap }})"
+    >
       {% for logo in section.blocks limit: 3 offset: 4 %}
         {% assign logo_image = logo.settings.image %}
-        <img
-          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
-          src="{{ logo_image | image_url }}"
-          width="{{ logo_image.width }}"
-          height="{{ logo_image.height }}"
-          loading="lazy"
-        >
+        <a href="{{ logo.settings.brand_collection.url }}">
+          <img
+            class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+            src="{{ logo_image | image_url }}"
+            width="{{ logo_image.width }}"
+            height="{{ logo_image.height }}"
+            loading="lazy"
+          >
+        </a>
       {% endfor %}
     </div>
 
-    <div class="tw:flex tw:flex-row tw:justify-center tw:gap-4">
+    <div
+      class="tw:flex tw:flex-row tw:justify-center"
+      style="gap: calc(var(--tw-spacing) * {{ section.settings.horizontal_gap }})"
+    >
       {% for logo in section.blocks limit: 2 offset: 7 %}
         {% assign logo_image = logo.settings.image %}
-        <img
-          class="tw:object-contain tw:w-[262px] tw:h-[116px]"
-          src="{{ logo_image | image_url }}"
-          width="{{ logo_image.width }}"
-          height="{{ logo_image.height }}"
-          loading="lazy"
-        >
+        <a href="{{ logo.settings.brand_collection.url }}">
+          <img
+            class="tw:object-contain tw:w-[262px] tw:h-[116px]"
+            src="{{ logo_image | image_url }}"
+            width="{{ logo_image.width }}"
+            height="{{ logo_image.height }}"
+            loading="lazy"
+          >
+        </a>
       {% endfor %}
     </div>
   </div>
 
   <div class="tw:px-4 tw:py-8 tw:lg:hidden">
-      <ul class="tw:grid tw:grid-cols-2 tw:sm:grid-cols-3 tw:lg:grid-cols-4 tw:gap-x-8 tw:gap-y-12 tw:items-center">
-        {% for logo in section.blocks %}
-          <li class="tw:flex tw:justify-center" {{ logo.shopify_attributes }}>
-            {%- assign logo_image = logo.settings.image -%}
-            {% if logo_image != blank %}
+    <ul class="tw:grid tw:grid-cols-2 tw:sm:grid-cols-3 tw:lg:grid-cols-4 tw:gap-x-1 tw:gap-y-1 tw:items-center">
+      {% for logo in section.blocks %}
+        <li class="tw:flex tw:justify-center" {{ logo.shopify_attributes }}>
+          {%- assign logo_image = logo.settings.image -%}
+          {% if logo_image != blank %}
+            <a href="{{ logo.settings.brand_collection.url }}">
               <img
-                class="tw:object-contain tw:h-16 lg:tw:h-20"
+                class="tw:object-cover tw:h-16 lg:tw:h-20"
                 src="{{ logo_image | image_url: width: 400 }}"
                 alt="{{ logo_image.alt | escape }}"
                 width="{{ logo_image.width }}"
                 height="{{ logo_image.height }}"
                 loading="lazy"
               >
-            {% else %}
-              {% comment %} Shopify placeholder for when no image is selected in a block {% endcomment %}
-              <div class="tw:w-full tw:max-w-[180px]">
-                {{ 'image' | placeholder_svg_tag: 'tw:w-full tw:h-auto tw:text-gray-400' }}
-              </div>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+            </a>
+          {% else %}
+            {% comment %} Shopify placeholder for when no image is selected in a block {% endcomment %}
+            <div class="tw:w-full tw:max-w-[180px]">
+              {{ 'image' | placeholder_svg_tag: 'tw:w-full tw:h-auto tw:text-gray-400' }}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
   {% if section.blocks.size == 0 %}
@@ -74,6 +94,26 @@
 {
   "name": "Brand Showcase",
   "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "horizontal_gap",
+      "label": "Horizontal Gap",
+      "min": 0,
+      "max": 12,
+      "default": 4,
+      "info": "This would only apply in large screens."
+    },
+    {
+      "type": "range",
+      "id": "vertical_gap",
+      "label": "Vertical Gap",
+      "min": 0,
+      "max": 12,
+      "default": 8,
+      "info": "This would only apply in large screens."
+    }
+  ],
   "blocks": [
     {
       "type": "logo",
@@ -84,6 +124,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "collection",
+          "id": "brand_collection",
+          "label": "Brand Collection"
         }
       ]
     }
