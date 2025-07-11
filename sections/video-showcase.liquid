@@ -21,7 +21,7 @@
       {% endif -%}
       {% if section.settings.video %}
         <div class="tw:flex-2/3">
-          {{ section.settings.video | video_tag: controls: true, loop: 'loop' }}
+          {{ section.settings.video | video_tag: controls: true, loop: 'loop', class: 'tw:w-full tw:h-full tw:object-cover' }}
         </div>
       {% endif -%}
     </div>
