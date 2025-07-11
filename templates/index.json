@@ -131,6 +131,16 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "custom_liquid_wCek9W": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "collection_list_dRE43m": {
       "type": "collection-list",
       "blocks": {
@@ -192,24 +202,14 @@
         "padding_bottom": 20
       }
     },
-    "custom_liquid_wCek9W": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 8,
-        "padding_bottom": 8
-      }
-    },
     "custom_liquid_M3GK8R": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "",
         "color_scheme": "",
-        "padding_top": 8,
-        "padding_bottom": 8
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "slideshow_DUCf8E": {
@@ -302,6 +302,7 @@
         "slide_gLbpYC",
         "slide_X7HxaC"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -315,6 +316,7 @@
     },
     "product_carousel_JFzDX8": {
       "type": "product-carousel",
+      "disabled": true,
       "name": "Product Carousel",
       "settings": {
         "collection": "lacoste-jewelry",
@@ -370,9 +372,9 @@
         "slide_M7DwPh": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_JUL2025_EA_ZS_EGS3172001_EGS3174710.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_EG3625221.jpg",
             "image_link": "shopify://collections/emporio-armani-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_ZS_EG3625221.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_EG3625221.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -390,9 +392,9 @@
         "slide_Kg9wzK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BANNER_JUL2025_EA_EG3615040_EG3616040.jpg",
+            "image": "shopify://shop_images/BANNER_JUL2025_EA_EG3608040.jpg",
             "image_link": "shopify://collections/emporio-armani-jewelry",
-            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_EG3615040_EG3616040.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE-BANNER_JUL2025_EA_EG3608040.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -414,7 +416,6 @@
         "slide_M7DwPh",
         "slide_Kg9wzK"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -428,7 +429,6 @@
     },
     "product_carousel_xtk4Ue": {
       "type": "product-carousel",
-      "disabled": true,
       "name": "Product Carousel",
       "settings": {
         "collection": "emporio-armani-jewelry",
@@ -538,6 +538,7 @@
         "slide_RAHPX8",
         "slide_hAj3HJ"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -551,6 +552,7 @@
     },
     "product_carousel_c4HVUh": {
       "type": "product-carousel",
+      "disabled": true,
       "name": "Product Carousel",
       "settings": {
         "collection": "tommy-hilfiger-jewelry",
@@ -650,7 +652,6 @@
         "slide_tafeYD",
         "slide_Dnth6T"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -664,7 +665,6 @@
     },
     "product_carousel_CHVbdT": {
       "type": "product-carousel",
-      "disabled": true,
       "name": "Product Carousel",
       "settings": {
         "collection": "michael-kors-jewelry",
@@ -739,7 +739,18 @@
         "image": "shopify://shop_images/FM_Shop-Look_LAJ-KJ_APA.jpg",
         "text_color": "#426c8a",
         "background_color": "#c2cfd6",
-        "title": "Shop the Look"
+        "title": "Shop KJ Apa's Look"
+      }
+    },
+    "product_carousel_fGc6CB": {
+      "type": "product-carousel",
+      "name": "Product Carousel",
+      "settings": {
+        "collection": "lacoste-jewelry",
+        "title": "More from Lacoste Jewelry",
+        "subtitle": "",
+        "nav_text": "Shop the brand",
+        "padding_y": 5
       }
     },
     "testimonials_ccfUfm": {
@@ -798,7 +809,9 @@
       "settings": {
         "title": "Own your Shine",
         "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "video": "shopify://files/videos/4236565-uhd_3840_2160_24fps.mp4"
+        "video": "shopify://files/videos/4236565-uhd_3840_2160_24fps.mp4",
+        "reversed": false,
+        "padding_y": 12
       }
     },
     "custom_liquid_DAieFi": {
@@ -813,6 +826,7 @@
     },
     "product_carousel_TrFzYi": {
       "type": "product-carousel",
+      "disabled": true,
       "name": "Product Carousel",
       "settings": {
         "collection": "bestsellers",
@@ -839,7 +853,7 @@
       "settings": {
         "collection": "new-arrivals",
         "header": "Exclusively on Fine & Mine",
-        "content": "Enjoy first pick privilege and checkout new arrivals from Michael Kors and Emporio Armani before they hit the shelves. You won't be able to get there anywhere else but here!",
+        "content": "Enjoy first pick privilege and checkout new arrivals from Michael Kors and Emporio Armani before they hit the shelves. You won't be able to get them anywhere else but here!",
         "button_text": "Shop Now",
         "image": "shopify://shop_images/PROMO-BOX_Text_ff3a931b-0193-431d-a20e-7f779c3e0b3e.jpg",
         "text_color": "#10181f",
@@ -911,6 +925,7 @@
     "custom_liquid_8XEFmE",
     "rich_text_7WP6RX",
     "shop_the_look_4Mbw49",
+    "product_carousel_fGc6CB",
     "testimonials_ccfUfm",
     "video_showcase_zrMwz7",
     "custom_liquid_DAieFi",

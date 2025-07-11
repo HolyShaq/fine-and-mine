@@ -23,9 +23,9 @@
         "slide_zFigEn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/LP_BANNER_JUL2025_EA.jpg",
-            "image_link": "shopify://collections/emporio-armani-jewelry",
-            "mobile_image": "shopify://shop_images/LP_MOBILE-BANNER_JUL2025_EA.jpg",
+            "image": "shopify://shop_images/LP_BANNER_JUL2025_MK.jpg",
+            "image_link": "shopify://collections/michael-kors-jewelry",
+            "mobile_image": "shopify://shop_images/LP_MOBILE-BANNER_JUL2025_MK.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -68,21 +68,6 @@
         "padding_y": 2
       }
     },
-    "collection_showcase_7EYGEr": {
-      "type": "collection-showcase",
-      "disabled": true,
-      "name": "Collection Showcase",
-      "settings": {
-        "collections": [
-          "ea-heart-pendants",
-          "ea-eagle-station-collection"
-        ],
-        "title": "Exclusively on Fine & Mine",
-        "subtitle": "Checkout these styles ahead of their launch in-store",
-        "nav_text": "View All",
-        "page": "shopify://collections/emporio-armani-jewelry"
-      }
-    },
     "custom_liquid_hJnHaD": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -108,7 +93,7 @@
         "heading_NYYhmm": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Emporio Armani Jewelry</strong>",
+            "heading": "<strong>Michael Kors Jewelry</strong>",
             "heading_size": "h1"
           }
         },
@@ -123,7 +108,7 @@
         "text_iMU8eG": {
           "type": "text",
           "settings": {
-            "text": "<p>The Emporio Armani jewelry collection for men and women inspires unapologetic confidence with bold and distinctive designs. Its alluring silhouettes feature refined textures that embody timeless style and grace.</p>"
+            "text": "<p>The Michael Kors jewelry collection is crafted from sterling silver, semi-precious stones and sparkling accents, creating uniquely personal jewelry designed to go beyond fashion.</p>"
           }
         }
       },
@@ -142,18 +127,6 @@
         "padding_bottom": 40
       }
     },
-    "video_showcase_DAAVHn": {
-      "type": "video-showcase",
-      "disabled": true,
-      "name": "Media Showcase",
-      "settings": {
-        "title": "Own your Shine",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "video": "shopify://files/videos/EA_SS25_APAC_ZHOU YUTONG_JEWELLERY 01_15s_1080x1080_H264_NO_LOGO.mp4",
-        "reversed": true,
-        "padding_y": 12
-      }
-    },
     "video_showcase_FKRfcr": {
       "type": "video-showcase",
       "disabled": true,
@@ -167,6 +140,18 @@
         "padding_y": 12
       }
     },
+    "video_showcase_DAAVHn": {
+      "type": "video-showcase",
+      "disabled": true,
+      "name": "Media Showcase",
+      "settings": {
+        "title": "Own your Shine",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "video": "shopify://files/videos/EA_SS25_APAC_ZHOU YUTONG_JEWELLERY 01_15s_1080x1080_H264_NO_LOGO.mp4",
+        "reversed": true,
+        "padding_y": 12
+      }
+    },
     "video_RbdyRG": {
       "type": "video",
       "custom_css": [],
@@ -175,7 +160,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify://files/videos/EA_SS25_APAC_ZHOU YUTONG_JEWELLERY 01_15s_1080x1080_H264_NO_LOGO.mp4",
+        "video": "shopify://files/videos/MMK_SS25_SUKI_JEWELRY_1X1_1080X1080_GLOBAL.mp4",
         "video_url": "",
         "description": "",
         "full_width": false,
@@ -184,35 +169,58 @@
         "padding_bottom": 12
       }
     },
+    "collection_showcase_7EYGEr": {
+      "type": "collection-showcase",
+      "name": "Collection Showcase",
+      "settings": {
+        "collections": [
+          "mk-monogram",
+          "mk-heart",
+          "mk-crystals"
+        ],
+        "title": "Just In",
+        "subtitle": "Checkout these styles ahead of their launch in-store",
+        "nav_text": "View All",
+        "page": "shopify://collections/michael-kors-jewelry"
+      }
+    },
     "shop_the_look_ig6ArU": {
       "type": "shop-the-look",
       "name": "Shop the Look Section",
       "settings": {
         "products": [
-          "sentimental-earrings-eaj-eg3627221",
-          "sentimental-bracelet-eaj-eg3626221",
-          "sentimental-necklace-eaj-eg3625221"
+          "jewelry-base-necklace-mkj-mkj8469710"
         ],
-        "image": "shopify://shop_images/FM_Shop-Look_MK-ZY.jpg",
+        "image": "shopify://shop_images/MKJ8469710_onmodel.png",
         "text_color": "#426c8a",
         "background_color": "#c2cfd6",
-        "title": "As seen on Zhou Yutong"
+        "title": "Shop The Look"
       }
     },
     "product_carousel_HxXDmc": {
       "type": "product-carousel",
       "name": "Product Carousel",
       "settings": {
-        "collection": "emporio-armani-jewelry-for-women",
+        "collection": "womens-michael-kors-jewelry",
         "title": "Shop Women's Styles",
         "subtitle": "",
         "nav_text": "View all",
         "padding_y": 5
       }
     },
+    "product_carousel_r7LJNa": {
+      "type": "product-carousel",
+      "name": "Product Carousel",
+      "settings": {
+        "collection": "michael-kors-jewelry",
+        "title": "More from Michael Kors Jewelry",
+        "subtitle": "",
+        "nav_text": "Shop the brand",
+        "padding_y": 5
+      }
+    },
     "custom_liquid_mDdtqr": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "",
@@ -259,8 +267,8 @@
       "disabled": true,
       "name": "Product Carousel",
       "settings": {
-        "collection": "emporio-armani-jewelry-for-women",
-        "title": "Shop Women's Styles",
+        "collection": "michael-kors-jewelry-mens",
+        "title": "Shop Men's Styles",
         "subtitle": "",
         "nav_text": "View all",
         "padding_y": 5
@@ -268,6 +276,7 @@
     },
     "custom_liquid_6jBb3i": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "",
@@ -304,6 +313,7 @@
         "featured_collection_UWMpRf",
         "featured_collection_gKHkrb"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Shop by Style",
@@ -333,6 +343,7 @@
     },
     "custom_liquid_MH9gbU": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "",
@@ -341,24 +352,13 @@
         "padding_bottom": 20
       }
     },
-    "product_carousel_r7LJNa": {
-      "type": "product-carousel",
-      "name": "Product Carousel",
-      "settings": {
-        "collection": "emporio-armani-jewelry",
-        "title": "More from Emporio Armani Jewelry",
-        "subtitle": "",
-        "nav_text": "Shop the brand",
-        "padding_y": 5
-      }
-    },
     "collection_list_G4HX84": {
       "type": "collection-list",
       "blocks": {
         "featured_collection_zKaJM4": {
           "type": "featured_collection",
           "settings": {
-            "collection": "michael-kors-jewelry"
+            "collection": "emporio-armani-jewelry"
           }
         },
         "featured_collection_XpC9jt": {
@@ -411,15 +411,16 @@
     "main",
     "slideshow_QG7Epz",
     "product_carousel_M9mCdb",
-    "collection_showcase_7EYGEr",
     "custom_liquid_hJnHaD",
     "page_intro_FXcU97",
     "rich_text_Ta6kUj",
-    "video_showcase_DAAVHn",
     "video_showcase_FKRfcr",
+    "video_showcase_DAAVHn",
     "video_RbdyRG",
+    "collection_showcase_7EYGEr",
     "shop_the_look_ig6ArU",
     "product_carousel_HxXDmc",
+    "product_carousel_r7LJNa",
     "custom_liquid_mDdtqr",
     "video_BEgDJk",
     "shop_the_look_BPdaCk",
@@ -427,7 +428,6 @@
     "custom_liquid_6jBb3i",
     "collection_list_9aKjxN",
     "custom_liquid_MH9gbU",
-    "product_carousel_r7LJNa",
     "collection_list_G4HX84"
   ]
 }

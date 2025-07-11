@@ -86,7 +86,12 @@
               "emporio-armani-jewelry-for-women",
               "lacoste-jewelry-for-women",
               "tommy-hilfiger-jewelry-for-women"
-            ]
+            ],
+            "collection_title_font_size": 13,
+            "collection_1_name": "Michael Kors Jewelry",
+            "collection_2_name": "Emporio Armani Jewelry",
+            "collection_3_name": "Lacoste Jewelry",
+            "collection_4_name": "Tommy Hilfiger Jewelry"
           }
         },
         "link_XHh6iK": {
@@ -97,7 +102,12 @@
             "collections": [
               "lacoste-jewelry-for-men",
               "tommy-hilfiger-for-men"
-            ]
+            ],
+            "collection_title_font_size": 13,
+            "collection_1_name": "Lacoste Jewelry",
+            "collection_2_name": "Tommy Hilfiger Jewelry",
+            "collection_3_name": "",
+            "collection_4_name": ""
           }
         },
         "link_bkbe86": {
@@ -110,7 +120,12 @@
               "emporio-armani-jewelry",
               "lacoste-jewelry",
               "tommy-hilfiger-jewelry"
-            ]
+            ],
+            "collection_title_font_size": 13,
+            "collection_1_name": "Michael Kors Jewelry",
+            "collection_2_name": "Emporio Armani Jewelry",
+            "collection_3_name": "Lacoste Jewelry",
+            "collection_4_name": "Tommy Hilfiger Jewelry"
           }
         },
         "highlight_dAcJzi": {

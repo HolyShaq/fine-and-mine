@@ -60,39 +60,46 @@
     "brand_showcase_Xi3HCN": {
       "type": "brand-showcase",
       "blocks": {
+        "logo_XeQyNJ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FM_Logos__MK_d0bba8e9-d015-4a0f-aa63-f0333a87a586.png",
+            "brand_collection": "michael-kors-jewelry"
+          }
+        },
         "logo_webfdc": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/FM_Logos__COA.png"
+            "image": "shopify://shop_images/FM_Logos.png",
+            "brand_collection": "lacoste-jewelry"
           }
         },
         "logo_q9eLfL": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/FM_Logos__EAG.png"
+            "image": "shopify://shop_images/FM_Logos__EAG_e6f64d26-c146-4417-9207-f65a0b35997a.png",
+            "brand_collection": "emporio-armani-jewelry"
           }
         },
         "logo_gLJGWt": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/FM_Logos_-04.png"
-          }
-        },
-        "logo_XeQyNJ": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/FM_Logos__MK.png"
+            "image": "shopify://shop_images/FM_Logos__TH.png",
+            "brand_collection": "tommy-hilfiger-jewelry"
           }
         }
       },
       "block_order": [
+        "logo_XeQyNJ",
         "logo_webfdc",
         "logo_q9eLfL",
-        "logo_gLJGWt",
-        "logo_XeQyNJ"
+        "logo_gLJGWt"
       ],
       "name": "Brand Showcase",
-      "settings": {}
+      "settings": {
+        "horizontal_gap": 4,
+        "vertical_gap": 10
+      }
     },
     "cta_banner_akm4bR": {
       "type": "cta-banner",
